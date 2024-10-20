@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Click 'EUR Euro'",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "h6qw0ZiqokinSpahHnEEQA",
+  "Reference": "Mn-a4VsjIUerpiuTZdzabQ/h6qw0ZiqokinSpahHnEEQA",
+  "ParentRef": "Mn-a4VsjIUerpiuTZdzabQ/-soJqjzQ80W-_uJuqCbHbQ",
+  "Created": "2024-10-17T20:40:21.1257903Z",
+  "Updated": "2024-10-18T09:22:17.8332768Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

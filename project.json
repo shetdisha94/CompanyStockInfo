@@ -1,0 +1,124 @@
+{
+  "name": "CompanyStockInfo",
+  "projectId": "23579255-db75-45b1-b4cc-52947910c4ef",
+  "previousProjectId": "ac484897-524a-46a4-8620-a95a015a955c",
+  "description": "Process reads company list and fetches stock data and converts INR price into EUR and writes data to excel.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.24.0-preview]",
+    "UiPath.Mail.Activities": "[1.23.11]",
+    "UiPath.System.Activities": "[24.11.0-preview]",
+    "UiPath.Testing.Activities": "[24.10.0]",
+    "UiPath.UIAutomation.Activities": "[24.11.1-preview]",
+    "UiPath.WebAPI.Activities": "[1.21.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.4.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "templateType": "Generic",
+        "fileName": ".templates\\GetCompanyUrlTemplate.xaml"
+      }
+    ],
+    "saveToCloud": false,
+    "cloudProjectUrl": "https://cloud.uipath.com/persoqzajkki/studio_/designer/23579255-db75-45b1-b4cc-52947910c4ef"
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "d8995ef0-8132-4ce0-a399-52a50f59543e",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Testing/Tryouts/CurrencyConverter.xaml",
+      "uniqueId": "9c261c08-ec58-434c-8fca-ca79b81af455",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Process/FetchAndConvert/FetchStockInfo.xaml",
+      "uniqueId": "709090ca-f69e-4004-8c37-d52308f2ada0",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Shared/Components/GetExchangeRates.xaml",
+      "uniqueId": "5eb090c8-805c-4ae1-982a-ad8d7017ff2a",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Process\\FetchAndConvert\\FetchStockInfo.xaml",
+      "uniqueId": "a703977e-1272-4e93-806a-673c81f71652",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Shared\\Components\\GetExchangeRates.xaml",
+      "uniqueId": "06536d17-d3a7-4728-92a9-de9c15e3fe32",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Testing\\Tryouts\\GetExchangeRates_.xaml",
+      "uniqueId": "c1386bab-8426-4083-98c5-cfb8e1d7a655",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Shared\\Components\\GetCompanyUrl.xaml",
+      "uniqueId": "4224bdf4-f9b2-4cc6-998f-2bbd8102e0d9",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Testing\\Tryouts\\GetCompanyUrl_c.xaml",
+      "uniqueId": "a80c27ff-b96b-428c-a388-97dfacc04fd1",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Main - with Parallel fetch.xaml",
+      "uniqueId": "6dee9d41-35fe-41d3-99ec-83c92a4e7b10",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

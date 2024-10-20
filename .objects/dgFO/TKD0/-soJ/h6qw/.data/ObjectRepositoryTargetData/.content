@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SO2CgpKYv0yVE6mExHVE9Q" Reference="Mn-a4VsjIUerpiuTZdzabQ/h6qw0ZiqokinSpahHnEEQA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.xe.com/" CVScreenId="a78c9d2d-2945-439c-8638-cbf2a316fc9c" CvTextArea="800, 846, 130, 17" CvTextArgument="[strToCurrencyType]" CvType="Text" DesignTimeRectangle="1120, 643, 81, 13" DesignTimeScaleFactor="1" ElementType="ListItem" FuzzyAccuracy="0.8" FuzzySelectorArgument="[string.Format(&quot;&lt;webctrl id='midmarketToCurrency-option-*' tag='LI' type='' class='sc-2fb55703-1 cHfuXk' aaname='' check:innerText='{0}' /&gt;&quot;, strToCurrencyType)]" Guid="7ee74843-0dad-4486-a9dd-4da4dfd68286" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJiMDE1OWUzNi0wZTQwLTQ0ZTItODgwMC04YmZkZjJmY2I4M2UifQ==/*yieldify*/' title='Currency Exchange Rates and International Money Transfers' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a78c9d2d-2945-439c-8638-cbf2a316fc9c" DesignTimeRectangle="1136, 546, 334, 74" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='combobox' tag='INPUT' aria-describedby='midmarketToCurrency-current-selection' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='INPUT' aria-describedby='midmarketToCurrency-current-selection' type='text' class='sc-68c5b934-0 sc-505266ee-5 cpnuFh eOSmHW combobox-input combobox-input-placeholder' placeholder='Type to search...' aaname='' /&gt;" Guid="0f7a8b22-42c6-4763-8a18-1541e571969a" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="44b601a0298aa45728b1b4d05b82bcd9.png" xmlns="">0UfZrArCqcUe64Im8eRikqA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="strToCurrencyType" />
+    </scg:List>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

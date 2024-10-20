@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qmNaOTuXr0mMDWZH4-eYQg" Reference="Mn-a4VsjIUerpiuTZdzabQ/SRvxTwrYgEmbvynNSg7hNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.xe.com/currencyconverter/convert/?Amount=487&amp;From=INR&amp;To=USD" DesignTimeRectangle="1179, 555, 417, 93" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-label='Swap currencies' tag='BUTTON' type='button' /&gt;&lt;nav up='2' /&gt;&lt;webctrl aria-role='combobox' parentid='midmarketToCurrency' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' parentid='midmarketToCurrency' tag='INPUT' type='text' class='sc-68c5b934-0 sc-505266ee-5 cpnuFh eOSmHW combobox-input combobox-input-placeholder' placeholder='Type to search...' aaname='' /&gt;" Guid="4eec6780-8975-4981-9eda-e63661226ae5" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJiMDE1OWUzNi0wZTQwLTQ0ZTItODgwMC04YmZkZjJmY2I4M2UifQ==/*yieldify*/' title='487 INR to USD - Indian Rupees to US Dollars Exchange Rate' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="2">
+          <Target DesignTimeRectangle="1165, 592, 18, 18" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;svg' parentid='__next' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='svg' class='h-4 w-4 rotate-90 text-greyblue-400 md:rotate-0' aaname='' /&gt;" Guid="cb52dab2-4fa8-4273-8227-6c2060c7d251" SearchSteps="Selector, FuzzySelector" />
+          <Target CVScreenId="4033498f-4030-42d2-9389-d705d826bca7" DesignTimeRectangle="1280, 477, 308, 40" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Alerts' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Alerts' tag='A' type='' class='bg-transparent text-greyblue-300 hover:bg-gray-200 [&amp;amp;_svg]:fill-greyblue-300 flex h-9 items-center justify-center gap-2 rounded-full text-center text-[13px] font-semibold transition-colors duration-200' check:text='Alerts' /&gt;" Guid="9648ad13-abd6-4b0f-8994-d248eeb1a755" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cde217e4499547a092f179d103285668.png" xmlns="">0QQaGc4v2nUOQZHFkXFUfRQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

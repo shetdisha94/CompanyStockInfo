@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Get Opening Date",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "KOLxE8q7t06O_WrV9IvwKw",
+  "Reference": "Mn-a4VsjIUerpiuTZdzabQ/KOLxE8q7t06O_WrV9IvwKw",
+  "ParentRef": "Mn-a4VsjIUerpiuTZdzabQ/eB8MP3x5HEixt6_hVQdmfw",
+  "Created": "2024-10-20T00:02:18.2584642Z",
+  "Updated": "2024-10-20T00:02:18.2584642Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

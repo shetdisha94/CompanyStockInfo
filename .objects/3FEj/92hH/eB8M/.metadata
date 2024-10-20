@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Open Moneycontrol URL",
+  "Type": "Screen",
+  "Id": "eB8MP3x5HEixt6_hVQdmfw",
+  "Reference": "Mn-a4VsjIUerpiuTZdzabQ/eB8MP3x5HEixt6_hVQdmfw",
+  "ParentRef": "Mn-a4VsjIUerpiuTZdzabQ/92hHSinfQ0WJnvS4Ar760A",
+  "Created": "2024-10-20T00:02:17.2772733Z",
+  "Updated": "2024-10-20T00:02:17.2772733Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

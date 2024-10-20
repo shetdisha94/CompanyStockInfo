@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Get Previous INR",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "htUCOklp7kCXXX7M-92GDQ",
+  "Reference": "Mn-a4VsjIUerpiuTZdzabQ/htUCOklp7kCXXX7M-92GDQ",
+  "ParentRef": "Mn-a4VsjIUerpiuTZdzabQ/eB8MP3x5HEixt6_hVQdmfw",
+  "Created": "2024-10-20T00:02:40.9723381Z",
+  "Updated": "2024-10-20T00:02:40.9723381Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

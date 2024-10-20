@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Open Moneycontrol URL",
+  "Type": "App",
+  "Id": "3FEjq4HaNkupl7I46cQhSQ",
+  "Reference": "Mn-a4VsjIUerpiuTZdzabQ/3FEjq4HaNkupl7I46cQhSQ",
+  "Created": "2024-10-20T00:02:17.1411095Z",
+  "Updated": "2024-10-20T00:02:17.1411095Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

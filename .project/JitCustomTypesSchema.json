@@ -1,0 +1,290 @@
+{
+  "ExportedBy": "StudioWeb",
+  "BundleHash": "X837u2PZ5BGRzc2Vu3xmddApjuCqJK3x0VA7PBjl454",
+  "Version": "1.0.0.0",
+  "JitAssemblyCompilerCommands": [
+    {
+      "ProviderName": "CustomEntities",
+      "BundleOptions": {
+        "Hash": "522762901",
+        "BundleName": "DeserializeJSONc08a22",
+        "EntitiesBundle": {
+          "Types": {
+            "DeserializeJSONc08a22": {
+              "Name": "DeserializeJSONc08a22",
+              "Properties": [
+                {
+                  "Name": "_33_60_20_ONE_20_WAM",
+                  "Type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "Attributes": {
+                    "Values": [
+                      {
+                        "Type": {
+                          "ClrType": "Newtonsoft.Json.JsonPropertyAttribute, Newtonsoft.Json"
+                        },
+                        "ConstructorArguments": [
+                          {
+                            "Value": "\"360 ONE WAM\"",
+                            "Type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "NamedArguments": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Name": "_33_M_20_India",
+                  "Type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "Attributes": {
+                    "Values": [
+                      {
+                        "Type": {
+                          "ClrType": "Newtonsoft.Json.JsonPropertyAttribute, Newtonsoft.Json"
+                        },
+                        "ConstructorArguments": [
+                          {
+                            "Value": "\"3M India\"",
+                            "Type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "NamedArguments": []
+                      }
+                    ]
+                  }
+                }
+              ],
+              "BaseType": null
+            }
+          },
+          "Version": 1
+        }
+      },
+      "EntityAssemblyKey": {
+        "Name": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSONc08a22",
+        "Hash": "NTIyNzYyOTAx",
+        "AssemblyName": "DeserializeJSONc08a2.ROjd6Y4IxO1vtRF2YQXOS1"
+      }
+    },
+    {
+      "ProviderName": "CustomEntities",
+      "BundleOptions": {
+        "Hash": "93162554",
+        "BundleName": "DeserializeJSON960986",
+        "EntitiesBundle": {
+          "Types": {
+            "DeserializeJSON960986": {
+              "Name": "DeserializeJSON960986",
+              "Properties": [
+                {
+                  "Name": "a",
+                  "Type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "Attributes": {
+                    "Values": [
+                      {
+                        "Type": {
+                          "ClrType": "Newtonsoft.Json.JsonPropertyAttribute, Newtonsoft.Json"
+                        },
+                        "ConstructorArguments": [
+                          {
+                            "Value": "\"a\"",
+                            "Type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "NamedArguments": []
+                      }
+                    ]
+                  }
+                }
+              ],
+              "BaseType": null
+            }
+          },
+          "Version": 1
+        }
+      },
+      "EntityAssemblyKey": {
+        "Name": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON960986",
+        "Hash": "OTMxNjI1NTQ",
+        "AssemblyName": "DeserializeJSON96098.g7k941d4toK1jZrxH1WD5yF2"
+      }
+    },
+    {
+      "ProviderName": "CustomEntities",
+      "BundleOptions": {
+        "Hash": "1587100451",
+        "BundleName": "DeserializeJSON1f8004",
+        "EntitiesBundle": {
+          "Types": {
+            "DeserializeJSON1f8004": {
+              "Name": "DeserializeJSON1f8004",
+              "Properties": [
+                {
+                  "Name": "a",
+                  "Type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "Attributes": {
+                    "Values": [
+                      {
+                        "Type": {
+                          "ClrType": "Newtonsoft.Json.JsonPropertyAttribute, Newtonsoft.Json"
+                        },
+                        "ConstructorArguments": [
+                          {
+                            "Value": "\"a\"",
+                            "Type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "NamedArguments": []
+                      }
+                    ]
+                  }
+                }
+              ],
+              "BaseType": null
+            }
+          },
+          "Version": 1
+        }
+      },
+      "EntityAssemblyKey": {
+        "Name": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON1f8004",
+        "Hash": "MTU4NzEwMDQ1MQ",
+        "AssemblyName": "DeserializeJSON1f800.DziCb4xzdtD1eJUz61ns9I34"
+      }
+    },
+    {
+      "ProviderName": "CustomEntities",
+      "BundleOptions": {
+        "Hash": "-895862824",
+        "BundleName": "DeserializeJSON298345",
+        "EntitiesBundle": {
+          "Types": {
+            "DeserializeJSON298345": {
+              "Name": "DeserializeJSON298345",
+              "Properties": [
+                {
+                  "Name": "a",
+                  "Type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "Attributes": {
+                    "Values": [
+                      {
+                        "Type": {
+                          "ClrType": "Newtonsoft.Json.JsonPropertyAttribute, Newtonsoft.Json"
+                        },
+                        "ConstructorArguments": [
+                          {
+                            "Value": "\"a\"",
+                            "Type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "NamedArguments": []
+                      }
+                    ]
+                  }
+                }
+              ],
+              "BaseType": null
+            }
+          },
+          "Version": 1
+        }
+      },
+      "EntityAssemblyKey": {
+        "Name": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON298345",
+        "Hash": "LTg5NTg2MjgyNA",
+        "AssemblyName": "DeserializeJSON29834.QVBG21OpAJH1fWcnj2gfkPe4"
+      }
+    },
+    {
+      "ProviderName": "CustomEntities",
+      "BundleOptions": {
+        "Hash": "-628950175",
+        "BundleName": "DeserializeJSON178e23",
+        "EntitiesBundle": {
+          "Types": {
+            "DeserializeJSON178e23": {
+              "Name": "DeserializeJSON178e23",
+              "Properties": [
+                {
+                  "Name": "_33_60_20_ONE_20_WAM",
+                  "Type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "Attributes": {
+                    "Values": [
+                      {
+                        "Type": {
+                          "ClrType": "Newtonsoft.Json.JsonPropertyAttribute, Newtonsoft.Json"
+                        },
+                        "ConstructorArguments": [
+                          {
+                            "Value": "\"360 ONE WAM\"",
+                            "Type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "NamedArguments": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Name": "_33_M_20_India",
+                  "Type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "Attributes": {
+                    "Values": [
+                      {
+                        "Type": {
+                          "ClrType": "Newtonsoft.Json.JsonPropertyAttribute, Newtonsoft.Json"
+                        },
+                        "ConstructorArguments": [
+                          {
+                            "Value": "\"3M India\"",
+                            "Type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "NamedArguments": []
+                      }
+                    ]
+                  }
+                }
+              ],
+              "BaseType": null
+            }
+          },
+          "Version": 1
+        }
+      },
+      "EntityAssemblyKey": {
+        "Name": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON178e23",
+        "Hash": "LTYyODk1MDE3NQ",
+        "AssemblyName": "DeserializeJSON178e2.Mm4JT3dIz5M1c0yHK1Bty6g4"
+      }
+    }
+  ]
+}

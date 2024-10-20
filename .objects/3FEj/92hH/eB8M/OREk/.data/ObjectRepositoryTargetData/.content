@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="64KFOizAvESiMb2KO9BLhg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.moneycontrol.com/india/stockpricequote/finance-others/360onewam/IIFLW54277" CVScreenId="3b7b1e7d-fb0f-48ab-a4be-d762de9b8b22" DesignTimeRectangle="479, 766, 96, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tag='TD' rowName='Open' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' rowName='Open' class='nseopn bseopn' /&gt;" Guid="67923eb7-6f67-4252-be9b-5614c4a834f8" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/21751243814,1039154/385208-160-600-1' title='* NSE/BSE Forecast News and Live Quotes' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="3b7b1e7d-fb0f-48ab-a4be-d762de9b8b22" DesignTimeRectangle="330, 766, 149, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Open' check:innerText='Open' /&gt;" Guid="0f53a1f2-88a6-4dbf-87c4-4a0de45f522d" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="97cadaefea6866e33997bb9be3fce6c7.png" xmlns="">0bB8H9UCkFk2DKd68ehz7Ig</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Amount",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "f3fNcvQVPUmlHwrSzRQnyA",
+  "Reference": "Mn-a4VsjIUerpiuTZdzabQ/f3fNcvQVPUmlHwrSzRQnyA",
+  "ParentRef": "Mn-a4VsjIUerpiuTZdzabQ/-soJqjzQ80W-_uJuqCbHbQ",
+  "Created": "2024-10-17T13:55:32.515403Z",
+  "Updated": "2024-10-17T13:55:32.515403Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

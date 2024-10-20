@@ -1,0 +1,49 @@
+{
+  "assemblyStates": {
+    "DeserializeJSON96098.g7k941d4toK1jZrxH1WD5yF2": {
+      "namespace": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON960986.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON960986",
+        "hash": "OTMxNjI1NTQ",
+        "assemblyName": "DeserializeJSON96098.g7k941d4toK1jZrxH1WD5yF2"
+      }
+    },
+    "DeserializeJSON29834.QVBG21OpAJH1fWcnj2gfkPe4": {
+      "namespace": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON298345.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON298345",
+        "hash": "LTg5NTg2MjgyNA",
+        "assemblyName": "DeserializeJSON29834.QVBG21OpAJH1fWcnj2gfkPe4"
+      }
+    },
+    "DeserializeJSON1f800.DziCb4xzdtD1eJUz61ns9I34": {
+      "namespace": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON1f8004.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON1f8004",
+        "hash": "MTU4NzEwMDQ1MQ",
+        "assemblyName": "DeserializeJSON1f800.DziCb4xzdtD1eJUz61ns9I34"
+      }
+    },
+    "DeserializeJSONc08a2.ROjd6Y4IxO1vtRF2YQXOS1": {
+      "namespace": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSONc08a22.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSONc08a22",
+        "hash": "NTIyNzYyOTAx",
+        "assemblyName": "DeserializeJSONc08a2.ROjd6Y4IxO1vtRF2YQXOS1"
+      }
+    },
+    "DeserializeJSON178e2.Mm4JT3dIz5M1c0yHK1Bty6g4": {
+      "namespace": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON178e23.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.Web.Activities.ViewModels.SWEntities.DeserializeJSON178e23",
+        "hash": "LTYyODk1MDE3NQ",
+        "assemblyName": "DeserializeJSON178e2.Mm4JT3dIz5M1c0yHK1Bty6g4"
+      }
+    }
+  }
+}

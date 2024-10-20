@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zXBL6VCm00eJvBPaa4s4ng" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.moneycontrol.com/india/stockpricequote/finance-others/360onewam/IIFLW54277" CVScreenId="9591a9ba-e9ab-4f37-8166-ce573f93ac5a" DesignTimeRectangle="330, 545, 340, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='inp_nse' tag='P' aaname='As on * | *' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl parentid='inp_nse' tag='P' type='' class='nseasondate' /&gt;" Guid="2918642a-c5d5-4e05-b91a-d13fe6f73c40" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/21751243814,1039154/385208-160-600-1' title='* NSE/BSE Forecast News and Live Quotes' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="9591a9ba-e9ab-4f37-8166-ce573f93ac5a" DesignTimeRectangle="330, 570, 120, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl id='open_trad_accnt' tag='A' aaname='Open Trading A/c' /&gt;" FuzzySelectorArgument="&lt;webctrl id='open_trad_accnt' tag='A' aaname='Open Trading A/c' type='' class='trade inditrade mob-hide' check:text='Open Trading A/c' /&gt;" Guid="f57fb7f4-af17-4801-97cf-e5fdc2cc410e" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="45a05f678477765d4de145d79dec3ecc.png" xmlns="">0QIIrdKmNoUy-FVudsdQEBg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

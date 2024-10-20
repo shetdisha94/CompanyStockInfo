@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tqkWAw6Yb0Kn1dNKtfxTeg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.moneycontrol.com/india/stockpricequote/pharmaceuticals/abbottindia/AI51" CVScreenId="4bf25941-d716-4b98-a0e0-ca59cffea44a" DesignTimeRectangle="330, 630, 735, 49" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='stockName' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='stockName' tag='DIV' type='' class='inid_name' aaname='                                                           ' check:text='&amp;#xD;&amp;#xA;                    Sector:  Pharmaceuticals &amp;amp; Drugs' /&gt;" Guid="102fd88c-c954-4ebe-b2db-49c76251d0f1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* NSE/BSE Forecast News and Live Quotes' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="21b424f03a63d60bbb76046a5f5ce858.png" xmlns="">0R6kl_1bQFkuVk0wr5Gkp5g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

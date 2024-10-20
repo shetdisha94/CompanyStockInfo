@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Click 'INR Indian Rupee'(1)",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "m4sYw9TkqkGgsjt7ETslMg",
+  "Reference": "Mn-a4VsjIUerpiuTZdzabQ/m4sYw9TkqkGgsjt7ETslMg",
+  "ParentRef": "Mn-a4VsjIUerpiuTZdzabQ/-soJqjzQ80W-_uJuqCbHbQ",
+  "Created": "2024-10-18T09:11:12.2994493Z",
+  "Updated": "2024-10-18T09:11:12.2994493Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

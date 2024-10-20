@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Click 'INR Indian Rupee'",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "VAW2IQeSFEm8NR_njeDMJw",
+  "Reference": "Mn-a4VsjIUerpiuTZdzabQ/VAW2IQeSFEm8NR_njeDMJw",
+  "ParentRef": "Mn-a4VsjIUerpiuTZdzabQ/-soJqjzQ80W-_uJuqCbHbQ",
+  "Created": "2024-10-17T20:17:47.2866029Z",
+  "Updated": "2024-10-18T09:05:09.4032268Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

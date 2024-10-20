@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IPuxdT9D90SM4tmLFdkisA" Reference="Mn-a4VsjIUerpiuTZdzabQ/m4sYw9TkqkGgsjt7ETslMg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.xe.com/" DesignTimeRectangle="794, 546, 333, 74" DesignTimeScaleFactor="0.8999999761581421" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='midmarketFromCurrency-option-*' tag='LI' type='' class='sc-2fb55703-1 cHfuXk' aaname='' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='INPUT' type='text' class='sc-68c5b934-0 sc-505266ee-5 cpnuFh eOSmHW combobox-input combobox-input-placeholder' placeholder='Type to search...' aaname='' check:text='' /&gt;" Guid="58eecccb-5a29-4e2e-bfde-4676fcbffbdd" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJiMDE1OWUzNi0wZTQwLTQ0ZTItODgwMC04YmZkZjJmY2I4M2UifQ==/*yieldify*/' title='Currency Exchange Rates and International Money Transfers' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="95b2e9cf85e7dfb073af85368450500c.png" xmlns="">0UKYVQbBgdUae-BQZ24r6oA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

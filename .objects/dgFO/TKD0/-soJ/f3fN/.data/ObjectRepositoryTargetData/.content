@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pfeDI0kLjUm61a9nS5jdgg" Reference="Mn-a4VsjIUerpiuTZdzabQ/f3fNcvQVPUmlHwrSzRQnyA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.xe.com/" CVScreenId="fc5cdad9-230f-496c-a078-65fb80b24532" CvElementArea="317, 677, 427, 100" CvType="InputBox" DesignTimeRectangle="356, 719, 102, 36" DesignTimeScaleFactor="1.125" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='amount' tag='INPUT' aaname='Amount' parentclass='amount-input' /&gt;" FuzzySelectorArgument="&lt;webctrl id='amount' tag='INPUT' aaname='Amount' parentclass='amount-input' type='text' class='sc-b8d6d0bc-1 fVCqnZ' /&gt;" Guid="75b265a3-4fdb-4cc1-81af-bd66225c6060" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJiMDE1OWUzNi0wZTQwLTQ0ZTItODgwMC04YmZkZjJmY2I4M2UifQ==/*yieldify*/' title='Currency Exchange Rates and International Money Transfers' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Visible">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="fc5cdad9-230f-496c-a078-65fb80b24532" CvElementArea="317, 677, 427, 100" CvType="InputBox" DesignTimeRectangle="338, 697, 58, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Amount' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Amount' type='' class='absolute top-4 text-sm font-normal text-greyblue-300' check:text='Amount' /&gt;" Guid="dd4a62e5-17da-4820-8c50-d94c0393cac3" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="133dd2e49bfb7e3b22fc4250aca601c3.png" xmlns="">0vXeAovRfLEiapsSurbKoYw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

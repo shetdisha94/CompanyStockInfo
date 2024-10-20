@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_QGztEC11U6upJ5_b7bgIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.moneycontrol.com/india/stockpricequote/finance-others/360onewam/IIFLW54277" CVScreenId="347d0c37-68c4-4fee-b0d5-8b47332acf68" DesignTimeRectangle="479, 796, 96, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tag='TD' rowName='Previous Close' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' rowName='Previous Close' class='nseprvclose bseprvclose' /&gt;" Guid="c8440568-fce9-4f81-b6b0-39b6a59e5076" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/21751243814,1039154/385208-160-600-1' title='360 ONE WAM Share Price, 360 ONE WAM Stock Price, 360 ONE WAM Ltd. Stock Price, Share Price, Live BSE/NSE, 360 ONE WAM Ltd. Bids Offers. Buy/Sell 360 ONE WAM Ltd. news &amp;amp; tips, &amp;amp; F&amp;amp;O Quotes, NSE/BSE Forecast News and Live Quotes' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="347d0c37-68c4-4fee-b0d5-8b47332acf68" DesignTimeRectangle="330, 796, 149, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='Previous Close' rowName='Previous Close' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='Previous Close' rowName='Previous Close' type='' class='' check:text='Previous Close' /&gt;" Guid="3ac01fc0-9c4d-431c-a7db-9eb1dc69e38c" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cbf46cafc7fbdf3157b2e0df84586634.png" xmlns="">0tKEr-vCk1kmpWyfqdlMYGw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

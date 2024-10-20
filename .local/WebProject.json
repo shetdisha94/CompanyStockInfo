@@ -1,0 +1,2814 @@
+{
+  "BaseUrl": "https://cloud.uipath.com/persoqzajkki/studio_",
+  "Snapshot": {
+    "Id": "23579255-db75-45b1-b4cc-52947910c4ef",
+    "ExpressionLanguage": "VisualBasic",
+    "ProjectType": "Process",
+    "Name": "ScrapeStockData",
+    "Description": "Process reads company list and fetches stock data and converts INR price into EUR and writes data to excel.",
+    "LastModifiedTime": "2024-10-20T20:25:36.0616078Z",
+    "CreationTime": "2024-10-20T11:33:31.0802647Z",
+    "UserId": "45cb3191-7fcb-4823-9467-c7228c9af891",
+    "RootFolder": {
+      "Name": "23579255-db75-45b1-b4cc-52947910c4ef",
+      "Folders": [
+        {
+          "Id": "534e446b-e17e-4ad3-b331-30e29ff5b9a5",
+          "Name": "Config",
+          "Folders": [],
+          "Files": [
+            {
+              "Id": "dc901f1f-b2e7-450a-988d-6ae82ecb72d6",
+              "Name": "Config.xlsx",
+              "IsMain": false
+            }
+          ]
+        },
+        {
+          "Id": "992f1cc8-2eeb-4266-b027-3da5abf29ebb",
+          "Name": ".templates",
+          "Folders": [],
+          "Files": [
+            {
+              "Id": "fe4feb41-57de-4aa3-a556-c1504d260db0",
+              "Name": "GetCompanyUrlTemplate.xaml",
+              "IsMain": false
+            }
+          ]
+        },
+        {
+          "Id": "9b47fe5c-a43e-4b6e-b65f-1bef5e3abef7",
+          "Name": ".screenshots",
+          "Folders": [],
+          "Files": [
+            {
+              "Id": "45a05f678477765d4de145d79dec3ecc.png",
+              "Name": "45a05f678477765d4de145d79dec3ecc.png",
+              "IsMain": false
+            },
+            {
+              "Id": "e8d2433a6d3d592073522328a97b5bff.jpg",
+              "Name": "e8d2433a6d3d592073522328a97b5bff.jpg",
+              "IsMain": false
+            },
+            {
+              "Id": "5bf7c69d78cea9a7e35962ba9f603ed6.png",
+              "Name": "5bf7c69d78cea9a7e35962ba9f603ed6.png",
+              "IsMain": false
+            },
+            {
+              "Id": "8f23c6d995954202657282faa526fcee.jpg",
+              "Name": "8f23c6d995954202657282faa526fcee.jpg",
+              "IsMain": false
+            },
+            {
+              "Id": "cace48d2d22cc99e61ce1ec65e419eae.png",
+              "Name": "cace48d2d22cc99e61ce1ec65e419eae.png",
+              "IsMain": false
+            },
+            {
+              "Id": "bf2d3fcdbbda2535371e1fb7c267be67.png",
+              "Name": "bf2d3fcdbbda2535371e1fb7c267be67.png",
+              "IsMain": false
+            },
+            {
+              "Id": "54550345515fd9b6222434a90e1ac3f9.png",
+              "Name": "54550345515fd9b6222434a90e1ac3f9.png",
+              "IsMain": false
+            },
+            {
+              "Id": "cbf46cafc7fbdf3157b2e0df84586634.png",
+              "Name": "cbf46cafc7fbdf3157b2e0df84586634.png",
+              "IsMain": false
+            },
+            {
+              "Id": "e748a140492247b5d36da22a302c8963.png",
+              "Name": "e748a140492247b5d36da22a302c8963.png",
+              "IsMain": false
+            },
+            {
+              "Id": "02d9366f47533709c74cf007777c04c1.png",
+              "Name": "02d9366f47533709c74cf007777c04c1.png",
+              "IsMain": false
+            },
+            {
+              "Id": "86eba801312f848cbbb9c0ea8361f63f.jpg",
+              "Name": "86eba801312f848cbbb9c0ea8361f63f.jpg",
+              "IsMain": false
+            },
+            {
+              "Id": "91fdff762737f1f464d94bb99656542e.png",
+              "Name": "91fdff762737f1f464d94bb99656542e.png",
+              "IsMain": false
+            },
+            {
+              "Id": "e178af8e079f0a12888d5e8bb790d10b.png",
+              "Name": "e178af8e079f0a12888d5e8bb790d10b.png",
+              "IsMain": false
+            },
+            {
+              "Id": "cde217e4499547a092f179d103285668.png",
+              "Name": "cde217e4499547a092f179d103285668.png",
+              "IsMain": false
+            },
+            {
+              "Id": "c5269ecbe19bd61ce29684c9846654ee.png",
+              "Name": "c5269ecbe19bd61ce29684c9846654ee.png",
+              "IsMain": false
+            },
+            {
+              "Id": "cf3296444b7fc2da1fefcedbed26a6b2.png",
+              "Name": "cf3296444b7fc2da1fefcedbed26a6b2.png",
+              "IsMain": false
+            },
+            {
+              "Id": "a09ea02fb4fab9ec69852bb90aa9f331.png",
+              "Name": "a09ea02fb4fab9ec69852bb90aa9f331.png",
+              "IsMain": false
+            },
+            {
+              "Id": "72a41668ff1ebc4a94dce4ad371e8531.png",
+              "Name": "72a41668ff1ebc4a94dce4ad371e8531.png",
+              "IsMain": false
+            },
+            {
+              "Id": "44b601a0298aa45728b1b4d05b82bcd9.png",
+              "Name": "44b601a0298aa45728b1b4d05b82bcd9.png",
+              "IsMain": false
+            },
+            {
+              "Id": "bdff033ab26bd50cfceb9552cb201a8d.jpg",
+              "Name": "bdff033ab26bd50cfceb9552cb201a8d.jpg",
+              "IsMain": false
+            },
+            {
+              "Id": "95b2e9cf85e7dfb073af85368450500c.png",
+              "Name": "95b2e9cf85e7dfb073af85368450500c.png",
+              "IsMain": false
+            },
+            {
+              "Id": "b8c82f5e406f1b34db45e9ab539b2089.png",
+              "Name": "b8c82f5e406f1b34db45e9ab539b2089.png",
+              "IsMain": false
+            },
+            {
+              "Id": "72f4c99ff0f263c3ce47d98f819af643.png",
+              "Name": "72f4c99ff0f263c3ce47d98f819af643.png",
+              "IsMain": false
+            },
+            {
+              "Id": "ff8a15b022e1135f6afb5d6b9c82675c.jpg",
+              "Name": "ff8a15b022e1135f6afb5d6b9c82675c.jpg",
+              "IsMain": false
+            },
+            {
+              "Id": "21b424f03a63d60bbb76046a5f5ce858.png",
+              "Name": "21b424f03a63d60bbb76046a5f5ce858.png",
+              "IsMain": false
+            },
+            {
+              "Id": "047c90d69e79f7aee8090318b8cfd903.png",
+              "Name": "047c90d69e79f7aee8090318b8cfd903.png",
+              "IsMain": false
+            },
+            {
+              "Id": "d0f0bbe91f0d6c4e3948877648f07f06.png",
+              "Name": "d0f0bbe91f0d6c4e3948877648f07f06.png",
+              "IsMain": false
+            },
+            {
+              "Id": "ba95c54b4f3de4b5bd5357f94b21032b.png",
+              "Name": "ba95c54b4f3de4b5bd5357f94b21032b.png",
+              "IsMain": false
+            },
+            {
+              "Id": "974aee13e4cf90aacb8881abec025b0e.png",
+              "Name": "974aee13e4cf90aacb8881abec025b0e.png",
+              "IsMain": false
+            },
+            {
+              "Id": "9a01318d3f5b4f6a9c2990e6a1b42b31.png",
+              "Name": "9a01318d3f5b4f6a9c2990e6a1b42b31.png",
+              "IsMain": false
+            },
+            {
+              "Id": "de722c5ad8b5d8e9ddd3fbde16025dc6.png",
+              "Name": "de722c5ad8b5d8e9ddd3fbde16025dc6.png",
+              "IsMain": false
+            },
+            {
+              "Id": "897ed62f1f16e0463880ebb078a0f3b6.png",
+              "Name": "897ed62f1f16e0463880ebb078a0f3b6.png",
+              "IsMain": false
+            },
+            {
+              "Id": "8c7b421e37087c9b74bb96c498fecc6b.png",
+              "Name": "8c7b421e37087c9b74bb96c498fecc6b.png",
+              "IsMain": false
+            },
+            {
+              "Id": "cbd6d5e0982765ed9ae83be144b7c9bc.png",
+              "Name": "cbd6d5e0982765ed9ae83be144b7c9bc.png",
+              "IsMain": false
+            },
+            {
+              "Id": "80ff5e6b43da6ee1d1f5b60803e33277.png",
+              "Name": "80ff5e6b43da6ee1d1f5b60803e33277.png",
+              "IsMain": false
+            },
+            {
+              "Id": "43f43b8e2999b6a796a9cbcebf29c0ea.png",
+              "Name": "43f43b8e2999b6a796a9cbcebf29c0ea.png",
+              "IsMain": false
+            },
+            {
+              "Id": "15fefef96e27ae6fcf4cd88f7d337201.png",
+              "Name": "15fefef96e27ae6fcf4cd88f7d337201.png",
+              "IsMain": false
+            },
+            {
+              "Id": "97cadaefea6866e33997bb9be3fce6c7.png",
+              "Name": "97cadaefea6866e33997bb9be3fce6c7.png",
+              "IsMain": false
+            },
+            {
+              "Id": "6159c49b5328a926a76b65013a3a166e.png",
+              "Name": "6159c49b5328a926a76b65013a3a166e.png",
+              "IsMain": false
+            },
+            {
+              "Id": "08ea56b119e6e9ccde2741024fa7f9ac.png",
+              "Name": "08ea56b119e6e9ccde2741024fa7f9ac.png",
+              "IsMain": false
+            },
+            {
+              "Id": "5c68b728b628f6c71f79006dec4b44ce.jpg",
+              "Name": "5c68b728b628f6c71f79006dec4b44ce.jpg",
+              "IsMain": false
+            },
+            {
+              "Id": "4a909a4569f7c9e71231db39d7c49932.png",
+              "Name": "4a909a4569f7c9e71231db39d7c49932.png",
+              "IsMain": false
+            },
+            {
+              "Id": "6e2e6f189c98ae7bc6f90b73d66541f1.png",
+              "Name": "6e2e6f189c98ae7bc6f90b73d66541f1.png",
+              "IsMain": false
+            },
+            {
+              "Id": "133dd2e49bfb7e3b22fc4250aca601c3.png",
+              "Name": "133dd2e49bfb7e3b22fc4250aca601c3.png",
+              "IsMain": false
+            },
+            {
+              "Id": "c613d6eb0d489108dfc90b27a89ea2ca.png",
+              "Name": "c613d6eb0d489108dfc90b27a89ea2ca.png",
+              "IsMain": false
+            },
+            {
+              "Id": "a67b7258ab7990c3f849f319b992a851.png",
+              "Name": "a67b7258ab7990c3f849f319b992a851.png",
+              "IsMain": false
+            },
+            {
+              "Id": "8886d5a53d1f572f7626e8ca0b23d7d4.jpg",
+              "Name": "8886d5a53d1f572f7626e8ca0b23d7d4.jpg",
+              "IsMain": false
+            },
+            {
+              "Id": "ea8ec28d477e1b07e1b4fdd7e4b06438.jpg",
+              "Name": "ea8ec28d477e1b07e1b4fdd7e4b06438.jpg",
+              "IsMain": false
+            },
+            {
+              "Id": "0b4f6f942f4dade1e5ffc114438f8d68.png",
+              "Name": "0b4f6f942f4dade1e5ffc114438f8d68.png",
+              "IsMain": false
+            },
+            {
+              "Id": "00401267301aaca4f9a9f1038ed5b3dc.png",
+              "Name": "00401267301aaca4f9a9f1038ed5b3dc.png",
+              "IsMain": false
+            },
+            {
+              "Id": "b861f2f84d98d9be1462e0ea1a5cb6f8.png",
+              "Name": "b861f2f84d98d9be1462e0ea1a5cb6f8.png",
+              "IsMain": false
+            },
+            {
+              "Id": "2df2137de9c1a0301c076a3e74d91aa1.png",
+              "Name": "2df2137de9c1a0301c076a3e74d91aa1.png",
+              "IsMain": false
+            },
+            {
+              "Id": "cd87555e0e443f595c646935130005a6.png",
+              "Name": "cd87555e0e443f595c646935130005a6.png",
+              "IsMain": false
+            },
+            {
+              "Id": "3fd0ef5a837b2ca4437e0d778fff660a.jpg",
+              "Name": "3fd0ef5a837b2ca4437e0d778fff660a.jpg",
+              "IsMain": false
+            },
+            {
+              "Id": "ca7c223f8d49dbd3d82d1661eae49bcf.png",
+              "Name": "ca7c223f8d49dbd3d82d1661eae49bcf.png",
+              "IsMain": false
+            },
+            {
+              "Id": "c14dca3b8abb2a06bcae669e0aa91769.png",
+              "Name": "c14dca3b8abb2a06bcae669e0aa91769.png",
+              "IsMain": false
+            },
+            {
+              "Id": "b13691ba3121af58defebdc25cbc8385.png",
+              "Name": "b13691ba3121af58defebdc25cbc8385.png",
+              "IsMain": false
+            },
+            {
+              "Id": "ef3b38e98a4c1ff045fd52bb17d224d6.png",
+              "Name": "ef3b38e98a4c1ff045fd52bb17d224d6.png",
+              "IsMain": false
+            },
+            {
+              "Id": "4c51693c7a3ed2b4f2b65907ef606af1.png",
+              "Name": "4c51693c7a3ed2b4f2b65907ef606af1.png",
+              "IsMain": false
+            },
+            {
+              "Id": "8514ecc0526791e332f51bf96d60bcf8.png",
+              "Name": "8514ecc0526791e332f51bf96d60bcf8.png",
+              "IsMain": false
+            },
+            {
+              "Id": "5d77b35c270a769ef33981a9297bba05.png",
+              "Name": "5d77b35c270a769ef33981a9297bba05.png",
+              "IsMain": false
+            }
+          ]
+        },
+        {
+          "Id": "e1dacd5c-1340-490b-8a0c-532e87237f78",
+          "Name": "Testing",
+          "Folders": [
+            {
+              "Id": "bb027926-900d-45ae-8f02-83f5d3198a16",
+              "Name": "Tryouts",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "d9267d49-8db6-4d41-b47a-f0b52dbbc120",
+                  "Name": "Main - Copy (1).xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "05402d10-325c-49a8-8824-1db45b7aa9d0",
+                  "Name": "CurrencyConverter.xaml.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "000eb1b8-cecb-4e5f-8413-d6bbe2dbcdc2",
+                  "Name": "CurrencyConverter.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "08742e8a-8e55-47b1-9e8d-9230e1e90674",
+                  "Name": "Main_Tryout.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "3bc0c83c-2296-4728-ba98-5cbd766a054b",
+                  "Name": "GetCompanyUrl_c.xaml.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "c633a957-b040-49ff-9421-e50bc760e8b1",
+                  "Name": "GetExchangeRates_.xaml.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "935c5309-9ee9-448b-90be-066ef70d6d6e",
+                  "Name": "GetExchangeRates_.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "0ee9a729-423c-4423-8bd3-9420efbcf8b2",
+                  "Name": "js.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "f5e208e6-69df-45f8-a8d3-7579ca3cb19a",
+                  "Name": "CurrencyConverter(Autosaved).xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "8c40eaac-3d71-4722-81a6-ce05fe6aca39",
+                  "Name": "ExtractStockData.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "7de0ff99-5010-4d02-aee5-cb7a262a3f5e",
+                  "Name": "Main - Old.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "0b7f34ed-7168-4d8c-83a4-5010cd80d894",
+                  "Name": "GetCompanyUrl_c.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "9a968c90-7724-4d6e-884c-48e094b5f7bd",
+                  "Name": "Main -with dt.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "3c9e9182-f3ce-4d2c-8bdc-becaee3ae5f7",
+                  "Name": "GetExchangeRates.xaml",
+                  "IsMain": false
+                }
+              ]
+            }
+          ],
+          "Files": []
+        },
+        {
+          "Id": "3f432db8-c83f-4ea7-8ab3-127cad9c9ac4",
+          "Name": ".tmh",
+          "Folders": [],
+          "Files": [
+            {
+              "Id": "5e7e8c5e-1c49-4ef5-81aa-355eb8acfd5d",
+              "Name": "config.json",
+              "IsMain": false
+            }
+          ]
+        },
+        {
+          "Id": "32cfc2f5-0aae-43e4-bae4-f5b4bcea78bd",
+          "Name": ".storage",
+          "Folders": [
+            {
+              "Id": "458e5a24-6722-4046-87b1-5b88d99eef6b",
+              "Name": ".runtime",
+              "Folders": [
+                {
+                  "Id": "5d570003-c326-4fe1-977a-2492e457820f",
+                  "Name": "DesignTimeTargetImagePersistenceService",
+                  "Folders": [],
+                  "Files": [
+                    {
+                      "Id": "2e58acfb-8703-451f-ab2d-46fafe0c5ea4",
+                      "Name": "4dd3fca3-78a8-4485-84e0-b4e1b5b4d46c",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "3ced5317-2237-412b-ae63-61bc7f4bc3e2",
+                      "Name": "9f657fa1-4adf-4fb1-b2dd-f18ac6878dab",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "012f5f3f-a1e9-4081-8f94-ef716b382de7",
+                      "Name": "75b265a3-4fdb-4cc1-81af-bd66225c6060",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "6232ab1c-f557-4583-b681-eb4ee5a977ee",
+                      "Name": "cd9eb0fc-0424-4237-85d7-ed14d9ed35b7",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "4568125f-75ac-42ad-bdfb-3aa9d30d91e2",
+                      "Name": "4eec6780-8975-4981-9eda-e63661226ae5",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "e675e01c-c522-4c77-93f0-aba905572424",
+                      "Name": "5d8c0939-1203-41ad-8a0c-353465c43aad",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "22294872-05cf-4ccf-9dc2-b07315158f80",
+                      "Name": "58eecccb-5a29-4e2e-bfde-4676fcbffbdd",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "d6eb7ebe-c780-4ed1-9eb8-62b21682b2c3",
+                      "Name": "67923eb7-6f67-4252-be9b-5614c4a834f8",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "87d3945d-8c8c-4243-b187-80768a285371",
+                      "Name": "5bc1905a-c97f-43c5-9014-fe0315344283",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "25f533a5-88ed-4eeb-92b3-e02d9cf11f01",
+                      "Name": "caa9830a-3680-4628-ba67-28ef1c3fecd1",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "2e5cefca-7023-472c-bb02-0648149213da",
+                      "Name": "7443a688-c3f1-4027-a76a-700621294f42",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "9f3b0d48-8513-4501-8f1a-1d343489151e",
+                      "Name": "c6b21b2a-c913-4aef-b496-5a49477b8297",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "387b575d-49cb-48d0-82fe-73440c906969",
+                      "Name": "c8440568-fce9-4f81-b6b0-39b6a59e5076",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "ebba9509-5a19-4da6-a94f-4727dc595f32",
+                      "Name": "bdd249fa-e7b5-42e7-a269-16e0d0cba36f",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "f9a8ee8e-e853-44c6-aa7a-0ba72f6ef039",
+                      "Name": "2918642a-c5d5-4e05-b91a-d13fe6f73c40",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "fa186d15-397c-4537-ab7b-c9cde4dcbf8a",
+                      "Name": "4387fe99-7565-4cde-8814-0b5b7addf152",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "c85f8702-1824-4242-9583-8071ec17b2b8",
+                      "Name": "ce56408b-9110-4b0b-9c35-7c4ecd272b86",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "4b5e5758-fded-47a6-a2b5-7b2af3a747fa",
+                      "Name": "0659ccf3-9e3e-4859-9de3-982d69ba57d3",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "bbea681e-fd99-4a0f-81ee-e362552e6a53",
+                      "Name": "47cb387c-e844-44c2-a7ea-d89d104a2cbb",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "712508ff-4fd2-42d1-a5e3-16e30f515d83",
+                      "Name": "d2749676-9c62-46e0-b75b-5bac3241381e",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "b2971cb8-64f3-4724-a0a0-17bc68c40f85",
+                      "Name": "7ee74843-0dad-4486-a9dd-4da4dfd68286",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "ee35b859-6777-4b47-b37e-79f75bb7d303",
+                      "Name": "102fd88c-c954-4ebe-b2db-49c76251d0f1",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "c4dd167a-416e-4cc3-8867-9a70d702cd0a",
+                      "Name": "d9306c4e-e222-43de-aad8-f6078169cd1d",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "ac190f69-ff82-4e1b-90bd-02ac8117395e",
+                      "Name": "d9f03b15-c645-454e-807a-40d20283a12a",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "39e19c65-e172-4730-acc2-8faecdb8d816",
+                      "Name": "5db609bc-c23f-49ed-bb5b-de6664602f16",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "c8ac4289-2918-4359-baa7-7962df7377ab",
+                      "Name": "d230316b-d835-4ec5-b994-3c35ad936494",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "11e8e1f7-a514-456c-bf9b-38f967d344c0",
+                      "Name": "5606e36e-c631-40a4-beae-fd9f0f3168de",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "2468316d-ae2b-4baa-8823-66673e7a923b",
+                      "Name": "afa58f88-464b-4753-b3ad-9a67caec5819",
+                      "IsMain": false
+                    }
+                  ]
+                },
+                {
+                  "Id": "31178639-33b2-41bf-ada1-a129716d9e63",
+                  "Name": "AncestryPersistenceService",
+                  "Folders": [],
+                  "Files": [
+                    {
+                      "Id": "c8bbc7f8-0d56-4fff-babe-8e02bb86e92f",
+                      "Name": "4dd3fca3-78a8-4485-84e0-b4e1b5b4d46c",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "fd5eb397-cf7c-4612-b826-64b5a70d6aae",
+                      "Name": "9f657fa1-4adf-4fb1-b2dd-f18ac6878dab",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "2288845e-942c-4260-bebc-375aa3355952",
+                      "Name": "47cb387c-e844-44c2-a7ea-d89d104a2cbb_3dbc66c9-877f-4ed8-b4b4-5f42d1181bbd",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "b868ac1f-aa0f-4886-bb78-e3fcec8f45a7",
+                      "Name": "5db609bc-c23f-49ed-bb5b-de6664602f16_6dd6d080-4d7b-4764-93d0-353be51c20d8_6f11bc80-d37b-49b4-a851-7336326d29a3",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "c2d3eb7b-0752-4634-a5cc-e255a1e7be57",
+                      "Name": "7ee74843-0dad-4486-a9dd-4da4dfd68286_0f7a8b22-42c6-4763-8a18-1541e571969a",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "aef44e51-acc1-45c0-b51b-71bc40a4f82a",
+                      "Name": "cd9eb0fc-0424-4237-85d7-ed14d9ed35b7",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "09c27b42-fda4-4723-a9c2-0057e5855de5",
+                      "Name": "58eecccb-5a29-4e2e-bfde-4676fcbffbdd",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "8aefba6d-ad88-48a4-b558-222fe8f2391e",
+                      "Name": "afa58f88-464b-4753-b3ad-9a67caec5819_332a28a7-81b4-4236-b717-de5063df7b9d_5cfe7deb-a668-4e87-9db6-a09390b482bc",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "8c0a5fc6-20c6-40f2-b16b-483b54fd1014",
+                      "Name": "5bc1905a-c97f-43c5-9014-fe0315344283",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "ba1ad14d-8158-48fa-aec4-8191ccfdc434",
+                      "Name": "c6b21b2a-c913-4aef-b496-5a49477b8297_ad364206-390c-43df-8735-e55a8baeb4bb",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "b846af7f-d76d-484b-93e6-c70917033594",
+                      "Name": "67923eb7-6f67-4252-be9b-5614c4a834f8_0f53a1f2-88a6-4dbf-87c4-4a0de45f522d",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "e220832d-9022-42ca-9e0f-32f7067bd272",
+                      "Name": "2918642a-c5d5-4e05-b91a-d13fe6f73c40_f57fb7f4-af17-4801-97cf-e5fdc2cc410e",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "972dbe15-56f7-42a6-989b-031f61e97e6c",
+                      "Name": "7443a688-c3f1-4027-a76a-700621294f42",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "2cb3e7ab-a2db-406b-ba10-26945a48d3a4",
+                      "Name": "c6b21b2a-c913-4aef-b496-5a49477b8297",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "fcd78261-7851-4632-92ec-35c96a28cb3c",
+                      "Name": "5d8c0939-1203-41ad-8a0c-353465c43aad_744dc912-af26-46d8-b2f6-84e8e24282bc",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "8039ceff-fa55-4016-af95-d554440d813a",
+                      "Name": "bdd249fa-e7b5-42e7-a269-16e0d0cba36f",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "2f5368a0-01da-465f-8a1c-166b7e030225",
+                      "Name": "4387fe99-7565-4cde-8814-0b5b7addf152",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "25e57cef-9bee-42b5-af55-888e8accc8a2",
+                      "Name": "ce56408b-9110-4b0b-9c35-7c4ecd272b86",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "e9c3e64f-7e13-44ac-987f-8a6c4c0fbd3f",
+                      "Name": "0659ccf3-9e3e-4859-9de3-982d69ba57d3",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "3d72f7a8-9311-4af5-bf4d-54696ec6ffe6",
+                      "Name": "75b265a3-4fdb-4cc1-81af-bd66225c6060_dd4a62e5-17da-4820-8c50-d94c0393cac3",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "30fdfd17-df45-4b01-b8ab-02192b81e462",
+                      "Name": "d2749676-9c62-46e0-b75b-5bac3241381e",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "173ccc82-f5cb-4cc1-8dc5-28206091df49",
+                      "Name": "102fd88c-c954-4ebe-b2db-49c76251d0f1",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "fe48750f-20d1-4058-afe5-adbe5f46b502",
+                      "Name": "caa9830a-3680-4628-ba67-28ef1c3fecd1_0fa25e46-8800-479e-b688-d3aefb01196c",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "ba9bb445-1f45-478b-b277-ff8fe2551325",
+                      "Name": "d9f03b15-c645-454e-807a-40d20283a12a",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "fb222a27-b714-499c-9ea0-caac0e5ba6ef",
+                      "Name": "c6b21b2a-c913-4aef-b496-5a49477b8297_1dc9949d-a849-4d27-9279-36f1f7b1d71f_dd5ecc78-0561-4add-b2bd-434ed21a1cbd_f1ae8c19-d365-41df-95fe-2f481681745d",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "87dda7c8-36e6-431d-8886-d12e2716c516",
+                      "Name": "c6b21b2a-c913-4aef-b496-5a49477b8297_1dc9949d-a849-4d27-9279-36f1f7b1d71f_dd5ecc78-0561-4add-b2bd-434ed21a1cbd",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "76dfdea7-589b-4349-8b7c-25df044470fb",
+                      "Name": "4eec6780-8975-4981-9eda-e63661226ae5_9648ad13-abd6-4b0f-8994-d248eeb1a755_cb52dab2-4fa8-4273-8227-6c2060c7d251",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "47b429ac-d5ab-4b12-be6f-87294e627882",
+                      "Name": "d230316b-d835-4ec5-b994-3c35ad936494",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "50e983a8-99cf-4a87-bb9c-883e7b9aed8a",
+                      "Name": "5606e36e-c631-40a4-beae-fd9f0f3168de",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "f1583aee-eb18-49dd-ad0d-7f0383856b45",
+                      "Name": "c8440568-fce9-4f81-b6b0-39b6a59e5076_3ac01fc0-9c4d-431c-a7db-9eb1dc69e38c",
+                      "IsMain": false
+                    }
+                  ]
+                }
+              ],
+              "Files": []
+            }
+          ],
+          "Files": []
+        },
+        {
+          "Id": "7ca33a4c-918d-4cf7-81fc-133a275d3309",
+          "Name": ".entities",
+          "Folders": [],
+          "Files": [
+            {
+              "Id": "EntitiesBundle.X837u2PZ5BGRzc2Vu3xmddApjuCqJK3x0VA7PBjl454.zip",
+              "Name": "EntitiesBundle.X837u2PZ5BGRzc2Vu3xmddApjuCqJK3x0VA7PBjl454.zip",
+              "IsMain": false
+            },
+            {
+              "Id": "EntitiesBundle.dK2PWbgRZNNJ3rzK4AKGrNXZwWep8yup16Vn6S6QBeY.zip",
+              "Name": "EntitiesBundle.dK2PWbgRZNNJ3rzK4AKGrNXZwWep8yup16Vn6S6QBeY.zip",
+              "IsMain": false
+            }
+          ]
+        },
+        {
+          "Id": "7ae6694d-9efe-47de-871c-f05b0fa23246",
+          "Name": ".objects",
+          "Folders": [
+            {
+              "Id": "8afff143-f016-40f9-a787-28285bf6c1f4",
+              "Name": "dgFO",
+              "Folders": [
+                {
+                  "Id": "35ea8c1e-5068-4738-9d18-162b1549e529",
+                  "Name": ".data",
+                  "Folders": [
+                    {
+                      "Id": "5d2d798f-8f76-426d-b73b-bd183997ef86",
+                      "Name": "ObjectSelectionName",
+                      "Folders": [],
+                      "Files": [
+                        {
+                          "Id": "60c0108e-3fbf-45a5-b134-69294ee80c7e",
+                          "Name": ".content",
+                          "IsMain": false
+                        }
+                      ]
+                    }
+                  ],
+                  "Files": []
+                },
+                {
+                  "Id": "f311d2c6-ce72-4801-a820-dd1af81e1ebb",
+                  "Name": "TKD0",
+                  "Folders": [
+                    {
+                      "Id": "2a57739d-0750-490a-9654-dc92227a39cf",
+                      "Name": "DFam",
+                      "Folders": [
+                        {
+                          "Id": "0a5d1948-7bd4-44c9-812b-142bd6d69953",
+                          "Name": ".data",
+                          "Folders": [
+                            {
+                              "Id": "0ac2c3ff-dc95-42b3-a390-bd2147b81af1",
+                              "Name": "ObjectRepositoryScreenData",
+                              "Folders": [
+                                {
+                                  "Id": "b05d66e0-316b-4fe7-acc7-72f0f1eb45e1",
+                                  "Name": ".images",
+                                  "Folders": [
+                                    {
+                                      "Id": "1e3f175c-bd0b-44bf-90f9-692693e3ee5d",
+                                      "Name": ".design",
+                                      "Folders": [],
+                                      "Files": [
+                                        {
+                                          "Id": "0dd64dc5-0f29-498e-a1ca-e70142f35609",
+                                          "Name": "08rugRv1rQUW-059KU-x93g",
+                                          "IsMain": false
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "Files": []
+                                }
+                              ],
+                              "Files": [
+                                {
+                                  "Id": "b09462c6-1f15-408d-894f-77e5e2b81297",
+                                  "Name": ".content",
+                                  "IsMain": false
+                                }
+                              ]
+                            }
+                          ],
+                          "Files": []
+                        }
+                      ],
+                      "Files": [
+                        {
+                          "Id": "3249a244-566e-448f-aa56-aa64185c1518",
+                          "Name": ".type",
+                          "IsMain": false
+                        },
+                        {
+                          "Id": "dd829d1f-b718-41b7-9a9f-50b97b9d16e3",
+                          "Name": ".metadata",
+                          "IsMain": false
+                        }
+                      ]
+                    },
+                    {
+                      "Id": "d4ced954-d023-4d88-ad1c-ce002a4ca515",
+                      "Name": "-soJ",
+                      "Folders": [
+                        {
+                          "Id": "4250466b-4ade-400c-883e-7917e30beddf",
+                          "Name": "f3fN",
+                          "Folders": [
+                            {
+                              "Id": "dcc490b2-9280-488d-ab68-af85978469e1",
+                              "Name": ".data",
+                              "Folders": [
+                                {
+                                  "Id": "6a7b3e33-fbad-454f-abd1-42983555305a",
+                                  "Name": "ObjectRepositoryTargetData",
+                                  "Folders": [
+                                    {
+                                      "Id": "c32125b7-a302-415e-b88e-86ae45c2650b",
+                                      "Name": ".images",
+                                      "Folders": [
+                                        {
+                                          "Id": "5f2e0ef6-0185-4886-b4f5-efe2639efe7d",
+                                          "Name": ".design",
+                                          "Folders": [],
+                                          "Files": [
+                                            {
+                                              "Id": "547c5568-4824-4be6-8626-55f896c1483a",
+                                              "Name": "0vXeAovRfLEiapsSurbKoYw",
+                                              "IsMain": false
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "Files": []
+                                    }
+                                  ],
+                                  "Files": [
+                                    {
+                                      "Id": "3516e9a8-182f-4826-b618-de13335dee9f",
+                                      "Name": ".content",
+                                      "IsMain": false
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Files": []
+                            }
+                          ],
+                          "Files": [
+                            {
+                              "Id": "10ba7dd5-b2b9-42d4-b9c8-cd5df0f4975f",
+                              "Name": ".type",
+                              "IsMain": false
+                            },
+                            {
+                              "Id": "ff9a6176-ffcb-411f-8c67-cff3ae5a7261",
+                              "Name": ".metadata",
+                              "IsMain": false
+                            }
+                          ]
+                        },
+                        {
+                          "Id": "aa982eb5-0e2a-4fcc-87f7-305d6f463eb7",
+                          "Name": ".data",
+                          "Folders": [
+                            {
+                              "Id": "6323bd47-a8d4-4fd2-8cb4-fab56ee54fe3",
+                              "Name": "ObjectRepositoryScreenData",
+                              "Folders": [
+                                {
+                                  "Id": "4c24a01f-3b6a-4d55-90cb-b36d36ac963c",
+                                  "Name": ".images",
+                                  "Folders": [
+                                    {
+                                      "Id": "cffe05fe-0bec-4748-a0a3-207c73e26f31",
+                                      "Name": ".design",
+                                      "Folders": [],
+                                      "Files": [
+                                        {
+                                          "Id": "cc4e8da7-4361-40ba-b81c-37727bcfb1a1",
+                                          "Name": "09ukbVCvewE26ypUtDR7Xsg",
+                                          "IsMain": false
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "Files": []
+                                }
+                              ],
+                              "Files": [
+                                {
+                                  "Id": "dc9796f7-87e4-4baa-b4a9-a8c5c2b0a00c",
+                                  "Name": ".content",
+                                  "IsMain": false
+                                }
+                              ]
+                            }
+                          ],
+                          "Files": []
+                        },
+                        {
+                          "Id": "82a94b61-3721-4c38-b930-5b1de7917c19",
+                          "Name": "m4sY",
+                          "Folders": [
+                            {
+                              "Id": "b148171d-0653-4243-b8b6-b62fcbb02af6",
+                              "Name": ".data",
+                              "Folders": [
+                                {
+                                  "Id": "f452bd52-7d90-4164-914c-06186d50590e",
+                                  "Name": "ObjectRepositoryTargetData",
+                                  "Folders": [
+                                    {
+                                      "Id": "35a85487-9041-4163-ab17-f5ab65cbde81",
+                                      "Name": ".images",
+                                      "Folders": [
+                                        {
+                                          "Id": "ab5b3d2f-c4b6-4756-8b33-1ffb33dd7f9d",
+                                          "Name": ".design",
+                                          "Folders": [],
+                                          "Files": [
+                                            {
+                                              "Id": "0e80561c-9dbd-45c9-8fb3-5f220982f9a4",
+                                              "Name": "0UKYVQbBgdUae-BQZ24r6oA",
+                                              "IsMain": false
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "Files": []
+                                    }
+                                  ],
+                                  "Files": [
+                                    {
+                                      "Id": "263b4b6c-4854-4250-ba7d-d90ce0d1efbb",
+                                      "Name": ".content",
+                                      "IsMain": false
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Files": []
+                            }
+                          ],
+                          "Files": [
+                            {
+                              "Id": "5a8774e1-60ff-4cc9-b9c6-7b53baa3e674",
+                              "Name": ".type",
+                              "IsMain": false
+                            },
+                            {
+                              "Id": "e4ac7616-36de-4d33-acfe-da51b76ba152",
+                              "Name": ".metadata",
+                              "IsMain": false
+                            }
+                          ]
+                        },
+                        {
+                          "Id": "42754da5-de96-4bd4-af21-6dee9a33ed9a",
+                          "Name": "SRvx",
+                          "Folders": [
+                            {
+                              "Id": "480040e7-878f-4427-805e-12b255460b2c",
+                              "Name": ".data",
+                              "Folders": [
+                                {
+                                  "Id": "49b1a485-6ad3-4c8c-afd6-7949f8271d09",
+                                  "Name": "ObjectRepositoryTargetData",
+                                  "Folders": [
+                                    {
+                                      "Id": "e85c14e8-2d88-458c-bee1-82e2539fa70c",
+                                      "Name": ".images",
+                                      "Folders": [
+                                        {
+                                          "Id": "88fca16f-847a-4d51-ac91-8790d754f99a",
+                                          "Name": ".design",
+                                          "Folders": [],
+                                          "Files": [
+                                            {
+                                              "Id": "3209ac72-bdea-4fcc-93ed-d3ba0c6a58af",
+                                              "Name": "0QQaGc4v2nUOQZHFkXFUfRQ",
+                                              "IsMain": false
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "Files": []
+                                    }
+                                  ],
+                                  "Files": [
+                                    {
+                                      "Id": "71cc253a-12fc-4bae-8dd5-f5b8a9bcfdc0",
+                                      "Name": ".content",
+                                      "IsMain": false
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Files": []
+                            }
+                          ],
+                          "Files": [
+                            {
+                              "Id": "fded8324-0a97-4630-a40f-3268362eba15",
+                              "Name": ".type",
+                              "IsMain": false
+                            },
+                            {
+                              "Id": "7f952a41-419a-44f1-b041-0020e3080097",
+                              "Name": ".metadata",
+                              "IsMain": false
+                            }
+                          ]
+                        },
+                        {
+                          "Id": "ec9dafea-1268-4864-b4cc-5b93b393161f",
+                          "Name": "xxU_",
+                          "Folders": [
+                            {
+                              "Id": "51b6a03e-5a95-4cf4-af8d-1beba2453a95",
+                              "Name": ".data",
+                              "Folders": [
+                                {
+                                  "Id": "cdd1ce86-16cf-431c-b143-a7fae5a7acb2",
+                                  "Name": "ObjectRepositoryTargetData",
+                                  "Folders": [
+                                    {
+                                      "Id": "fcc726e5-4384-47d0-ba92-79a085b94d27",
+                                      "Name": ".images",
+                                      "Folders": [
+                                        {
+                                          "Id": "2918d765-771a-42f6-aff0-e123eb48c06e",
+                                          "Name": ".design",
+                                          "Folders": [],
+                                          "Files": [
+                                            {
+                                              "Id": "2aeada11-a8b3-4fcb-922b-0525b97a7faf",
+                                              "Name": "0FDCKYs5DRkK5M_PBpuKsvQ",
+                                              "IsMain": false
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "Files": []
+                                    }
+                                  ],
+                                  "Files": [
+                                    {
+                                      "Id": "4cb6e518-b1d6-42ed-9791-480240f2a46d",
+                                      "Name": ".content",
+                                      "IsMain": false
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Files": []
+                            }
+                          ],
+                          "Files": [
+                            {
+                              "Id": "25481f0f-a8a6-427e-b62e-8fe91b527cdb",
+                              "Name": ".type",
+                              "IsMain": false
+                            },
+                            {
+                              "Id": "19ce425b-de9f-4b46-a970-9714dcad27ee",
+                              "Name": ".metadata",
+                              "IsMain": false
+                            }
+                          ]
+                        },
+                        {
+                          "Id": "dacedfe7-e0e7-4e75-b8bf-88376892f622",
+                          "Name": "h6qw",
+                          "Folders": [
+                            {
+                              "Id": "4ea1f8a5-443d-4bc9-8fde-bc858ac1589e",
+                              "Name": ".data",
+                              "Folders": [
+                                {
+                                  "Id": "d85c25cd-e53b-4df5-ad81-4e7c6f6bf6ae",
+                                  "Name": "ObjectRepositoryTargetData",
+                                  "Folders": [
+                                    {
+                                      "Id": "0625148d-c826-4700-8252-73d3aeb6c221",
+                                      "Name": ".images",
+                                      "Folders": [
+                                        {
+                                          "Id": "cd520928-2d69-403f-a7d1-69c747adf271",
+                                          "Name": ".design",
+                                          "Folders": [],
+                                          "Files": [
+                                            {
+                                              "Id": "dab00c9a-8631-4a61-8a96-c16a8870bbf0",
+                                              "Name": "0UfZrArCqcUe64Im8eRikqA",
+                                              "IsMain": false
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "Files": []
+                                    }
+                                  ],
+                                  "Files": [
+                                    {
+                                      "Id": "987fc63b-f903-4097-9547-022c2a11b84a",
+                                      "Name": ".content",
+                                      "IsMain": false
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Files": []
+                            }
+                          ],
+                          "Files": [
+                            {
+                              "Id": "d286cf95-03f0-4cdf-9bb8-3ab034dcfa07",
+                              "Name": ".type",
+                              "IsMain": false
+                            },
+                            {
+                              "Id": "a791bb47-d15f-4141-b00b-f0a13a437c4b",
+                              "Name": ".metadata",
+                              "IsMain": false
+                            }
+                          ]
+                        },
+                        {
+                          "Id": "7e5a0465-64b7-4de6-ab7e-5e71d5596be2",
+                          "Name": "VAW2",
+                          "Folders": [
+                            {
+                              "Id": "631b360d-5752-47a4-b731-fa0500c95d67",
+                              "Name": ".data",
+                              "Folders": [
+                                {
+                                  "Id": "a6f7daa7-80ea-4fb1-87ed-02d3a821e8f3",
+                                  "Name": "ObjectRepositoryTargetData",
+                                  "Folders": [
+                                    {
+                                      "Id": "75c7ac77-b573-490d-8009-5e1accf1cf2e",
+                                      "Name": ".images",
+                                      "Folders": [
+                                        {
+                                          "Id": "8a1c15c7-6011-4782-a130-48cc2ba5b3f5",
+                                          "Name": ".design",
+                                          "Folders": [],
+                                          "Files": [
+                                            {
+                                              "Id": "f1ed2bc6-bc1e-494e-bd81-be84d4219269",
+                                              "Name": "0JD1rFONkzEe9W3uVN8CvcQ",
+                                              "IsMain": false
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "Files": []
+                                    }
+                                  ],
+                                  "Files": [
+                                    {
+                                      "Id": "a406c484-b1a3-4979-9c1a-e4e9453f97f1",
+                                      "Name": ".content",
+                                      "IsMain": false
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Files": []
+                            }
+                          ],
+                          "Files": [
+                            {
+                              "Id": "9da2e81f-80b7-44df-baaf-728de2d99b01",
+                              "Name": ".type",
+                              "IsMain": false
+                            },
+                            {
+                              "Id": "445e0a2b-1cce-48bb-9f65-183ae6023fce",
+                              "Name": ".metadata",
+                              "IsMain": false
+                            }
+                          ]
+                        }
+                      ],
+                      "Files": [
+                        {
+                          "Id": "2da72c77-30ff-4942-a216-15a126fe01a5",
+                          "Name": ".type",
+                          "IsMain": false
+                        },
+                        {
+                          "Id": "1147e577-56fd-4686-807b-23ab7120887c",
+                          "Name": ".metadata",
+                          "IsMain": false
+                        }
+                      ]
+                    }
+                  ],
+                  "Files": [
+                    {
+                      "Id": "fc9f22b3-576c-4320-bae1-be197256e118",
+                      "Name": ".type",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "995eec5e-5b86-4222-ade9-9e037eb1f5da",
+                      "Name": ".metadata",
+                      "IsMain": false
+                    }
+                  ]
+                }
+              ],
+              "Files": [
+                {
+                  "Id": "d0f4c1f1-810b-4629-aae1-684b5ebdcf0b",
+                  "Name": ".type",
+                  "IsMain": false
+                },
+                {
+                  "Id": "3b3639fb-fa7f-4cce-b60a-5ca037ecead7",
+                  "Name": ".metadata",
+                  "IsMain": false
+                }
+              ]
+            },
+            {
+              "Id": "56245ca8-06bc-443e-bfad-95a142f01c84",
+              "Name": "3FEj",
+              "Folders": [
+                {
+                  "Id": "bb86eed8-4d22-421d-8b70-9ac58bfc958c",
+                  "Name": ".data",
+                  "Folders": [
+                    {
+                      "Id": "1a48480c-02eb-4ec3-8ac5-3c547a0d0c30",
+                      "Name": "ObjectSelectionName",
+                      "Folders": [],
+                      "Files": [
+                        {
+                          "Id": "8e5087ec-782a-4da2-b760-0c0cfa5537d8",
+                          "Name": ".content",
+                          "IsMain": false
+                        }
+                      ]
+                    }
+                  ],
+                  "Files": []
+                },
+                {
+                  "Id": "a962c13c-02bb-4d9a-807a-3e09b8c3ab02",
+                  "Name": "92hH",
+                  "Folders": [
+                    {
+                      "Id": "9ada9522-e187-4a95-ba28-8dd631be8b31",
+                      "Name": "eB8M",
+                      "Folders": [
+                        {
+                          "Id": "0870a2a4-fe5b-44b3-ab69-9e2ea9c8c2e9",
+                          "Name": ".data",
+                          "Folders": [
+                            {
+                              "Id": "dfbefbae-4c49-4552-b0b9-1b90215a4fc8",
+                              "Name": "ObjectRepositoryScreenData",
+                              "Folders": [
+                                {
+                                  "Id": "042b613d-b21b-42a2-bf4c-277b686ca15d",
+                                  "Name": ".images",
+                                  "Folders": [
+                                    {
+                                      "Id": "8424b74d-c6b0-4d5c-ab41-dc63c26bfdfc",
+                                      "Name": ".design",
+                                      "Folders": [],
+                                      "Files": [
+                                        {
+                                          "Id": "5d54e890-664f-448e-86e7-e4f40958b6a9",
+                                          "Name": "0o9mydZXLMUKVzig14dTwRA",
+                                          "IsMain": false
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "Files": []
+                                }
+                              ],
+                              "Files": [
+                                {
+                                  "Id": "f8f2a3f3-d433-4bae-8695-cd6ea6fde78c",
+                                  "Name": ".content",
+                                  "IsMain": false
+                                }
+                              ]
+                            }
+                          ],
+                          "Files": []
+                        },
+                        {
+                          "Id": "3b81f655-47d0-4582-9a97-2086baa55e01",
+                          "Name": "htUC",
+                          "Folders": [
+                            {
+                              "Id": "def1f25f-58f1-4973-a6ea-1ca5cbf101b4",
+                              "Name": ".data",
+                              "Folders": [
+                                {
+                                  "Id": "379e5230-0094-4028-a13c-a48422b2d6cc",
+                                  "Name": "ObjectRepositoryTargetData",
+                                  "Folders": [
+                                    {
+                                      "Id": "69b1fd0a-46e4-485c-a5d2-b71516b0a76b",
+                                      "Name": ".images",
+                                      "Folders": [
+                                        {
+                                          "Id": "ebfeab07-4237-417a-abcf-e2188345cd91",
+                                          "Name": ".design",
+                                          "Folders": [],
+                                          "Files": [
+                                            {
+                                              "Id": "1ee66aac-18ed-4c09-9db9-06f3f4f9b79c",
+                                              "Name": "0tKEr-vCk1kmpWyfqdlMYGw",
+                                              "IsMain": false
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "Files": []
+                                    }
+                                  ],
+                                  "Files": [
+                                    {
+                                      "Id": "79da0da3-1c68-48e4-b8dd-1575fa28a616",
+                                      "Name": ".content",
+                                      "IsMain": false
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Files": []
+                            }
+                          ],
+                          "Files": [
+                            {
+                              "Id": "aaaa988e-f4c1-431f-9dad-d522567ef059",
+                              "Name": ".type",
+                              "IsMain": false
+                            },
+                            {
+                              "Id": "b91a0332-c509-4b47-80bf-0ddc3b7556f4",
+                              "Name": ".metadata",
+                              "IsMain": false
+                            }
+                          ]
+                        },
+                        {
+                          "Id": "590946e3-fd7c-413f-b51c-7cc267217434",
+                          "Name": "OREk",
+                          "Folders": [
+                            {
+                              "Id": "bc886af3-5ee8-4dfe-83b0-2077215ac12f",
+                              "Name": ".data",
+                              "Folders": [
+                                {
+                                  "Id": "d8484a83-1db3-4848-8e11-45a3bc62fce0",
+                                  "Name": "ObjectRepositoryTargetData",
+                                  "Folders": [
+                                    {
+                                      "Id": "d262fe35-150f-4224-8921-bd4f15d65a6b",
+                                      "Name": ".images",
+                                      "Folders": [
+                                        {
+                                          "Id": "e95b5dc5-c585-42b2-8f3d-abd79556078e",
+                                          "Name": ".design",
+                                          "Folders": [],
+                                          "Files": [
+                                            {
+                                              "Id": "84362497-c651-40ba-88be-59c0b18382d9",
+                                              "Name": "0bB8H9UCkFk2DKd68ehz7Ig",
+                                              "IsMain": false
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "Files": []
+                                    }
+                                  ],
+                                  "Files": [
+                                    {
+                                      "Id": "c7e15d39-7be6-43af-a7af-017d5f2bfe2c",
+                                      "Name": ".content",
+                                      "IsMain": false
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Files": []
+                            }
+                          ],
+                          "Files": [
+                            {
+                              "Id": "99ee3b63-45f1-48c5-8a53-eb7104aa79ae",
+                              "Name": ".type",
+                              "IsMain": false
+                            },
+                            {
+                              "Id": "7aa928a1-1720-438f-8fea-37b7808fd81d",
+                              "Name": ".metadata",
+                              "IsMain": false
+                            }
+                          ]
+                        },
+                        {
+                          "Id": "5215cda8-6891-47f5-86e7-b73e1f9c6435",
+                          "Name": "KOLx",
+                          "Folders": [
+                            {
+                              "Id": "b44c62e5-ed58-4fdd-b047-a3c35ffc7952",
+                              "Name": ".data",
+                              "Folders": [
+                                {
+                                  "Id": "89111f37-474e-438b-8d26-81a74e7ab878",
+                                  "Name": "ObjectRepositoryTargetData",
+                                  "Folders": [
+                                    {
+                                      "Id": "e06526c5-2ef8-4ca3-89d9-2d8feaebbc38",
+                                      "Name": ".images",
+                                      "Folders": [
+                                        {
+                                          "Id": "1c26e0b3-0c52-44dd-a8e5-2e671e3b53e4",
+                                          "Name": ".design",
+                                          "Folders": [],
+                                          "Files": [
+                                            {
+                                              "Id": "286d8078-5f2e-4dc2-bf36-8742b1d31c47",
+                                              "Name": "0QIIrdKmNoUy-FVudsdQEBg",
+                                              "IsMain": false
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "Files": []
+                                    }
+                                  ],
+                                  "Files": [
+                                    {
+                                      "Id": "3cbb8248-0df0-4d2b-8fee-c250c911e35a",
+                                      "Name": ".content",
+                                      "IsMain": false
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Files": []
+                            }
+                          ],
+                          "Files": [
+                            {
+                              "Id": "f8fc40c4-3775-452f-a1da-37bce8e8c52b",
+                              "Name": ".type",
+                              "IsMain": false
+                            },
+                            {
+                              "Id": "a6263258-dc09-4ac2-8369-0b84f0b29d03",
+                              "Name": ".metadata",
+                              "IsMain": false
+                            }
+                          ]
+                        }
+                      ],
+                      "Files": [
+                        {
+                          "Id": "f3652908-e1ab-4807-af40-57852e0dd2d6",
+                          "Name": ".type",
+                          "IsMain": false
+                        },
+                        {
+                          "Id": "35c98a03-5745-4ffb-96dd-541194f424c3",
+                          "Name": ".metadata",
+                          "IsMain": false
+                        }
+                      ]
+                    }
+                  ],
+                  "Files": [
+                    {
+                      "Id": "13bda8b4-7b7c-4fe8-8aaa-dcebc4574ecc",
+                      "Name": ".type",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "b75c85f3-7d7c-46c7-ba89-f16998467a6a",
+                      "Name": ".metadata",
+                      "IsMain": false
+                    }
+                  ]
+                }
+              ],
+              "Files": [
+                {
+                  "Id": "e8831f45-b3cc-4c0e-b89d-b2975d606cf2",
+                  "Name": ".type",
+                  "IsMain": false
+                },
+                {
+                  "Id": "b2dde7e3-d38e-4646-a105-037074267200",
+                  "Name": ".metadata",
+                  "IsMain": false
+                }
+              ]
+            },
+            {
+              "Id": "4c387afd-a237-47dd-9b3a-cbcd017aed65",
+              "Name": "mONe",
+              "Folders": [
+                {
+                  "Id": "0ade004e-1cdf-432c-af81-23f392d9e9e3",
+                  "Name": ".data",
+                  "Folders": [
+                    {
+                      "Id": "f2e6abcb-8c4e-4b73-ba71-997b8aa357a3",
+                      "Name": "ObjectSelectionName",
+                      "Folders": [],
+                      "Files": [
+                        {
+                          "Id": "8cd09a93-08fb-47b3-8085-4a08a590fb26",
+                          "Name": ".content",
+                          "IsMain": false
+                        }
+                      ]
+                    }
+                  ],
+                  "Files": []
+                },
+                {
+                  "Id": "3cadaac6-56a5-4278-b700-d7efe5d2dfe8",
+                  "Name": "fXej",
+                  "Folders": [
+                    {
+                      "Id": "6ba78c3d-7d7b-4db3-96a2-8fc46876f43f",
+                      "Name": "WQTx",
+                      "Folders": [
+                        {
+                          "Id": "c6deff43-2bcd-44ac-a85e-5515a09cf29c",
+                          "Name": ".data",
+                          "Folders": [
+                            {
+                              "Id": "6c49d26c-4871-456f-bf6d-533b247e7baa",
+                              "Name": "ObjectRepositoryScreenData",
+                              "Folders": [],
+                              "Files": [
+                                {
+                                  "Id": "9d673aae-95f2-4ea7-b4b9-cf3d302f81ec",
+                                  "Name": ".content",
+                                  "IsMain": false
+                                }
+                              ]
+                            }
+                          ],
+                          "Files": []
+                        },
+                        {
+                          "Id": "7d219089-3d79-4d50-a066-abf0c1b4639b",
+                          "Name": "kjdg",
+                          "Folders": [
+                            {
+                              "Id": "c730b5c9-ab50-47e4-81c4-1ebb52d245e3",
+                              "Name": ".data",
+                              "Folders": [
+                                {
+                                  "Id": "e6b405bf-7f2a-44c5-9ccd-7c58d083c6a4",
+                                  "Name": "ObjectRepositoryTargetData",
+                                  "Folders": [
+                                    {
+                                      "Id": "0ce59529-4d78-4f9d-8cd3-6c6650a80b0e",
+                                      "Name": ".images",
+                                      "Folders": [
+                                        {
+                                          "Id": "e597ca59-f6e0-4090-a2e3-a1251a1f7ffb",
+                                          "Name": ".design",
+                                          "Folders": [],
+                                          "Files": [
+                                            {
+                                              "Id": "a25e9812-a6d7-46d8-832a-4bcae5414b1f",
+                                              "Name": "0R6kl_1bQFkuVk0wr5Gkp5g",
+                                              "IsMain": false
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "Files": []
+                                    }
+                                  ],
+                                  "Files": [
+                                    {
+                                      "Id": "fee60e80-d99b-41fa-a761-6702438fca13",
+                                      "Name": ".content",
+                                      "IsMain": false
+                                    }
+                                  ]
+                                }
+                              ],
+                              "Files": []
+                            }
+                          ],
+                          "Files": [
+                            {
+                              "Id": "ffa6f126-36ac-45c2-829f-00a4466e2d65",
+                              "Name": ".type",
+                              "IsMain": false
+                            },
+                            {
+                              "Id": "aa1c2012-9cf5-40c6-9a8b-1622cfc7311a",
+                              "Name": ".metadata",
+                              "IsMain": false
+                            }
+                          ]
+                        }
+                      ],
+                      "Files": [
+                        {
+                          "Id": "9a1c21cf-9e07-461c-b697-29f47f602f9d",
+                          "Name": ".type",
+                          "IsMain": false
+                        },
+                        {
+                          "Id": "7fba2d28-78ab-4c98-93ad-212a798e9cea",
+                          "Name": ".metadata",
+                          "IsMain": false
+                        }
+                      ]
+                    }
+                  ],
+                  "Files": [
+                    {
+                      "Id": "efb8000f-8510-44d1-b189-8b00162f7c02",
+                      "Name": ".type",
+                      "IsMain": false
+                    },
+                    {
+                      "Id": "0144f15e-910f-42ed-b48f-8fccedc30904",
+                      "Name": ".metadata",
+                      "IsMain": false
+                    }
+                  ]
+                }
+              ],
+              "Files": [
+                {
+                  "Id": "80787b52-ef3b-4ecc-8e00-03612f39c679",
+                  "Name": ".type",
+                  "IsMain": false
+                },
+                {
+                  "Id": "773456e3-688e-4ce9-997c-776e1b5724ff",
+                  "Name": ".metadata",
+                  "IsMain": false
+                }
+              ]
+            }
+          ],
+          "Files": [
+            {
+              "Id": "e165258a-16cb-431d-a777-f52dd4fe49e0",
+              "Name": ".type",
+              "IsMain": false
+            },
+            {
+              "Id": "2186a7da-af76-4b49-ab85-76d638241096",
+              "Name": ".metadata",
+              "IsMain": false
+            }
+          ]
+        },
+        {
+          "Id": "228f8df1-3e55-4f49-a8d3-9d613e8ffb62",
+          "Name": "Process",
+          "Folders": [
+            {
+              "Id": "a87238b0-c971-4c0e-a0b0-230a6eac4a18",
+              "Name": "FetchAndConvert",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "67cbe657-ecf2-46dd-8ee1-a83a4d8e3966",
+                  "Name": "FetchAndConvert_Main -Parallel.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "1794b4df-4cab-4a0c-93bc-3d83c39e0a98",
+                  "Name": "FetchStockInfo.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "b3addb17-1d0e-4eb7-b105-b979311d8222",
+                  "Name": "FetchStockInfo.xaml.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "f0d2fe50-0295-4c99-88e0-05db2d1a4b05",
+                  "Name": "FetchAndConvert_Main.xaml",
+                  "IsMain": false
+                }
+              ]
+            }
+          ],
+          "Files": []
+        },
+        {
+          "Id": "f9555c90-c42d-40e7-ae7f-f7b876405987",
+          "Name": "Utils",
+          "Folders": [],
+          "Files": [
+            {
+              "Id": "21693025-8e43-42dd-ac15-c2b82dd03ae4",
+              "Name": "FetchAllCompany.js",
+              "IsMain": false
+            },
+            {
+              "Id": "b567a804-d282-4ecf-9484-6ea81d76d9c6",
+              "Name": "Flowchart.xaml",
+              "IsMain": false
+            },
+            {
+              "Id": "5787f9ad-fd30-45fc-a188-acdc98afaa20",
+              "Name": "FetchStockPrice.js",
+              "IsMain": false
+            }
+          ]
+        },
+        {
+          "Id": "4bcec7cd-1875-4a72-9471-a20020ddaf41",
+          "Name": ".project",
+          "Folders": [],
+          "Files": [
+            {
+              "Id": "914691ab-882d-4d55-918a-f6b1c9de55b9",
+              "Name": "design.json",
+              "IsMain": false
+            },
+            {
+              "Id": "25347c3b-bebb-4df4-9d6a-56ed0c62308a",
+              "Name": "PackageBindingsMetadata.json",
+              "IsMain": false
+            },
+            {
+              "Id": "4492c832-cae4-4ef9-a9aa-6efe2294ae16",
+              "Name": "JitCustomTypes.json",
+              "IsMain": false
+            }
+          ]
+        },
+        {
+          "Id": "c124cd0d-a61d-4f24-a3b4-bd98508d9054",
+          "Name": ".local",
+          "Folders": [
+            {
+              "Id": "9893cf19-22c7-49a9-ac8c-62673836bcee",
+              "Name": "sw-import",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "13dd3a6b-30a8-44db-9cb3-10d2e90f56cb",
+                  "Name": "JitCustomTypesSchema.json",
+                  "IsMain": false
+                }
+              ]
+            }
+          ],
+          "Files": []
+        },
+        {
+          "Id": "6edc667f-d8b1-45d2-b87c-b5537d10aa99",
+          "Name": "Shared",
+          "Folders": [
+            {
+              "Id": "bc68efd5-4f8c-4674-9303-df75a8772422",
+              "Name": "Components",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "32ab2045-17bb-4c6d-b50f-92d09a961b12",
+                  "Name": "GetExchangeRates.xaml.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "9047622c-a066-4f30-81e1-8f01e7b0c728",
+                  "Name": "LogMessage.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "2bd32934-0c88-4cb0-a062-6961d4171ed3",
+                  "Name": "InitConfig.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "05f42bdc-b3ab-4767-87fc-54f956878a2a",
+                  "Name": "GetCompanyUrl.xaml.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "7497f95b-c653-4f39-bc9e-7584a79e78ca",
+                  "Name": "GetCompanyUrl.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "20a1f3b2-1b26-40b7-b4a7-fdafef4d189e",
+                  "Name": "GetExchangeRates.xaml",
+                  "IsMain": false
+                }
+              ]
+            },
+            {
+              "Id": "a6762de6-1e58-457b-a00c-f9826286b8a3",
+              "Name": "Utils",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "0996ac33-2a9b-4541-a92b-9afecf3b8b6c",
+                  "Name": "FetchAllCompany.js",
+                  "IsMain": false
+                },
+                {
+                  "Id": "2bb220f7-c740-48e1-adcf-793de1fbfbca",
+                  "Name": "FetchStockPrice.js",
+                  "IsMain": false
+                }
+              ]
+            }
+          ],
+          "Files": []
+        },
+        {
+          "Id": "6040665f-83aa-46c5-ac35-03a3e2160b3b",
+          "Name": "Data",
+          "Folders": [
+            {
+              "Id": "205ae046-3faa-486d-8205-1e814e021b02",
+              "Name": "Output",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "a770617f-c21d-48c1-bf10-df65fa36aded",
+                  "Name": "CompanyStockData.xlsx",
+                  "IsMain": false
+                },
+                {
+                  "Id": "824f17c0-9b30-4ac2-9ce2-8f53d5a298b5",
+                  "Name": "CompanyStockData_old.xlsx",
+                  "IsMain": false
+                }
+              ]
+            },
+            {
+              "Id": "02c00169-a4a6-424e-8499-5d9f79a112dc",
+              "Name": "Input",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "1ab124a1-628d-4663-a9fe-b80fe80743d7",
+                  "Name": "CompanyList.xlsx",
+                  "IsMain": false
+                },
+                {
+                  "Id": "26c14f71-badb-4668-aa44-340a83a77413",
+                  "Name": "CompanyList - Copy.xlsx",
+                  "IsMain": false
+                }
+              ]
+            },
+            {
+              "Id": "08a00b46-b344-4975-847b-94c20e667375",
+              "Name": "Logs",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "391820aa-f24e-49bb-b223-cb9bfdace16f",
+                  "Name": "process_log.txt",
+                  "IsMain": false
+                }
+              ]
+            }
+          ],
+          "Files": [
+            {
+              "Id": "3ae2eaa5-0acd-4de2-9d44-f89768b323fa",
+              "Name": "StockPriceOutput_old.xlsx",
+              "IsMain": false
+            },
+            {
+              "Id": "cfabf0bc-9e56-4041-8bac-a74c71025d05",
+              "Name": "CompanyStockData.xlsx",
+              "IsMain": false
+            },
+            {
+              "Id": "d6295a01-d7a2-4b5d-b901-5a6bb59fedba",
+              "Name": "StockData.xlsx",
+              "IsMain": false
+            },
+            {
+              "Id": "594d995c-5a83-4d2d-97fa-f99b57a6be33",
+              "Name": "StockPrice - Copy - Copy.xlsx",
+              "IsMain": false
+            },
+            {
+              "Id": "f3e2c57c-b8d1-45ee-98ae-2061862ce4a6",
+              "Name": "StockPrice.xlsx",
+              "IsMain": false
+            },
+            {
+              "Id": "685d743a-2849-4907-ba81-fdcf1d4e0a33",
+              "Name": "CompanyStockData_.xlsx",
+              "IsMain": false
+            },
+            {
+              "Id": "ecc3af9a-4170-44bb-a77a-19f50a2ef212",
+              "Name": "CompanyStockData_old.xlsx",
+              "IsMain": false
+            },
+            {
+              "Id": "e194eb23-f483-4e07-86ce-f5c9df76a723",
+              "Name": "StockPriceOutput.xlsx",
+              "IsMain": false
+            },
+            {
+              "Id": "ce3c6e5f-61da-4764-b1be-fb011ef5047c",
+              "Name": "CompanyStockData_parallel.xlsx",
+              "IsMain": false
+            }
+          ]
+        },
+        {
+          "Id": "4e4bfa10-fe4f-4aac-980c-873eed3638ed",
+          "Name": ".settings",
+          "Folders": [
+            {
+              "Id": "0ef63b08-d52c-4fcc-ba91-8593487ef8fe",
+              "Name": "Debug",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "401b338b-7f6b-46f4-b204-303b39d95e34",
+                  "Name": "settings-1a5b880a.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "526705e9-9ff6-4679-b2a0-3c4ea978594f",
+                  "Name": "settings-590bb27b.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "e01b2502-2c79-4d33-8c20-c493049a7bdd",
+                  "Name": "settings-5190454b.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "7cf12f2b-39f8-4b53-a7f7-65dafbdd8b6e",
+                  "Name": "settings-9e9290da.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "d929ea64-7714-44d3-aab4-2f3905cfac67",
+                  "Name": "settings-82ca306a.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "489c81c5-1ffd-46ac-b1a6-a3aaadac3c37",
+                  "Name": "settings-afad0842.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "2993359e-2c05-4e79-8a7e-028fb1499b41",
+                  "Name": "settings-a1b2dac1.json",
+                  "IsMain": false
+                }
+              ]
+            },
+            {
+              "Id": "d666f9ab-965e-4aab-be1d-e1196396c065",
+              "Name": "Release",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "8de72a50-9503-4bc8-a559-644209ebb224",
+                  "Name": "settings-1a5b880a.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "4e6332e9-4d0d-4ae2-90d3-1c87f97ce13c",
+                  "Name": "settings-590bb27b.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "e547112c-d4c9-468d-aa52-6a8d7962a9b4",
+                  "Name": "settings-5190454b.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "7d91282f-39f9-42f1-90a0-753480917cf1",
+                  "Name": "settings-9e9290da.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "432a3def-704e-4d2b-912d-f9e2337a0231",
+                  "Name": "settings-82ca306a.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "2a905847-0200-45c3-a802-5d23c7a5b725",
+                  "Name": "settings-afad0842.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "b7d0d86d-681f-4dad-bbac-77ef1a9a61bf",
+                  "Name": "settings-a1b2dac1.json",
+                  "IsMain": false
+                }
+              ]
+            },
+            {
+              "Id": "77561879-6106-490b-87d4-1dea5ea70974",
+              "Name": "Design",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "21832bb6-bce3-462a-8725-6a2e6512a02c",
+                  "Name": "settings-5190454b.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "6ba83239-d14d-43fa-ab0d-e452340fc64e",
+                  "Name": "settings-afad0842.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "ef126c85-4776-4d71-b5de-5c568b063c62",
+                  "Name": "settings-a1b2dac1.json",
+                  "IsMain": false
+                }
+              ]
+            }
+          ],
+          "Files": []
+        }
+      ],
+      "Files": [
+        {
+          "Id": "f80214de-09e6-4f17-a86a-fb8213de0845",
+          "Name": "Main.xaml",
+          "IsMain": true
+        },
+        {
+          "Id": "d19aafaf-23c3-4455-a3aa-48b95c42b064",
+          "Name": "project.json",
+          "IsMain": false
+        },
+        {
+          "Id": "a523decf-00fe-494d-85dd-e92751033f28",
+          "Name": "Main - with Parallel fetch.xaml",
+          "IsMain": false
+        }
+      ]
+    },
+    "Dependencies": [
+      {
+        "Name": "UiPath.Excel.Activities",
+        "Version": "[2.24.0-preview]"
+      },
+      {
+        "Name": "UiPath.Mail.Activities",
+        "Version": "[1.23.11]"
+      },
+      {
+        "Name": "UiPath.System.Activities",
+        "Version": "[24.11.0-preview]"
+      },
+      {
+        "Name": "UiPath.Testing.Activities",
+        "Version": "[24.10.0]"
+      },
+      {
+        "Name": "UiPath.UIAutomation.Activities",
+        "Version": "[24.11.1-preview]"
+      },
+      {
+        "Name": "UiPath.WebAPI.Activities",
+        "Version": "[1.21.0]"
+      }
+    ],
+    "HasTrigger": false,
+    "DisableAutoUpdate": false
+  },
+  "OriginalFilesHash": {
+    ".storage/.runtime/AncestryPersistenceService/5db609bc-c23f-49ed-bb5b-de6664602f16_6dd6d080-4d7b-4764-93d0-353be51c20d8_6f11bc80-d37b-49b4-a851-7336326d29a3": "uvosfN2qjg0oqQwZ5dDsqRWKdDHoLMLzU6/kipVAqNU=",
+    ".objects/dgFO/TKD0/-soJ/.type": "blYTfiHTIiouMTX8NFgob8P7ay4sZ56a4o2yaP6YKvc=",
+    ".objects/mONe/fXej/WQTx/.metadata": "V6CiXvPjsJM9J4qciXLyJY+LnsfkAjaD+jVUUFVlZpg=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/5db609bc-c23f-49ed-bb5b-de6664602f16": "WSRsMzLAN5GxdzQFF9Q25AZ8NIllaIqrkDXyZgcI1JI=",
+    "Data/CompanyStockData_parallel.xlsx": "PGAHsqYPfnl4bGCXNpjXIfbyJuvQ+/4Po3+e4YQ1p1U=",
+    ".screenshots/133dd2e49bfb7e3b22fc4250aca601c3.png": "QA70m9Vnij5TRS+nEDf84C0pRvSdtzPWENxV1Hu5218=",
+    ".objects/dgFO/TKD0/-soJ/f3fN/.data/ObjectRepositoryTargetData/.content": "q8ti9jlRtIRax3f2se0SmCOuN7XGpsCO8lmypT9yBqA=",
+    "Data/CompanyStockData_old.xlsx": "DPpbz51axj8BiTAMMpdd0E/x6gWrPFUFFE5aX5rUYW0=",
+    ".objects/dgFO/TKD0/-soJ/m4sY/.data/ObjectRepositoryTargetData/.images/.design/0UKYVQbBgdUae-BQZ24r6oA": "nk/Y+K24Xr0gesedAg6ZCwf8QMEASVJTW+IYku+PWyc=",
+    ".settings/Release/settings-5190454b.json": "9dTmYrtHO5uIu22mdu0GX2x5y/DCUKnNBY94nZK1SXw=",
+    ".storage/.runtime/AncestryPersistenceService/102fd88c-c954-4ebe-b2db-49c76251d0f1": "I+kAc5Tz69ERx9WiBxS9Zli3vC4lr+9RNoqpu0STg3U=",
+    "Testing/Tryouts/GetCompanyUrl_c.xaml": "KeysqoaAsYLuKpxSlA+1qU/qZ3Gh6iQ6sRiCNKcdNnw=",
+    ".objects/3FEj/92hH/eB8M/KOLx/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    ".objects/3FEj/.data/ObjectSelectionName/.content": "6PsJOMs84zB7DMaNgFFpsn9XFC4zxJ+OSuShvRiKf50=",
+    ".storage/.runtime/AncestryPersistenceService/4387fe99-7565-4cde-8814-0b5b7addf152": "Y1+l1Es1ZQSXRHLTD5ZXOpo2qTKTWtm+WLvOBD8x158=",
+    ".objects/mONe/fXej/.metadata": "N54oQlYapf3SN5J9sbNxAu0S5jbYiP5ud5hWUsVg3Hk=",
+    ".objects/mONe/fXej/WQTx/kjdg/.data/ObjectRepositoryTargetData/.images/.design/0R6kl_1bQFkuVk0wr5Gkp5g": "chD29lLOWiAGb5MInWbVg2suPuzC+k/JtEPnz5+7T6w=",
+    "Data/CompanyStockData_.xlsx": "J3HLC7jFFIwjcdV9T5Qg0VDh6+xBVjkcCubG3BFZZPQ=",
+    ".objects/dgFO/TKD0/.metadata": "zuYAqaXqomOF/uwVyJ5jo6l6Gp668NuOzLpIDGeqR0I=",
+    ".screenshots/8514ecc0526791e332f51bf96d60bcf8.png": "h961h33F+dwFMQciTIQj0uvbzAwkBq/7Iq9kzoVD37k=",
+    ".screenshots/cd87555e0e443f595c646935130005a6.png": "h/2sJk73Pf2+Uq9eVi52ugSkNCdAPF1XJe5MYoKI9Uw=",
+    ".storage/.runtime/AncestryPersistenceService/d9f03b15-c645-454e-807a-40d20283a12a": "5QghBuDtxxzDklyY6UuT3gEUNBc6EvKhl7xzFTLYBQY=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/7443a688-c3f1-4027-a76a-700621294f42": "1pQAwax6IHGwyVbTq/KeHde1zXSugOwEY64uK2Q3EIs=",
+    "Testing/Tryouts/Main_Tryout.xaml": "g06D0t7jISUGQFAnhfkVWkkKFJux0kuL99VXIkgRFuY=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/0659ccf3-9e3e-4859-9de3-982d69ba57d3": "Hx3lXvdUgXIVkfmegpGz6ueC/glm/9G5VpsP2G9lMNA=",
+    ".settings/Design/settings-afad0842.json": "jjBbv/WXwDPEhGnbSVQxlI3fuMaxR42abIF+4Qju1ok=",
+    ".screenshots/97cadaefea6866e33997bb9be3fce6c7.png": "IOVl2q3VJKxLXJ5PMUoPTYeZtZGgKCd43aYgl5I1X80=",
+    ".screenshots/6e2e6f189c98ae7bc6f90b73d66541f1.png": "G6gby2RIuUqwJvRIWoIJaRfSgSTHhJoNlaS3/jCTh04=",
+    ".screenshots/cde217e4499547a092f179d103285668.png": "m51u2GBWNQijtxf7VopGUUpSgwWOhloc6EU/oekPaCo=",
+    ".objects/3FEj/92hH/eB8M/KOLx/.data/ObjectRepositoryTargetData/.images/.design/0QIIrdKmNoUy-FVudsdQEBg": "2N61AA/E52utw3TLlHquU3pdIzSqbcL4g/5dE0knkdA=",
+    ".screenshots/95b2e9cf85e7dfb073af85368450500c.png": "nk/Y+K24Xr0gesedAg6ZCwf8QMEASVJTW+IYku+PWyc=",
+    ".storage/.runtime/AncestryPersistenceService/58eecccb-5a29-4e2e-bfde-4676fcbffbdd": "8Z38UJzd7khmFkMQPXDU7jTahg+HarrVsyqOfpynlt8=",
+    ".objects/3FEj/92hH/eB8M/OREk/.metadata": "7EuaMLB3mgqfYgIgYgMJ8pVmatIM7msjswrq1IR6/8Y=",
+    ".objects/3FEj/92hH/eB8M/OREk/.data/ObjectRepositoryTargetData/.content": "OMB/KjbcK9SS6b63RZPcmGLgsJEYF4kgHYbxEEGJtMQ=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/5606e36e-c631-40a4-beae-fd9f0f3168de": "fvpt0ym4FqSCnxgr81AXUXim4UN9Gr6g00QCEMcAcu4=",
+    ".objects/3FEj/92hH/eB8M/OREk/.data/ObjectRepositoryTargetData/.images/.design/0bB8H9UCkFk2DKd68ehz7Ig": "IOVl2q3VJKxLXJ5PMUoPTYeZtZGgKCd43aYgl5I1X80=",
+    ".screenshots/0b4f6f942f4dade1e5ffc114438f8d68.png": "8aG1mwWI2cAxZ3CCiOE5AwvZlBR3tiOYNe01MGdRzaM=",
+    ".screenshots/cbd6d5e0982765ed9ae83be144b7c9bc.png": "Aw4pB51u5sa5wYuIL4KBOZDvXXLc870jq9QA04g5lgg=",
+    ".settings/Release/settings-a1b2dac1.json": "jniB7XO7RvyXE8sg1W6+CdAeAGwUoixjP1iOAMQq0zY=",
+    ".screenshots/e178af8e079f0a12888d5e8bb790d10b.png": "q/XtWtMfp27M+qW/IVoZK1MTqQH7fDdWEddzTDxK0C8=",
+    ".objects/dgFO/TKD0/-soJ/m4sY/.data/ObjectRepositoryTargetData/.content": "9jGGpox5eBsdBYsw/b4sJ0SCeBcDqSepa0/r/GSd2wU=",
+    ".storage/.runtime/AncestryPersistenceService/d230316b-d835-4ec5-b994-3c35ad936494": "YITN0YbO28jyBdazkcbzMqE6GNoO2jrvHClzNUUFgUU=",
+    "Data/StockPriceOutput_old.xlsx": "hKkYrifRoRQMSDJ7enT/Uaw1Zoga2nu5mZlHOmcd0Bc=",
+    ".objects/3FEj/92hH/eB8M/.data/ObjectRepositoryScreenData/.content": "L2RVx1dPh9dsX5tNVavgX3ugEfisMKQVOMqvxkrmfCA=",
+    ".screenshots/ea8ec28d477e1b07e1b4fdd7e4b06438.jpg": "GLqJhxnnvBh4qWQVfSEO0YZI2hlZAPemAW8/HRiLPg8=",
+    ".objects/mONe/.type": "DQS/631ktxx0/JJcypPWgxVOjMfm5YOPrO1JjjTJmE0=",
+    ".screenshots/ba95c54b4f3de4b5bd5357f94b21032b.png": "P0A6izM/ykNYbTeHfpM4SBLgA2PvtJXgHBQwb+LC/YU=",
+    "Process/FetchAndConvert/FetchAndConvert_Main -Parallel.xaml": "8N3Pe4OQ+KA4tkTy36tkLHMuV0E20ICq2U/C6ODsISM=",
+    "Data/CompanyStockData.xlsx": "/mhL9DQ0+BuEDXV5rbaQ0SQPs2Ly9Jq3k0xd4OLwUpI=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/5d8c0939-1203-41ad-8a0c-353465c43aad": "OqgjYJw+tZXcYS+NdjhhmDMXfBEdS9Ia5g8zZfb5GsE=",
+    ".objects/3FEj/92hH/.type": "+GggqKGln+EckLy4CkowIpHwBNKm6rrFd/RbiZgQY7c=",
+    ".screenshots/ff8a15b022e1135f6afb5d6b9c82675c.jpg": "g7eYgl+CJauhyI1a9g116+KF0rYmbE9RYwvcQomw1iM=",
+    "Testing/Tryouts/Main -with dt.xaml": "nDaEbsLZmiIIW0Ys7UnHoFdeWgb+PQDX8o/GPKP/oMw=",
+    ".screenshots/047c90d69e79f7aee8090318b8cfd903.png": "uAT1HYP9nnoBbP0VLEjKfn8csnADanRl5JexXkSu9LA=",
+    ".tmh/config.json": "Tk6QDUUsqtifkyIEMEjvqL300ZUpxaIp15qlWlZ+18w=",
+    ".objects/mONe/fXej/WQTx/.data/ObjectRepositoryScreenData/.content": "BicYtNWgAAX8z1qYaYlsFclyzngFdAMDVat2sVukGfA=",
+    ".storage/.runtime/AncestryPersistenceService/7ee74843-0dad-4486-a9dd-4da4dfd68286_0f7a8b22-42c6-4763-8a18-1541e571969a": "iYszUyJtfISSOaF+yxjDOeT65mhKZtQoqh3UNkwbGBM=",
+    "Shared/Utils/FetchAllCompany.js": "9AUErwi4C6UA6GOCUTfmWouhO7QjWK6QFsOc1yY3Vjk=",
+    ".objects/dgFO/TKD0/-soJ/f3fN/.metadata": "WTvTcQ/QJYrNKVJ6OgOPVt5Mn8bKyoqvOanJ8gvF/DE=",
+    "Shared/Components/InitConfig.xaml": "BMgu7SuIx9IzCusYYw5gMWKTaKawSHLSZvdZrITYJPA=",
+    ".screenshots/cbf46cafc7fbdf3157b2e0df84586634.png": "mL7xx2HVEBpcKI8A7jKiDSag84biMc31tLpX1HivZAM=",
+    ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297_1dc9949d-a849-4d27-9279-36f1f7b1d71f_dd5ecc78-0561-4add-b2bd-434ed21a1cbd_f1ae8c19-d365-41df-95fe-2f481681745d": "IFEVsYBi/ACRwhuIhJ6FzAC8Hdr7tBiTACyVD7y/4D4=",
+    ".objects/.type": "3CCz1dLN34L60zKCHKXppO/c7eSic6oZPStJW9zJKCU=",
+    ".screenshots/a67b7258ab7990c3f849f319b992a851.png": "1c9ml/tNHfvv1W8w6K9KcoT+kysa1Qfo14JmIjyyAjQ=",
+    ".storage/.runtime/AncestryPersistenceService/4eec6780-8975-4981-9eda-e63661226ae5_9648ad13-abd6-4b0f-8994-d248eeb1a755_cb52dab2-4fa8-4273-8227-6c2060c7d251": "APnk3faXSeb8Wz+KBpP3FqPa/7RajzUhLCqcsRd+3bk=",
+    ".objects/dgFO/TKD0/-soJ/SRvx/.metadata": "9XE4FTs3W66Qh6zfE4lK/wV79PouLGCSxCX0jyVoE/w=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/cd9eb0fc-0424-4237-85d7-ed14d9ed35b7": "53UQ8y+5I3lrNcA+eceN9YdOz6gNyxDJoACvHgTmF/A=",
+    "Testing/Tryouts/js.xaml": "LkeH9ER3EhybpX0UXmoEmS4BUfNwsGZD4wDeqWA4vXM=",
+    ".settings/Release/settings-9e9290da.json": "7PjBQcYPpDS7UhN/HydlT7QCRIsBYnPNtHuFFBOcfg8=",
+    "Config/Config.xlsx": "2a6eZLEMmxwfGQQVrf0DBS7pY9Dw9OqNRL4ImKp7j/A=",
+    "Shared/Components/LogMessage.xaml": "HqlpCzVKnGJpGWnVdc/YUOZuKe2qXAyxgopDRSzJF1E=",
+    "Main - with Parallel fetch.xaml": "GW/zERmLNgPdhiau86gOSsLqvCqhoXJxjuO7dfuTb4o=",
+    ".storage/.runtime/AncestryPersistenceService/4dd3fca3-78a8-4485-84e0-b4e1b5b4d46c": "YyNW8CpJSylFHVfv1BZO/Ik6pdPJTudXd0GoBMKPXqk=",
+    "Data/StockPriceOutput.xlsx": "H6HFKSiThFCT0Ge/ptK1RyD+2aCzQ/NLdaPcdmvjZqc=",
+    ".objects/3FEj/.type": "DQS/631ktxx0/JJcypPWgxVOjMfm5YOPrO1JjjTJmE0=",
+    ".screenshots/72a41668ff1ebc4a94dce4ad371e8531.png": "IZYwHdlAVHjghGYINSehdlQ5QhLmLmqbNHineP2XbAU=",
+    ".settings/Debug/settings-1a5b880a.json": "7LuMiqeAyudf1SiAtg+L/3TGzsMJkAoNJ7g6yi2hqOg=",
+    "Testing/Tryouts/GetExchangeRates_.xaml": "w594Dnjd6mNhvtaLN/OMMIG1PSqxYdpEA7xVPyme5Yc=",
+    ".objects/3FEj/92hH/eB8M/htUC/.data/ObjectRepositoryTargetData/.content": "b5VBtFCLne2RirVsdXWfYRMdDkQmUs9KZNKO9EaRgEo=",
+    ".screenshots/5c68b728b628f6c71f79006dec4b44ce.jpg": "MMeNbOmrHb8+9Kk7cPECPZ6IbWtAqvoBqSMe3uD/2U8=",
+    ".screenshots/8f23c6d995954202657282faa526fcee.jpg": "ovnGLfGDPwkilsTsjhs3loeRKLckuuLRVZPjMHpn7Js=",
+    ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297_1dc9949d-a849-4d27-9279-36f1f7b1d71f_dd5ecc78-0561-4add-b2bd-434ed21a1cbd": "iA6l3wHDbWnyClMvbXAH5LzkDKwd89q+3K7/1CRBcgE=",
+    ".settings/Design/settings-a1b2dac1.json": "/Pf++JYszjaKNRQIKt9HNhqooNNSjdx8OpMnOoey80M=",
+    ".settings/Debug/settings-9e9290da.json": "7PjBQcYPpDS7UhN/HydlT7QCRIsBYnPNtHuFFBOcfg8=",
+    "Data/StockData.xlsx": "/wK4n7CnzxTP5K1ra8hIUG0k7D8fbojHzbqy4HnF7Xk=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/d2749676-9c62-46e0-b75b-5bac3241381e": "71saupRd/KSTnDP+gCimCsKuf9P+EQLQveOTWChn284=",
+    ".storage/.runtime/AncestryPersistenceService/5606e36e-c631-40a4-beae-fd9f0f3168de": "dFS8isppE6T6vyy3LK/L22iZf1+9Mjb/mlWJ8qc2BHo=",
+    ".objects/dgFO/TKD0/.type": "+GggqKGln+EckLy4CkowIpHwBNKm6rrFd/RbiZgQY7c=",
+    ".screenshots/44b601a0298aa45728b1b4d05b82bcd9.png": "hLHiMxP8Ff49kLbCsgqeFI1l2LlPJqnTDqlPa96hNsY=",
+    ".objects/mONe/fXej/WQTx/kjdg/.data/ObjectRepositoryTargetData/.content": "Fch/oMLHb62ihhfN2vA7/HDSd8YCnJvWP4wfbPrHDko=",
+    ".screenshots/9a01318d3f5b4f6a9c2990e6a1b42b31.png": "aBoNHiVsVFftjGoAIScjpnlA9LE5WCwyBQo5kBJFkx8=",
+    ".screenshots/4c51693c7a3ed2b4f2b65907ef606af1.png": "HEbrnNZnYLijxcVxob+mf2DD9KqDAvagNcIzuq9FrVw=",
+    ".objects/dgFO/.data/ObjectSelectionName/.content": "6PsJOMs84zB7DMaNgFFpsn9XFC4zxJ+OSuShvRiKf50=",
+    ".screenshots/ca7c223f8d49dbd3d82d1661eae49bcf.png": "IX6y4yzFJWLYu04P55h44j2jw2D1mMSzokxwbQp5IUI=",
+    ".project/JitCustomTypes.json": "+KbXlI8UPAyEs2AoeXJFUrsAe7n1HTekBsT4SneoTPY=",
+    "Shared/Components/GetCompanyUrl.xaml": "1E4yYN1RpUSRF43I8x6ujWwYRXwTcBPIUhD7ekGnhBU=",
+    ".screenshots/86eba801312f848cbbb9c0ea8361f63f.jpg": "UYdEop4KAGMGhj8RV1rtS1DeQUEChT0r5X8BoOAFfW0=",
+    ".screenshots/4a909a4569f7c9e71231db39d7c49932.png": "sb/uXtdDFahen2voxM+n7RYg9DaIwEWnwvpDW75ET+A=",
+    ".objects/dgFO/TKD0/DFam/.data/ObjectRepositoryScreenData/.content": "7qGQKfiDUTND0Mh7pZmdPf0uC9UGuYBsW0F1PNqBB+M=",
+    ".settings/Release/settings-afad0842.json": "o6cyP0e4lygMz+a1AdWsz/rRkRbvynZ6TlDRF8oah28=",
+    ".storage/.runtime/AncestryPersistenceService/5d8c0939-1203-41ad-8a0c-353465c43aad_744dc912-af26-46d8-b2f6-84e8e24282bc": "kdA43JEk2OuLVhczj9vdgxY7qhdvYC2YVkmMuX3NAD0=",
+    ".screenshots/21b424f03a63d60bbb76046a5f5ce858.png": "chD29lLOWiAGb5MInWbVg2suPuzC+k/JtEPnz5+7T6w=",
+    "Shared/Components/GetExchangeRates.xaml.json": "Xpv/mXjqwF15OQspGcl6lMGrTnupSMDnNYb7/v7v7l0=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/7ee74843-0dad-4486-a9dd-4da4dfd68286": "BzD+SXlzZndxBwDtAhLRPLuzyVby/EWjoSPIjx9w47c=",
+    ".objects/3FEj/92hH/eB8M/htUC/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    ".storage/.runtime/AncestryPersistenceService/c8440568-fce9-4f81-b6b0-39b6a59e5076_3ac01fc0-9c4d-431c-a7db-9eb1dc69e38c": "STYkpqRzkuV/wBiVYjjm3hrhBTZdGjTMfTQfJn/Ltl8=",
+    ".screenshots/c14dca3b8abb2a06bcae669e0aa91769.png": "7V2FMAhMFMG/iOmnlqCaS6HEDbSmtvJp1rF7mbjsHUA=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/d9306c4e-e222-43de-aad8-f6078169cd1d": "8m5sU5zFuH8Rhg2tXPH0jTDmwcDl+5oCiD6vQvlovf8=",
+    ".project/PackageBindingsMetadata.json": "ib+hY6+KQbH7tsM3AxzF8P2FqvrZkPgVgASwCAs9ZLY=",
+    ".screenshots/8c7b421e37087c9b74bb96c498fecc6b.png": "bFxaIR88nt3uUCvkNiwKEXVnZ2N6NAEcoBQ1rTYFOiM=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/67923eb7-6f67-4252-be9b-5614c4a834f8": "Xdc8yrlNOBdAzmIqUg2PgA1mvo6g8siLxOrMXSB6L24=",
+    "Utils/Flowchart.xaml": "iiw88uE0WyOs4GvHlltltm7Z9UDi5bMn5zS57kudef0=",
+    ".objects/dgFO/TKD0/-soJ/VAW2/.metadata": "IubknqCUs2nAqwGVD+4E9SbQibL/5uaJgd3mqpAYSBM=",
+    ".storage/.runtime/AncestryPersistenceService/caa9830a-3680-4628-ba67-28ef1c3fecd1_0fa25e46-8800-479e-b688-d3aefb01196c": "amJ3EqK4LGs74sLK4V59U6R0yPhtGt+B2cObyHyftcU=",
+    ".storage/.runtime/AncestryPersistenceService/0659ccf3-9e3e-4859-9de3-982d69ba57d3": "DmW7EqkvAKfgWQwd6NSb1HeVt0V/Rz9pShzM0uWXDqY=",
+    ".objects/dgFO/TKD0/-soJ/.data/ObjectRepositoryScreenData/.images/.design/09ukbVCvewE26ypUtDR7Xsg": "MMeNbOmrHb8+9Kk7cPECPZ6IbWtAqvoBqSMe3uD/2U8=",
+    "Data/StockPrice - Copy - Copy.xlsx": "NChVdu4EVv6kQHu+yqQuyShX2Pp4desPbcjNaBYI8lk=",
+    ".objects/mONe/fXej/.type": "+GggqKGln+EckLy4CkowIpHwBNKm6rrFd/RbiZgQY7c=",
+    ".objects/3FEj/92hH/eB8M/htUC/.metadata": "35ELVPqyIFFT2xFKV7/lq8+g+Yj20Yw0h2qTz8kd4LA=",
+    ".settings/Debug/settings-a1b2dac1.json": "jniB7XO7RvyXE8sg1W6+CdAeAGwUoixjP1iOAMQq0zY=",
+    "Testing/Tryouts/CurrencyConverter(Autosaved).xaml": "oAZB/j6rai7XA/IOzr360DR0fJTjj5iyHlBDH/rCFng=",
+    ".objects/dgFO/TKD0/-soJ/m4sY/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    ".screenshots/e8d2433a6d3d592073522328a97b5bff.jpg": "4tW2yK9hWAs9mdqqCqj4+KKhwnUKxvXj4EMUxPQKvAM=",
+    ".objects/dgFO/TKD0/-soJ/f3fN/.data/ObjectRepositoryTargetData/.images/.design/0vXeAovRfLEiapsSurbKoYw": "QA70m9Vnij5TRS+nEDf84C0pRvSdtzPWENxV1Hu5218=",
+    ".storage/.runtime/AncestryPersistenceService/ce56408b-9110-4b0b-9c35-7c4ecd272b86": "S5tbHI2Dpzaw6gXjbjKGomifTfrJXlNGvEgwF/10pr4=",
+    "Testing/Tryouts/GetCompanyUrl_c.xaml.json": "gHdePamE2FJWtxXl4TcyPskedmpF9lKO2U+hPKOD6Yg=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/bdd249fa-e7b5-42e7-a269-16e0d0cba36f": "aZvMXbXArZawZXsoZEdWtCaksm2hSXjPSf3cFEPd/nw=",
+    ".storage/.runtime/AncestryPersistenceService/9f657fa1-4adf-4fb1-b2dd-f18ac6878dab": "qx1kw0nJhdnDSBBcI6vp0pe0HcbA9KrUMlGOhOJ+omQ=",
+    "Shared/Components/GetExchangeRates.xaml": "nSyjTZkBnrkA940BHwbtycRZdnhk5H59X2Jb5d2PxA0=",
+    ".screenshots/c5269ecbe19bd61ce29684c9846654ee.png": "d30XU4h083lgMLEmAfBJMJIFhyoqrusavUhVKAbdt+M=",
+    ".storage/.runtime/AncestryPersistenceService/bdd249fa-e7b5-42e7-a269-16e0d0cba36f": "7VjABulP9swC0Etv/K7SqG+R6bRf+F/CUsHefFL4O2E=",
+    ".objects/3FEj/92hH/eB8M/.metadata": "tcCUPlnlFrzFKyLDH4Ev7CXxIJvd9TuT4JFdExqubYA=",
+    "Main.xaml": "pZZ20L7nu9AFaQGB2K5CQlt7+xWVyFYuBvx9Cz7ELIM=",
+    ".objects/mONe/.metadata": "2xoRiJ86yud9lMws9rPNARlGbuxRrRQpJGUNtd+q0dQ=",
+    ".objects/dgFO/.metadata": "QaKGB0zL18EmFJxc5HHXtE54Z8yATRrfVwGmaHmp62U=",
+    ".screenshots/80ff5e6b43da6ee1d1f5b60803e33277.png": "3T2ZchSmrfhTVvK+af3uEo0HJDkz/zP/pIASZKtsqm4=",
+    ".screenshots/974aee13e4cf90aacb8881abec025b0e.png": "pQghBsQERYKSpSYl3Y8KWPqvJfs+/EVOJriQ4dOyrLI=",
+    ".objects/dgFO/TKD0/DFam/.data/ObjectRepositoryScreenData/.images/.design/08rugRv1rQUW-059KU-x93g": "KDttcYj4csGKwLTbD9dh++jhr4Of9niwLnkiuZOvBCI=",
+    "Process/FetchAndConvert/FetchStockInfo.xaml": "Njkd0DcI6ekJdyuHUyy7CvcJpteCSY4PYUJ9nsVqvYw=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297": "nz07g8g1ThO7nHe0ko9+9EzfsogslyW2MCbek4VGXpw=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/d9f03b15-c645-454e-807a-40d20283a12a": "DICfU612cD44qrPQ9iDrh7ZUK9lnksrzj9HwSz6OEjg=",
+    ".settings/Release/settings-590bb27b.json": "4fvUURCKkxFSSIwu1y1AoZuELH2J5tuzSfwKYQ+/qxo=",
+    ".objects/dgFO/TKD0/-soJ/h6qw/.data/ObjectRepositoryTargetData/.content": "2q/T4d2dmnI6UkjW/Y566s2nHd9fxWhKxb8T7hktPQI=",
+    ".storage/.runtime/AncestryPersistenceService/5bc1905a-c97f-43c5-9014-fe0315344283": "I19hi1RGsDPtmZBnTelAq9B1BHWPcgFhhzz0SukqewU=",
+    ".storage/.runtime/AncestryPersistenceService/d2749676-9c62-46e0-b75b-5bac3241381e": "g+SZWjTdA7bay/qnUQ7yYwGq9NGMDARk471QUHxxsrI=",
+    ".screenshots/72f4c99ff0f263c3ce47d98f819af643.png": "X+Nm0latLB+QuuQzoGRl6urrhvAYH9qh2FYL139xh9o=",
+    ".entities/EntitiesBundle.X837u2PZ5BGRzc2Vu3xmddApjuCqJK3x0VA7PBjl454.zip": "KVzlNHqwTSPW6wq9xnIDPq4RqeR56+yhKKROdMbCDWg=",
+    ".settings/Design/settings-5190454b.json": "R8KMXeb6aoFhT/ZIUo1Ju8IME0pdk4z0CdfLSKo011s=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/2918642a-c5d5-4e05-b91a-d13fe6f73c40": "hx3aZ69xM/pPU1WwactVwdIubaMk0OFK8I2wY1c9u4s=",
+    ".screenshots/8886d5a53d1f572f7626e8ca0b23d7d4.jpg": "Qi3o2rbeTyPzpq8J43wBNc5EVobXakIrofu3EdiTlB0=",
+    "Data/Input/CompanyList - Copy.xlsx": "c15WkuzXmrwSQXw9sutRS8as7DD9K9ByScLu4pwN6AU=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/4387fe99-7565-4cde-8814-0b5b7addf152": "Aev5mdUq90/CyWjw3vvdB98FKqhOiVNz925kdcDaCLw=",
+    ".screenshots/15fefef96e27ae6fcf4cd88f7d337201.png": "SSjWfs2g1afaQFbPX0wmOrC2LrMkOnrX4QKKEVzB2RU=",
+    "Utils/FetchAllCompany.js": "KbInpIzEAl6vL3YSp+YpuwDu0mz4bI/qM0rUQdJCKXg=",
+    "Testing/Tryouts/CurrencyConverter.xaml.json": "zhC85jLzGHCqwiglE5eKija35yTffJ0AEymRoZBYb74=",
+    ".settings/Debug/settings-5190454b.json": "9dTmYrtHO5uIu22mdu0GX2x5y/DCUKnNBY94nZK1SXw=",
+    ".screenshots/de722c5ad8b5d8e9ddd3fbde16025dc6.png": "0LbxpXQaunaeJmxbIQWVn4mbFECD7znnL1Yn6+ontw0=",
+    ".storage/.runtime/AncestryPersistenceService/75b265a3-4fdb-4cc1-81af-bd66225c6060_dd4a62e5-17da-4820-8c50-d94c0393cac3": "DWOPoJjyQHVxPum/kd9VhKiBei6yrJ/2XieJ57NuFgc=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/47cb387c-e844-44c2-a7ea-d89d104a2cbb": "xbn36YQBtMKU7nbIKnJjhNbT/VXlVErLyy5IIgvxO58=",
+    "Testing/Tryouts/Main - Copy (1).xaml": "MUueJwUUt5kfoz/4ajZwvjkNYcIOUIgSXHml14/TMd0=",
+    ".screenshots/2df2137de9c1a0301c076a3e74d91aa1.png": "8ldhpcIerj7KYt2HtWGIhjcLmEA+uUAY/h4/Jd98xx4=",
+    ".storage/.runtime/AncestryPersistenceService/7443a688-c3f1-4027-a76a-700621294f42": "HoM6U9MWZQgeRsuz+iDKgZ/dPkl3Cu0fkAGoTJFAbQ4=",
+    ".objects/mONe/fXej/WQTx/kjdg/.metadata": "YsPmG150nS36+2ncn1bFmz7qLoQtl75vuBVHD68exQw=",
+    ".screenshots/b861f2f84d98d9be1462e0ea1a5cb6f8.png": "cS7EkXgrmsZwk/l+th2uGCAb5j7XBLFXtDPlosFBV1s=",
+    ".objects/dgFO/TKD0/-soJ/VAW2/.data/ObjectRepositoryTargetData/.images/.design/0JD1rFONkzEe9W3uVN8CvcQ": "03dszwcwgMJNoLKKWJFbNYz6qpGG42+R83Clg7s4Xbs=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/4dd3fca3-78a8-4485-84e0-b4e1b5b4d46c": "9MRyLqqmaLYaU+G7oAPi+sbyL2hf1pyaiGDuHA/rpNI=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/caa9830a-3680-4628-ba67-28ef1c3fecd1": "BxSVBwVCiKwfpgHfXQzpnBrxqhVeST+zVyH9b3VmM18=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/4eec6780-8975-4981-9eda-e63661226ae5": "QxAfLrEaveRoT75YJ3MMF3otrgEGmHpvQt/7GAIDH2o=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/d230316b-d835-4ec5-b994-3c35ad936494": "WjLKp2mBDS9q02Pn5mig+bfqwsoNlXKPtZYYfYZaSi8=",
+    ".objects/3FEj/92hH/eB8M/KOLx/.metadata": "A47J51Zg8242h8IfvKN1DhgBvKSRqx71IusiR88A4Vs=",
+    ".screenshots/d0f0bbe91f0d6c4e3948877648f07f06.png": "8tfoAljntFkUSkU36lqh1Uq8uXp+ROJArIcuMDzYWjI=",
+    ".storage/.runtime/AncestryPersistenceService/cd9eb0fc-0424-4237-85d7-ed14d9ed35b7": "3o65PPmnjXEpfGCiYH6dZNtg2SxW80BOTiPhTH9wvHg=",
+    ".objects/3FEj/92hH/eB8M/.data/ObjectRepositoryScreenData/.images/.design/0o9mydZXLMUKVzig14dTwRA": "4tW2yK9hWAs9mdqqCqj4+KKhwnUKxvXj4EMUxPQKvAM=",
+    "Shared/Components/GetCompanyUrl.xaml.json": "bNA+iULSuHHGuv9qp3+4e1s8hzZpGo4yvz1yKM/i/5U=",
+    ".screenshots/cf3296444b7fc2da1fefcedbed26a6b2.png": "2tRmblBYVMZNg3IeKuyw4Vvo3zP3pLRAhiYVA6R3rws=",
+    "Process/FetchAndConvert/FetchAndConvert_Main.xaml": "8N3Pe4OQ+KA4tkTy36tkLHMuV0E20ICq2U/C6ODsISM=",
+    ".objects/dgFO/TKD0/-soJ/xxU_/.data/ObjectRepositoryTargetData/.images/.design/0FDCKYs5DRkK5M_PBpuKsvQ": "X+Nm0latLB+QuuQzoGRl6urrhvAYH9qh2FYL139xh9o=",
+    ".objects/3FEj/92hH/eB8M/htUC/.data/ObjectRepositoryTargetData/.images/.design/0tKEr-vCk1kmpWyfqdlMYGw": "mL7xx2HVEBpcKI8A7jKiDSag84biMc31tLpX1HivZAM=",
+    ".objects/mONe/.data/ObjectSelectionName/.content": "6PsJOMs84zB7DMaNgFFpsn9XFC4zxJ+OSuShvRiKf50=",
+    "Testing/Tryouts/GetExchangeRates.xaml": "q5ctZHIYoWGgbP6Nv7aforWEOYkU2jbINSrlzMrKyiY=",
+    ".objects/3FEj/92hH/eB8M/.type": "blYTfiHTIiouMTX8NFgob8P7ay4sZ56a4o2yaP6YKvc=",
+    ".objects/dgFO/TKD0/-soJ/xxU_/.metadata": "cOxApz3ofbes/ddtIlOmOv8d56Nw5Ea07vFFEpgMi4M=",
+    ".screenshots/00401267301aaca4f9a9f1038ed5b3dc.png": "4U/1Y1s3lvSjjrwPh9Fb350cUNVXpDQzC7zMv36VByU=",
+    ".objects/dgFO/TKD0/DFam/.metadata": "Wgtzl2oEMxb6YMONFB46l4HDg1dfJBo/Wu+wBsraz14=",
+    ".objects/dgFO/TKD0/-soJ/h6qw/.metadata": "D9H2plh5wPZIQETX6GFcZYqd+s7HYp/YabPqT5ArTDI=",
+    ".screenshots/6159c49b5328a926a76b65013a3a166e.png": "OWH7EBcxuW3AyNiVC0MwI37zDkhM1vWOn5pQu4ih4OI=",
+    ".screenshots/91fdff762737f1f464d94bb99656542e.png": "kkTVf76zS6St4N13hcADcSGzA8BXnl+DB++Sms1kRV4=",
+    ".objects/dgFO/.type": "DQS/631ktxx0/JJcypPWgxVOjMfm5YOPrO1JjjTJmE0=",
+    ".objects/dgFO/TKD0/-soJ/f3fN/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    "Data/Input/CompanyList.xlsx": "4+NMgCXJMioSIHnjXLp2DI++71qr5nKlIKZkQzzr10k=",
+    "Utils/FetchStockPrice.js": "lZjSX4NDbLcfsIKP5okvxvQeaNBvx7BSHtp26a6Nz0k=",
+    "Shared/Utils/FetchStockPrice.js": "lZjSX4NDbLcfsIKP5okvxvQeaNBvx7BSHtp26a6Nz0k=",
+    ".project/design.json": "tpigGYm5XaG029JmRVNbleDrxKui0uJxWXFRRvAf2I4=",
+    ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297": "e8w3diG+X5hHuIe6odWrucxucuZmS9qYTGJqe2xqQFg=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/75b265a3-4fdb-4cc1-81af-bd66225c6060": "WhAZtMBcpD2aKHqObbrRzD0CGaPIC6FTetUk13xxx7M=",
+    ".objects/3FEj/.metadata": "SwaTJ7Vn/H2uGdi8KTaVnQfJpTBPl5EYe1c7nqxlr9w=",
+    ".objects/dgFO/TKD0/-soJ/h6qw/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    ".objects/dgFO/TKD0/-soJ/VAW2/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    "Data/Output/CompanyStockData.xlsx": "jmRlGBXvwU+/UrPXc4vAxSJI7QlfNc+8eThE8QSg3iA=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/ce56408b-9110-4b0b-9c35-7c4ecd272b86": "aEQsz3YG4ghDhZZewuqRmGLL6vBwwfY83syI6Cq64fo=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/afa58f88-464b-4753-b3ad-9a67caec5819": "QTfaivmJJpOnj9+1zFhmGyW9wGjVhGvdtugDwQwZsIU=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/58eecccb-5a29-4e2e-bfde-4676fcbffbdd": "xOGro279u+ufbw+NdNMIh1hTP8WW6kK1Lw0NUXrVCGg=",
+    ".objects/dgFO/TKD0/-soJ/VAW2/.data/ObjectRepositoryTargetData/.content": "mw4lzbH1HoM+sz844vRZbWHUNIo5zfU1OWuVPFK1WcE=",
+    ".objects/dgFO/TKD0/-soJ/h6qw/.data/ObjectRepositoryTargetData/.images/.design/0UfZrArCqcUe64Im8eRikqA": "hLHiMxP8Ff49kLbCsgqeFI1l2LlPJqnTDqlPa96hNsY=",
+    "Testing/Tryouts/CurrencyConverter.xaml": "fZibNI57v+KGPLR2uHYiX3PWxgZP6GIphRzxCjYnO9M=",
+    ".objects/dgFO/TKD0/-soJ/SRvx/.data/ObjectRepositoryTargetData/.images/.design/0QQaGc4v2nUOQZHFkXFUfRQ": "m51u2GBWNQijtxf7VopGUUpSgwWOhloc6EU/oekPaCo=",
+    ".objects/dgFO/TKD0/-soJ/xxU_/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    ".screenshots/e748a140492247b5d36da22a302c8963.png": "WLikY2pWmoZLs/XP6q5zsSUhd6K/irAD4k17KqGOXbU=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/c8440568-fce9-4f81-b6b0-39b6a59e5076": "35nbDoRsyqJZY1FO3VhsC9XqzRF8jgW7VA6kT1xmjeU=",
+    ".screenshots/3fd0ef5a837b2ca4437e0d778fff660a.jpg": "KDttcYj4csGKwLTbD9dh++jhr4Of9niwLnkiuZOvBCI=",
+    ".objects/mONe/fXej/WQTx/.type": "blYTfiHTIiouMTX8NFgob8P7ay4sZ56a4o2yaP6YKvc=",
+    "project.json": "J26npkW9OVKu1t3ux1BeQAU2Pw2r7DbjHSQmxFKosJo=",
+    "Testing/Tryouts/GetExchangeRates_.xaml.json": "rGgSa+NZ/f5881tibaoTLsKgMammv5tfVJ/wHZOuyFQ=",
+    ".screenshots/bf2d3fcdbbda2535371e1fb7c267be67.png": "vV2U92m7mnD5bMoOmwN5p6BBqIxzqoYxANOJW+K7Ou0=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/102fd88c-c954-4ebe-b2db-49c76251d0f1": "ekT+nxhfdwH0IX4j07pyfdLjGP3nHNmMZrtH7siDW+Y=",
+    ".objects/dgFO/TKD0/-soJ/m4sY/.metadata": "dH275YbmcvB2qKqbWzfqkCV8ndmLO6+dTdpiPyY/3fE=",
+    ".screenshots/08ea56b119e6e9ccde2741024fa7f9ac.png": "M7Ttjf+m5P6XaxS3Ec8dsnYei1GbzFkid9Bu6CuraHI=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/9f657fa1-4adf-4fb1-b2dd-f18ac6878dab": "vSr42Hbfb9j419Uo3si9ZdppmrQdPG8E3j2Kx38c17w=",
+    "Data/Output/CompanyStockData_old.xlsx": "Z6cWIv6aTUF+9bcO0C4otKANMF6K01qUmxXMkDeunMY=",
+    ".screenshots/43f43b8e2999b6a796a9cbcebf29c0ea.png": "0Zy3ZM9LzikiWvqxqnYSEWNBLha4kR/7k69M7ii/b14=",
+    "Process/FetchAndConvert/FetchStockInfo.xaml.json": "IlGPrG2nMs0puXLeOpPEjg/Ba1ywN+VkHTp/b5ZWeWs=",
+    ".screenshots/cace48d2d22cc99e61ce1ec65e419eae.png": "b4zxQWhnkiyO6pzbJqgkx8AABKLZCXHubwOP2FL/DwQ=",
+    ".screenshots/ef3b38e98a4c1ff045fd52bb17d224d6.png": "yv8e4nzfuA0ZJlu66YWmciKwiCnQPYRcUNPt6pjnBgY=",
+    ".objects/3FEj/92hH/eB8M/OREk/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297_ad364206-390c-43df-8735-e55a8baeb4bb": "+yT6zfn1G8srvQ7iFQDRAGf81Nn1VDvZWphfVLdokYc=",
+    ".storage/.runtime/AncestryPersistenceService/2918642a-c5d5-4e05-b91a-d13fe6f73c40_f57fb7f4-af17-4801-97cf-e5fdc2cc410e": "kL+0yCm5B4owHnqGAsU40mTDrFEFzisvCCnCsLvkKAU=",
+    ".screenshots/54550345515fd9b6222434a90e1ac3f9.png": "4uAfTkba316c5tf11HcHEbJvz1rMnNU2TPpEP09z/w4=",
+    ".storage/.runtime/AncestryPersistenceService/47cb387c-e844-44c2-a7ea-d89d104a2cbb_3dbc66c9-877f-4ed8-b4b4-5f42d1181bbd": "5c+MBmy0o7LLljfVe6NJhQJHc697NxPwVl8uv93gdQk=",
+    ".objects/3FEj/92hH/eB8M/KOLx/.data/ObjectRepositoryTargetData/.content": "u+we1y2HF5Hv+PT0LhLp8/Q342o8M2zkPYONx/XIE+8=",
+    ".objects/mONe/fXej/WQTx/kjdg/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    ".objects/.metadata": "rszqGhuj1QVPQGTk9h6nPZ66azR9t7E/oPcO8b4tWZE=",
+    ".settings/Release/settings-82ca306a.json": "wW7p8opAxgjsb/RDAO397wAnWiGTiw2bTYZH58LTpCI=",
+    ".objects/dgFO/TKD0/-soJ/.data/ObjectRepositoryScreenData/.content": "lcqM2QioGQ+c4POYqOXHrJYmBfo0MUN3Adfxffid8hI=",
+    ".objects/dgFO/TKD0/DFam/.type": "blYTfiHTIiouMTX8NFgob8P7ay4sZ56a4o2yaP6YKvc=",
+    ".storage/.runtime/AncestryPersistenceService/afa58f88-464b-4753-b3ad-9a67caec5819_332a28a7-81b4-4236-b717-de5063df7b9d_5cfe7deb-a668-4e87-9db6-a09390b482bc": "MJN7TjnkoOVP1y9xoMkSB5ZUvBRYzGdXXALz2QEq+c8=",
+    ".screenshots/b13691ba3121af58defebdc25cbc8385.png": "Sbh0SKsP2x7VFPlFuY215MRC0eMFv8EQOvefklJHYRo=",
+    "Data/Logs/process_log.txt": "j0lNcNLsVkisc0bmD2NmHbUyByO34u+5TMbmYKDlgnU=",
+    ".project/JitCustomTypesSchema.json": "44m8TZjbxKYGpflr4lUqhn+eTLTsuZT4QpjQZaRLLRc=",
+    ".screenshots/b8c82f5e406f1b34db45e9ab539b2089.png": "TgLLfFys4H6VMKu4Yc3yWWgBA/iYkUbWFa3qsmuoyDU=",
+    ".settings/Release/settings-1a5b880a.json": "7LuMiqeAyudf1SiAtg+L/3TGzsMJkAoNJ7g6yi2hqOg=",
+    ".screenshots/45a05f678477765d4de145d79dec3ecc.png": "2N61AA/E52utw3TLlHquU3pdIzSqbcL4g/5dE0knkdA=",
+    ".storage/.runtime/AncestryPersistenceService/67923eb7-6f67-4252-be9b-5614c4a834f8_0f53a1f2-88a6-4dbf-87c4-4a0de45f522d": "RnOgOCVNDQZSkZqA66dzmjCLOiCn2anNaZHWdFdaSro=",
+    ".screenshots/5bf7c69d78cea9a7e35962ba9f603ed6.png": "03dszwcwgMJNoLKKWJFbNYz6qpGG42+R83Clg7s4Xbs=",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/5bc1905a-c97f-43c5-9014-fe0315344283": "1pQAwax6IHGwyVbTq/KeHde1zXSugOwEY64uK2Q3EIs=",
+    ".screenshots/5d77b35c270a769ef33981a9297bba05.png": "ggz4hFoiy6TfOPNUVONCHSlg4roKfGFmANS2T8TrjTE=",
+    ".screenshots/02d9366f47533709c74cf007777c04c1.png": "gwT7pMhXeVBCGyn2nowgwGEb0xgTZK4IXngM7aK4o/A=",
+    ".screenshots/897ed62f1f16e0463880ebb078a0f3b6.png": "ug90kc9DgjMa+WGVuLhhKnk1eG8hhKlCuL09lJ0StlE=",
+    ".screenshots/a09ea02fb4fab9ec69852bb90aa9f331.png": "M0mSC2bI0WmcbkWgNAIeff+AUqaj3Yl/T2ArzhjL3yY=",
+    "Testing/Tryouts/Main - Old.xaml": "6lQ2yOJm1KfRVGF9Hz4FFKbP6li2yEG8/V+wCRoeWh0=",
+    ".objects/dgFO/TKD0/-soJ/SRvx/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    ".settings/Debug/settings-afad0842.json": "o6cyP0e4lygMz+a1AdWsz/rRkRbvynZ6TlDRF8oah28=",
+    "Testing/Tryouts/ExtractStockData.xaml": "uGPdV2BlWrdTvViNHTuEHoJ6M9cgUhOwyjLIW6bVeKY=",
+    ".objects/dgFO/TKD0/-soJ/.metadata": "1JLXmz8iRFhtCRykqMHoryP3/vX1FsZX1Fztyh1sP7w=",
+    ".screenshots/bdff033ab26bd50cfceb9552cb201a8d.jpg": "adXS27OHDb8RbP7KaPiiEQ016qmFCoATjwwqxdJakpA=",
+    ".objects/dgFO/TKD0/-soJ/xxU_/.data/ObjectRepositoryTargetData/.content": "MVmBCaJRcAc+jYCH5JS6JT388W3QLQvVj7pj3UbgrQY=",
+    ".settings/Debug/settings-590bb27b.json": "4fvUURCKkxFSSIwu1y1AoZuELH2J5tuzSfwKYQ+/qxo=",
+    "Data/StockPrice.xlsx": "1F2AAOE0AB0oONu+qnXZbO9P0zZLETqDf4f3k0VUhAo=",
+    ".objects/dgFO/TKD0/-soJ/SRvx/.data/ObjectRepositoryTargetData/.content": "LyVp8W+j8c3MxJdOuCsBcoXsWH2bx0sZtYfA1WchSNk=",
+    ".settings/Debug/settings-82ca306a.json": "wW7p8opAxgjsb/RDAO397wAnWiGTiw2bTYZH58LTpCI=",
+    ".objects/3FEj/92hH/.metadata": "59+t9WBtnmTlbtUY/lvjs94KHxVp97/1gDX12yBYXpo=",
+    ".screenshots/c613d6eb0d489108dfc90b27a89ea2ca.png": "gEgiiSJTQrMW1Fy2M73vRpvWEiG63x6prHQu2hxI+Sg=",
+    ".templates/GetCompanyUrlTemplate.xaml": "9gte/EKhbNuV040ohuXn8xLfbtB5DpfoaTRHRlftPt4="
+  },
+  "OriginalFolders": [
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.entities",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\.data\\ObjectSelectionName",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\.data\\ObjectRepositoryScreenData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\.data\\ObjectRepositoryScreenData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\.data\\ObjectRepositoryScreenData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\.data\\ObjectRepositoryScreenData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\htUC",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\htUC\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\htUC\\.data\\ObjectRepositoryTargetData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\htUC\\.data\\ObjectRepositoryTargetData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\htUC\\.data\\ObjectRepositoryTargetData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\htUC\\.data\\ObjectRepositoryTargetData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\KOLx",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\KOLx\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\KOLx\\.data\\ObjectRepositoryTargetData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\KOLx\\.data\\ObjectRepositoryTargetData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\KOLx\\.data\\ObjectRepositoryTargetData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\KOLx\\.data\\ObjectRepositoryTargetData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\OREk",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\OREk\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\OREk\\.data\\ObjectRepositoryTargetData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\OREk\\.data\\ObjectRepositoryTargetData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\OREk\\.data\\ObjectRepositoryTargetData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\3FEj\\92hH\\eB8M\\OREk\\.data\\ObjectRepositoryTargetData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\.data\\ObjectSelectionName",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\.data\\ObjectRepositoryScreenData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\.data\\ObjectRepositoryScreenData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\.data\\ObjectRepositoryScreenData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\.data\\ObjectRepositoryScreenData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\f3fN",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\f3fN\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\f3fN\\.data\\ObjectRepositoryTargetData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\f3fN\\.data\\ObjectRepositoryTargetData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\f3fN\\.data\\ObjectRepositoryTargetData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\f3fN\\.data\\ObjectRepositoryTargetData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\h6qw",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\h6qw\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\h6qw\\.data\\ObjectRepositoryTargetData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\h6qw\\.data\\ObjectRepositoryTargetData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\h6qw\\.data\\ObjectRepositoryTargetData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\h6qw\\.data\\ObjectRepositoryTargetData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\m4sY",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\m4sY\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\m4sY\\.data\\ObjectRepositoryTargetData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\m4sY\\.data\\ObjectRepositoryTargetData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\m4sY\\.data\\ObjectRepositoryTargetData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\m4sY\\.data\\ObjectRepositoryTargetData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\SRvx",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\SRvx\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\SRvx\\.data\\ObjectRepositoryTargetData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\SRvx\\.data\\ObjectRepositoryTargetData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\SRvx\\.data\\ObjectRepositoryTargetData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\SRvx\\.data\\ObjectRepositoryTargetData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\VAW2",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\VAW2\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\VAW2\\.data\\ObjectRepositoryTargetData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\VAW2\\.data\\ObjectRepositoryTargetData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\VAW2\\.data\\ObjectRepositoryTargetData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\VAW2\\.data\\ObjectRepositoryTargetData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\xxU_",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\xxU_\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\xxU_\\.data\\ObjectRepositoryTargetData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\xxU_\\.data\\ObjectRepositoryTargetData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\xxU_\\.data\\ObjectRepositoryTargetData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\-soJ\\xxU_\\.data\\ObjectRepositoryTargetData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\DFam",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\DFam\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\DFam\\.data\\ObjectRepositoryScreenData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\DFam\\.data\\ObjectRepositoryScreenData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\DFam\\.data\\ObjectRepositoryScreenData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\dgFO\\TKD0\\DFam\\.data\\ObjectRepositoryScreenData\\.images\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\.data\\ObjectSelectionName",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\fXej",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\fXej\\WQTx",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\fXej\\WQTx\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\fXej\\WQTx\\.data\\ObjectRepositoryScreenData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\fXej\\WQTx\\kjdg",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\fXej\\WQTx\\kjdg\\.data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\fXej\\WQTx\\kjdg\\.data\\ObjectRepositoryTargetData",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\fXej\\WQTx\\kjdg\\.data\\ObjectRepositoryTargetData\\.images",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.objects\\mONe\\fXej\\WQTx\\kjdg\\.data\\ObjectRepositoryTargetData\\.images\\.design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.project",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.screenshots",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.settings",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.settings\\Debug",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.settings\\Design",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.settings\\Release",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.storage",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.storage\\.runtime",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.storage\\.runtime\\AncestryPersistenceService",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.storage\\.runtime\\DesignTimeTargetImagePersistenceService",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.templates",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.tmh",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Config",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Data",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Data\\Input",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Data\\Output",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Process",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Process\\FetchAndConvert",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Shared",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Shared\\Components",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Shared\\Utils",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Testing",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Testing\\Tryouts",
+    "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\Utils"
+  ],
+  "StudioWebFiles": [
+    "Main - with Parallel fetch.xaml",
+    "Main.xaml",
+    "project.json",
+    ".entities/EntitiesBundle.X837u2PZ5BGRzc2Vu3xmddApjuCqJK3x0VA7PBjl454.zip",
+    ".objects/.metadata",
+    ".objects/.type",
+    ".objects/3FEj/.metadata",
+    ".objects/3FEj/.type",
+    ".objects/3FEj/.data/ObjectSelectionName/.content",
+    ".objects/3FEj/92hH/.metadata",
+    ".objects/3FEj/92hH/.type",
+    ".objects/3FEj/92hH/eB8M/.metadata",
+    ".objects/3FEj/92hH/eB8M/.type",
+    ".objects/3FEj/92hH/eB8M/.data/ObjectRepositoryScreenData/.content",
+    ".objects/3FEj/92hH/eB8M/.data/ObjectRepositoryScreenData/.images/.design/0o9mydZXLMUKVzig14dTwRA",
+    ".objects/3FEj/92hH/eB8M/htUC/.metadata",
+    ".objects/3FEj/92hH/eB8M/htUC/.type",
+    ".objects/3FEj/92hH/eB8M/htUC/.data/ObjectRepositoryTargetData/.content",
+    ".objects/3FEj/92hH/eB8M/htUC/.data/ObjectRepositoryTargetData/.images/.design/0tKEr-vCk1kmpWyfqdlMYGw",
+    ".objects/3FEj/92hH/eB8M/KOLx/.metadata",
+    ".objects/3FEj/92hH/eB8M/KOLx/.type",
+    ".objects/3FEj/92hH/eB8M/KOLx/.data/ObjectRepositoryTargetData/.content",
+    ".objects/3FEj/92hH/eB8M/KOLx/.data/ObjectRepositoryTargetData/.images/.design/0QIIrdKmNoUy-FVudsdQEBg",
+    ".objects/3FEj/92hH/eB8M/OREk/.metadata",
+    ".objects/3FEj/92hH/eB8M/OREk/.type",
+    ".objects/3FEj/92hH/eB8M/OREk/.data/ObjectRepositoryTargetData/.content",
+    ".objects/3FEj/92hH/eB8M/OREk/.data/ObjectRepositoryTargetData/.images/.design/0bB8H9UCkFk2DKd68ehz7Ig",
+    ".objects/dgFO/.metadata",
+    ".objects/dgFO/.type",
+    ".objects/dgFO/.data/ObjectSelectionName/.content",
+    ".objects/dgFO/TKD0/.metadata",
+    ".objects/dgFO/TKD0/.type",
+    ".objects/dgFO/TKD0/-soJ/.metadata",
+    ".objects/dgFO/TKD0/-soJ/.type",
+    ".objects/dgFO/TKD0/-soJ/.data/ObjectRepositoryScreenData/.content",
+    ".objects/dgFO/TKD0/-soJ/.data/ObjectRepositoryScreenData/.images/.design/09ukbVCvewE26ypUtDR7Xsg",
+    ".objects/dgFO/TKD0/-soJ/f3fN/.metadata",
+    ".objects/dgFO/TKD0/-soJ/f3fN/.type",
+    ".objects/dgFO/TKD0/-soJ/f3fN/.data/ObjectRepositoryTargetData/.content",
+    ".objects/dgFO/TKD0/-soJ/f3fN/.data/ObjectRepositoryTargetData/.images/.design/0vXeAovRfLEiapsSurbKoYw",
+    ".objects/dgFO/TKD0/-soJ/h6qw/.metadata",
+    ".objects/dgFO/TKD0/-soJ/h6qw/.type",
+    ".objects/dgFO/TKD0/-soJ/h6qw/.data/ObjectRepositoryTargetData/.content",
+    ".objects/dgFO/TKD0/-soJ/h6qw/.data/ObjectRepositoryTargetData/.images/.design/0UfZrArCqcUe64Im8eRikqA",
+    ".objects/dgFO/TKD0/-soJ/m4sY/.metadata",
+    ".objects/dgFO/TKD0/-soJ/m4sY/.type",
+    ".objects/dgFO/TKD0/-soJ/m4sY/.data/ObjectRepositoryTargetData/.content",
+    ".objects/dgFO/TKD0/-soJ/m4sY/.data/ObjectRepositoryTargetData/.images/.design/0UKYVQbBgdUae-BQZ24r6oA",
+    ".objects/dgFO/TKD0/-soJ/SRvx/.metadata",
+    ".objects/dgFO/TKD0/-soJ/SRvx/.type",
+    ".objects/dgFO/TKD0/-soJ/SRvx/.data/ObjectRepositoryTargetData/.content",
+    ".objects/dgFO/TKD0/-soJ/SRvx/.data/ObjectRepositoryTargetData/.images/.design/0QQaGc4v2nUOQZHFkXFUfRQ",
+    ".objects/dgFO/TKD0/-soJ/VAW2/.metadata",
+    ".objects/dgFO/TKD0/-soJ/VAW2/.type",
+    ".objects/dgFO/TKD0/-soJ/VAW2/.data/ObjectRepositoryTargetData/.content",
+    ".objects/dgFO/TKD0/-soJ/VAW2/.data/ObjectRepositoryTargetData/.images/.design/0JD1rFONkzEe9W3uVN8CvcQ",
+    ".objects/dgFO/TKD0/-soJ/xxU_/.metadata",
+    ".objects/dgFO/TKD0/-soJ/xxU_/.type",
+    ".objects/dgFO/TKD0/-soJ/xxU_/.data/ObjectRepositoryTargetData/.content",
+    ".objects/dgFO/TKD0/-soJ/xxU_/.data/ObjectRepositoryTargetData/.images/.design/0FDCKYs5DRkK5M_PBpuKsvQ",
+    ".objects/dgFO/TKD0/DFam/.metadata",
+    ".objects/dgFO/TKD0/DFam/.type",
+    ".objects/dgFO/TKD0/DFam/.data/ObjectRepositoryScreenData/.content",
+    ".objects/dgFO/TKD0/DFam/.data/ObjectRepositoryScreenData/.images/.design/08rugRv1rQUW-059KU-x93g",
+    ".objects/mONe/.metadata",
+    ".objects/mONe/.type",
+    ".objects/mONe/.data/ObjectSelectionName/.content",
+    ".objects/mONe/fXej/.metadata",
+    ".objects/mONe/fXej/.type",
+    ".objects/mONe/fXej/WQTx/.metadata",
+    ".objects/mONe/fXej/WQTx/.type",
+    ".objects/mONe/fXej/WQTx/.data/ObjectRepositoryScreenData/.content",
+    ".objects/mONe/fXej/WQTx/kjdg/.metadata",
+    ".objects/mONe/fXej/WQTx/kjdg/.type",
+    ".objects/mONe/fXej/WQTx/kjdg/.data/ObjectRepositoryTargetData/.content",
+    ".objects/mONe/fXej/WQTx/kjdg/.data/ObjectRepositoryTargetData/.images/.design/0R6kl_1bQFkuVk0wr5Gkp5g",
+    ".project/design.json",
+    ".project/JitCustomTypes.json",
+    ".project/JitCustomTypesSchema.json",
+    ".project/PackageBindingsMetadata.json",
+    ".screenshots/00401267301aaca4f9a9f1038ed5b3dc.png",
+    ".screenshots/02d9366f47533709c74cf007777c04c1.png",
+    ".screenshots/047c90d69e79f7aee8090318b8cfd903.png",
+    ".screenshots/08ea56b119e6e9ccde2741024fa7f9ac.png",
+    ".screenshots/0b4f6f942f4dade1e5ffc114438f8d68.png",
+    ".screenshots/133dd2e49bfb7e3b22fc4250aca601c3.png",
+    ".screenshots/15fefef96e27ae6fcf4cd88f7d337201.png",
+    ".screenshots/21b424f03a63d60bbb76046a5f5ce858.png",
+    ".screenshots/2df2137de9c1a0301c076a3e74d91aa1.png",
+    ".screenshots/3fd0ef5a837b2ca4437e0d778fff660a.jpg",
+    ".screenshots/43f43b8e2999b6a796a9cbcebf29c0ea.png",
+    ".screenshots/44b601a0298aa45728b1b4d05b82bcd9.png",
+    ".screenshots/45a05f678477765d4de145d79dec3ecc.png",
+    ".screenshots/4a909a4569f7c9e71231db39d7c49932.png",
+    ".screenshots/4c51693c7a3ed2b4f2b65907ef606af1.png",
+    ".screenshots/54550345515fd9b6222434a90e1ac3f9.png",
+    ".screenshots/5bf7c69d78cea9a7e35962ba9f603ed6.png",
+    ".screenshots/5c68b728b628f6c71f79006dec4b44ce.jpg",
+    ".screenshots/5d77b35c270a769ef33981a9297bba05.png",
+    ".screenshots/6159c49b5328a926a76b65013a3a166e.png",
+    ".screenshots/6e2e6f189c98ae7bc6f90b73d66541f1.png",
+    ".screenshots/72a41668ff1ebc4a94dce4ad371e8531.png",
+    ".screenshots/72f4c99ff0f263c3ce47d98f819af643.png",
+    ".screenshots/80ff5e6b43da6ee1d1f5b60803e33277.png",
+    ".screenshots/8514ecc0526791e332f51bf96d60bcf8.png",
+    ".screenshots/86eba801312f848cbbb9c0ea8361f63f.jpg",
+    ".screenshots/8886d5a53d1f572f7626e8ca0b23d7d4.jpg",
+    ".screenshots/897ed62f1f16e0463880ebb078a0f3b6.png",
+    ".screenshots/8c7b421e37087c9b74bb96c498fecc6b.png",
+    ".screenshots/8f23c6d995954202657282faa526fcee.jpg",
+    ".screenshots/91fdff762737f1f464d94bb99656542e.png",
+    ".screenshots/95b2e9cf85e7dfb073af85368450500c.png",
+    ".screenshots/974aee13e4cf90aacb8881abec025b0e.png",
+    ".screenshots/97cadaefea6866e33997bb9be3fce6c7.png",
+    ".screenshots/9a01318d3f5b4f6a9c2990e6a1b42b31.png",
+    ".screenshots/a09ea02fb4fab9ec69852bb90aa9f331.png",
+    ".screenshots/a67b7258ab7990c3f849f319b992a851.png",
+    ".screenshots/b13691ba3121af58defebdc25cbc8385.png",
+    ".screenshots/b861f2f84d98d9be1462e0ea1a5cb6f8.png",
+    ".screenshots/b8c82f5e406f1b34db45e9ab539b2089.png",
+    ".screenshots/ba95c54b4f3de4b5bd5357f94b21032b.png",
+    ".screenshots/bdff033ab26bd50cfceb9552cb201a8d.jpg",
+    ".screenshots/bf2d3fcdbbda2535371e1fb7c267be67.png",
+    ".screenshots/c14dca3b8abb2a06bcae669e0aa91769.png",
+    ".screenshots/c5269ecbe19bd61ce29684c9846654ee.png",
+    ".screenshots/c613d6eb0d489108dfc90b27a89ea2ca.png",
+    ".screenshots/ca7c223f8d49dbd3d82d1661eae49bcf.png",
+    ".screenshots/cace48d2d22cc99e61ce1ec65e419eae.png",
+    ".screenshots/cbd6d5e0982765ed9ae83be144b7c9bc.png",
+    ".screenshots/cbf46cafc7fbdf3157b2e0df84586634.png",
+    ".screenshots/cd87555e0e443f595c646935130005a6.png",
+    ".screenshots/cde217e4499547a092f179d103285668.png",
+    ".screenshots/cf3296444b7fc2da1fefcedbed26a6b2.png",
+    ".screenshots/d0f0bbe91f0d6c4e3948877648f07f06.png",
+    ".screenshots/de722c5ad8b5d8e9ddd3fbde16025dc6.png",
+    ".screenshots/e178af8e079f0a12888d5e8bb790d10b.png",
+    ".screenshots/e748a140492247b5d36da22a302c8963.png",
+    ".screenshots/e8d2433a6d3d592073522328a97b5bff.jpg",
+    ".screenshots/ea8ec28d477e1b07e1b4fdd7e4b06438.jpg",
+    ".screenshots/ef3b38e98a4c1ff045fd52bb17d224d6.png",
+    ".screenshots/ff8a15b022e1135f6afb5d6b9c82675c.jpg",
+    ".settings/Debug/settings-1a5b880a.json",
+    ".settings/Debug/settings-5190454b.json",
+    ".settings/Debug/settings-590bb27b.json",
+    ".settings/Debug/settings-82ca306a.json",
+    ".settings/Debug/settings-9e9290da.json",
+    ".settings/Debug/settings-a1b2dac1.json",
+    ".settings/Debug/settings-afad0842.json",
+    ".settings/Design/settings-5190454b.json",
+    ".settings/Design/settings-a1b2dac1.json",
+    ".settings/Design/settings-afad0842.json",
+    ".settings/Release/settings-1a5b880a.json",
+    ".settings/Release/settings-5190454b.json",
+    ".settings/Release/settings-590bb27b.json",
+    ".settings/Release/settings-82ca306a.json",
+    ".settings/Release/settings-9e9290da.json",
+    ".settings/Release/settings-a1b2dac1.json",
+    ".settings/Release/settings-afad0842.json",
+    ".storage/.runtime/AncestryPersistenceService/0659ccf3-9e3e-4859-9de3-982d69ba57d3",
+    ".storage/.runtime/AncestryPersistenceService/102fd88c-c954-4ebe-b2db-49c76251d0f1",
+    ".storage/.runtime/AncestryPersistenceService/2918642a-c5d5-4e05-b91a-d13fe6f73c40_f57fb7f4-af17-4801-97cf-e5fdc2cc410e",
+    ".storage/.runtime/AncestryPersistenceService/4387fe99-7565-4cde-8814-0b5b7addf152",
+    ".storage/.runtime/AncestryPersistenceService/47cb387c-e844-44c2-a7ea-d89d104a2cbb_3dbc66c9-877f-4ed8-b4b4-5f42d1181bbd",
+    ".storage/.runtime/AncestryPersistenceService/4dd3fca3-78a8-4485-84e0-b4e1b5b4d46c",
+    ".storage/.runtime/AncestryPersistenceService/4eec6780-8975-4981-9eda-e63661226ae5_9648ad13-abd6-4b0f-8994-d248eeb1a755_cb52dab2-4fa8-4273-8227-6c2060c7d251",
+    ".storage/.runtime/AncestryPersistenceService/5606e36e-c631-40a4-beae-fd9f0f3168de",
+    ".storage/.runtime/AncestryPersistenceService/58eecccb-5a29-4e2e-bfde-4676fcbffbdd",
+    ".storage/.runtime/AncestryPersistenceService/5bc1905a-c97f-43c5-9014-fe0315344283",
+    ".storage/.runtime/AncestryPersistenceService/5d8c0939-1203-41ad-8a0c-353465c43aad_744dc912-af26-46d8-b2f6-84e8e24282bc",
+    ".storage/.runtime/AncestryPersistenceService/5db609bc-c23f-49ed-bb5b-de6664602f16_6dd6d080-4d7b-4764-93d0-353be51c20d8_6f11bc80-d37b-49b4-a851-7336326d29a3",
+    ".storage/.runtime/AncestryPersistenceService/67923eb7-6f67-4252-be9b-5614c4a834f8_0f53a1f2-88a6-4dbf-87c4-4a0de45f522d",
+    ".storage/.runtime/AncestryPersistenceService/7443a688-c3f1-4027-a76a-700621294f42",
+    ".storage/.runtime/AncestryPersistenceService/75b265a3-4fdb-4cc1-81af-bd66225c6060_dd4a62e5-17da-4820-8c50-d94c0393cac3",
+    ".storage/.runtime/AncestryPersistenceService/7ee74843-0dad-4486-a9dd-4da4dfd68286_0f7a8b22-42c6-4763-8a18-1541e571969a",
+    ".storage/.runtime/AncestryPersistenceService/9f657fa1-4adf-4fb1-b2dd-f18ac6878dab",
+    ".storage/.runtime/AncestryPersistenceService/afa58f88-464b-4753-b3ad-9a67caec5819_332a28a7-81b4-4236-b717-de5063df7b9d_5cfe7deb-a668-4e87-9db6-a09390b482bc",
+    ".storage/.runtime/AncestryPersistenceService/bdd249fa-e7b5-42e7-a269-16e0d0cba36f",
+    ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297",
+    ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297_1dc9949d-a849-4d27-9279-36f1f7b1d71f_dd5ecc78-0561-4add-b2bd-434ed21a1cbd",
+    ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297_1dc9949d-a849-4d27-9279-36f1f7b1d71f_dd5ecc78-0561-4add-b2bd-434ed21a1cbd_f1ae8c19-d365-41df-95fe-2f481681745d",
+    ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297_ad364206-390c-43df-8735-e55a8baeb4bb",
+    ".storage/.runtime/AncestryPersistenceService/c8440568-fce9-4f81-b6b0-39b6a59e5076_3ac01fc0-9c4d-431c-a7db-9eb1dc69e38c",
+    ".storage/.runtime/AncestryPersistenceService/caa9830a-3680-4628-ba67-28ef1c3fecd1_0fa25e46-8800-479e-b688-d3aefb01196c",
+    ".storage/.runtime/AncestryPersistenceService/cd9eb0fc-0424-4237-85d7-ed14d9ed35b7",
+    ".storage/.runtime/AncestryPersistenceService/ce56408b-9110-4b0b-9c35-7c4ecd272b86",
+    ".storage/.runtime/AncestryPersistenceService/d230316b-d835-4ec5-b994-3c35ad936494",
+    ".storage/.runtime/AncestryPersistenceService/d2749676-9c62-46e0-b75b-5bac3241381e",
+    ".storage/.runtime/AncestryPersistenceService/d9f03b15-c645-454e-807a-40d20283a12a",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/0659ccf3-9e3e-4859-9de3-982d69ba57d3",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/102fd88c-c954-4ebe-b2db-49c76251d0f1",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/2918642a-c5d5-4e05-b91a-d13fe6f73c40",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/4387fe99-7565-4cde-8814-0b5b7addf152",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/47cb387c-e844-44c2-a7ea-d89d104a2cbb",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/4dd3fca3-78a8-4485-84e0-b4e1b5b4d46c",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/4eec6780-8975-4981-9eda-e63661226ae5",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/5606e36e-c631-40a4-beae-fd9f0f3168de",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/58eecccb-5a29-4e2e-bfde-4676fcbffbdd",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/5bc1905a-c97f-43c5-9014-fe0315344283",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/5d8c0939-1203-41ad-8a0c-353465c43aad",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/5db609bc-c23f-49ed-bb5b-de6664602f16",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/67923eb7-6f67-4252-be9b-5614c4a834f8",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/7443a688-c3f1-4027-a76a-700621294f42",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/75b265a3-4fdb-4cc1-81af-bd66225c6060",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/7ee74843-0dad-4486-a9dd-4da4dfd68286",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/9f657fa1-4adf-4fb1-b2dd-f18ac6878dab",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/afa58f88-464b-4753-b3ad-9a67caec5819",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/bdd249fa-e7b5-42e7-a269-16e0d0cba36f",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/c8440568-fce9-4f81-b6b0-39b6a59e5076",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/caa9830a-3680-4628-ba67-28ef1c3fecd1",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/cd9eb0fc-0424-4237-85d7-ed14d9ed35b7",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/ce56408b-9110-4b0b-9c35-7c4ecd272b86",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/d230316b-d835-4ec5-b994-3c35ad936494",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/d2749676-9c62-46e0-b75b-5bac3241381e",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/d9306c4e-e222-43de-aad8-f6078169cd1d",
+    ".storage/.runtime/DesignTimeTargetImagePersistenceService/d9f03b15-c645-454e-807a-40d20283a12a",
+    ".templates/GetCompanyUrlTemplate.xaml",
+    ".tmh/config.json",
+    "Config/Config.xlsx",
+    "Data/CompanyStockData.xlsx",
+    "Data/CompanyStockData_.xlsx",
+    "Data/CompanyStockData_old.xlsx",
+    "Data/CompanyStockData_parallel.xlsx",
+    "Data/StockData.xlsx",
+    "Data/StockPrice - Copy - Copy.xlsx",
+    "Data/StockPrice.xlsx",
+    "Data/StockPriceOutput.xlsx",
+    "Data/StockPriceOutput_old.xlsx",
+    "Data/Input/CompanyList - Copy.xlsx",
+    "Data/Input/CompanyList.xlsx",
+    "Data/Logs/process_log.txt",
+    "Data/Output/CompanyStockData.xlsx",
+    "Data/Output/CompanyStockData_old.xlsx",
+    "Process/FetchAndConvert/FetchAndConvert_Main -Parallel.xaml",
+    "Process/FetchAndConvert/FetchAndConvert_Main.xaml",
+    "Process/FetchAndConvert/FetchStockInfo.xaml",
+    "Process/FetchAndConvert/FetchStockInfo.xaml.json",
+    "Shared/Components/GetCompanyUrl.xaml",
+    "Shared/Components/GetCompanyUrl.xaml.json",
+    "Shared/Components/GetExchangeRates.xaml",
+    "Shared/Components/GetExchangeRates.xaml.json",
+    "Shared/Components/InitConfig.xaml",
+    "Shared/Components/LogMessage.xaml",
+    "Shared/Utils/FetchAllCompany.js",
+    "Shared/Utils/FetchStockPrice.js",
+    "Testing/Tryouts/CurrencyConverter(Autosaved).xaml",
+    "Testing/Tryouts/CurrencyConverter.xaml",
+    "Testing/Tryouts/CurrencyConverter.xaml.json",
+    "Testing/Tryouts/ExtractStockData.xaml",
+    "Testing/Tryouts/GetCompanyUrl_c.xaml",
+    "Testing/Tryouts/GetCompanyUrl_c.xaml.json",
+    "Testing/Tryouts/GetExchangeRates.xaml",
+    "Testing/Tryouts/GetExchangeRates_.xaml",
+    "Testing/Tryouts/GetExchangeRates_.xaml.json",
+    "Testing/Tryouts/js.xaml",
+    "Testing/Tryouts/Main - Copy (1).xaml",
+    "Testing/Tryouts/Main - Old.xaml",
+    "Testing/Tryouts/Main -with dt.xaml",
+    "Testing/Tryouts/Main_Tryout.xaml",
+    "Utils/FetchAllCompany.js",
+    "Utils/FetchStockPrice.js",
+    "Utils/Flowchart.xaml"
+  ],
+  "StudioWebEmptyFolders": [],
+  "LockKey": "9095fcf6-cc2a-49df-a922-84b44fd7b4d7",
+  "LocalProjectPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice",
+  "ProjectId": "23579255-db75-45b1-b4cc-52947910c4ef",
+  "ProjectName": "ScrapeStockData"
+}

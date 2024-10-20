@@ -1,0 +1,57 @@
+{
+  "DisplayName": "GetExchangeRates - Copy (1)",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_CurrencyValue",
+      "DisplayName": "in_CurrencyValue",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "1000",
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_strToCurrencyType",
+      "DisplayName": "in_strToCurrencyType",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "EUR",
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_strFromCurrencyType",
+      "DisplayName": "in_strFromCurrencyType",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "INR",
+      "Widget": "TextComposer",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_ConvertionRate",
+      "DisplayName": "out_ConvertionRate",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

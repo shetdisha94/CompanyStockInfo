@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: Currency Exchange Rates and Internati",
+  "Type": "Screen",
+  "Id": "DFamurRU-EOLTdcngo0ssg",
+  "Reference": "Mn-a4VsjIUerpiuTZdzabQ/DFamurRU-EOLTdcngo0ssg",
+  "ParentRef": "Mn-a4VsjIUerpiuTZdzabQ/TKD0YRjre0yUyQn9zGkNyA",
+  "Created": "2024-10-17T13:55:18.077818Z",
+  "Updated": "2024-10-17T13:55:18.077818Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
