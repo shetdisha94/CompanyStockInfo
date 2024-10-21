@@ -3,9 +3,11 @@
 ## Overview
 This project aims to fetch stock prices for a list of companies from an Excel file, convert the prices to EUR, and save the results back to an Excel file. 
 
-<a href="https://github.com/shetdisha94/CompanyStockInfo/blob/project-analysis/FlowChart.md" target="_blank">Link to process flow</a>
+<a href="https://github.com/shetdisha94/CompanyStockInfo/blob/project-analysis/README_ASIS.md" target="_blank">As-Is</a>
 
-<a href="https://github.com/shetdisha94/CompanyStockInfo/blob/project-analysis/FlowChart.md" target="_blank">Link to results</a>
+<a href="https://github.com/shetdisha94/CompanyStockInfo/blob/project-analysis/README_TOBE.md" target="_blank">To-Be</a>
+
+<a href="https://github.com/shetdisha94/CompanyStockInfo/blob/project-analysis/README_RESULTS.md" target="_blank">Link to input and results</a>
 
 
 ### Architectural choices
