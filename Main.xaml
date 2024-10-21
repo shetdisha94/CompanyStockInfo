@@ -121,6 +121,9 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -129,7 +132,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1269.6000000000001,1745.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1269.6000000000001,2250.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="dictConfig" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtCompanies" />
@@ -156,14 +159,22 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="654.4,1722.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="654.4,2227.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Double" Name="dblWebsiteLoadTime">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Double" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="s:DateTime" Default="[DateAndTime.now]" Name="dateProcessStartTime" />
+      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Main" sap:VirtualizedContainerService.HintSize="620.8,1639.2" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+      <TryCatch DisplayName="Try Main" sap:VirtualizedContainerService.HintSize="620.8,2144" sap2010:WorkflowViewState.IdRef="TryCatch_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -171,49 +182,50 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Fetch and process the stock prices" sap:VirtualizedContainerService.HintSize="584,1090.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
+          <Sequence DisplayName="Fetch and process the stock prices" sap:VirtualizedContainerService.HintSize="584,1702.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence sap2010:Annotation.AnnotationText="Read the config file and get all the company names from excel into dtCompany and&#xA;extract the exchange rate for required currency as mentioned in config and&#xA;also fetch the company  Urls to extract the stock data from. Build the output tables." DisplayName="Initialisation" sap:VirtualizedContainerService.HintSize="550.4,148.8" sap2010:WorkflowViewState.IdRef="Sequence_35">
+            <Sequence sap2010:Annotation.AnnotationText="Read the config file and get all the company names from excel into dtCompany and&#xA;extract the exchange rate for required currency as mentioned in config and&#xA;also fetch the company  Urls to extract the stock data from. Build the output tables." DisplayName="Initialisation" sap:VirtualizedContainerService.HintSize="550.4,389.6" sap2010:WorkflowViewState.IdRef="Sequence_35">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Int32" Name="intBatchSize" />
                 <Variable x:TypeArguments="sc:ListDictionaryInternal" Name="dictCompanyBatches" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadConfig - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="1216,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Shared\Components\InitConfig.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadConfig - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Shared\Components\InitConfig.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFilePath">Config/Config.xlsx</InArgument>
                   <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[dictConfig]</OutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
-              <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtCompanies]" DisplayName="Read Companies from Excel" sap:VirtualizedContainerService.HintSize="1216,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="CompanyList" WorkbookPath="Data\Input\CompanyList.xlsx">
+              <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtCompanies]" DisplayName="Read Companies from Excel" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="CompanyList" WorkbookPath="Data\Input\CompanyList.xlsx">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ReadRange>
-              <Parallel sap2010:Annotation.AnnotationText="Parallely extract exchange rate and company URLs and initialising tables." DisplayName="Parallely execute initialization activities" sap:VirtualizedContainerService.HintSize="1216,275.2" sap2010:WorkflowViewState.IdRef="Parallel_1">
+              <Parallel sap2010:Annotation.AnnotationText="Parallely extract exchange rate and company URLs and initialising tables." DisplayName="Parallely execute initialization activities" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Parallel_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -252,40 +264,40 @@
                 </ui:BuildDataTable>
               </Parallel>
             </Sequence>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log" sap:VirtualizedContainerService.HintSize="550.4,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="logMessage">Reading config completed</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="logLevel">Info</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="currentLogLevel">[dictConfig("LogLevel").ToString]</InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-            <Sequence sap2010:Annotation.AnnotationText="Fetch and convert the stock prices for each compoany and write to output to dtCompanyStockData" DisplayName="Fetch and convert the stock prices" sap:VirtualizedContainerService.HintSize="550.4,596" sap2010:WorkflowViewState.IdRef="Sequence_34">
+            <Sequence sap2010:Annotation.AnnotationText="Fetch and convert the stock prices for each compoany and write to output to dtCompanyStockData" DisplayName="Fetch and convert the stock prices" sap:VirtualizedContainerService.HintSize="550.4,885.6" sap2010:WorkflowViewState.IdRef="Sequence_34">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iCurrentIndex]" DataTable="[dtCompanies]" DisplayName="For Each Company " sap:VirtualizedContainerService.HintSize="516.8,460" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iCurrentIndex]" DataTable="[dtCompanies]" DisplayName="For Each Company " sap:VirtualizedContainerService.HintSize="516.8,749.6" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Extract stock data , convert the prices and write to datatable" sap:VirtualizedContainerService.HintSize="483.2,271.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Extract stock data , convert the prices and write to datatable" sap:VirtualizedContainerService.HintSize="483.2,560.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[Not dictCompanyURLInfo.ContainsKey(CurrentRow(&quot;Company name&quot;).ToString)]" DisplayName="Check if the company is not found" sap:VirtualizedContainerService.HintSize="449.6,211.2" sap2010:WorkflowViewState.IdRef="If_1">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Fetching started" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="logMessage">["Started fetching stock data for "+CurrentRow("Company name").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="logLevel">Info</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="currentLogLevel">[dictConfig("LogLevel").ToString]</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InvokeWorkflowFile>
+                      <If Condition="[Not dictCompanyURLInfo.ContainsKey(CurrentRow(&quot;Company name&quot;).ToString)]" DisplayName="Check if the company is not found" sap:VirtualizedContainerService.HintSize="449.6,444" sap2010:WorkflowViewState.IdRef="If_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -313,19 +325,20 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else - Invoke workflow FetchAndConvert.xaml" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                          <Sequence DisplayName="Else - Invoke workflow FetchAndConvert.xaml" sap:VirtualizedContainerService.HintSize="416,257.6" sap2010:WorkflowViewState.IdRef="Sequence_38">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FetchAndConvert_Main.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="382.4,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Process\FetchAndConvert\FetchAndConvert_Main.xaml">
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FetchAndConvert_Main.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="382.4,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Workflows\ExtractData\FetchAndConvert_Main.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
                                 <InArgument x:TypeArguments="x:String" x:Key="in_strCompanyName">[CurrentRow("Company name").ToString]</InArgument>
                                 <InArgument x:TypeArguments="x:String" x:Key="in_strCompanyUrl">[dictCompanyURLInfo(CurrentRow("Company name").ToString).ToString]</InArgument>
                                 <InArgument x:TypeArguments="x:String" x:Key="in_strConversionRate">[strConversionRate]</InArgument>
                                 <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_dtCompanyBatchData">[dtCompanyStockData]</InOutArgument>
+                                <InOutArgument x:TypeArguments="x:Double" x:Key="dblWebsiteLoadTime">[dblWebsiteLoadTime]</InOutArgument>
                               </ui:InvokeWorkflowFile.Arguments>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -347,26 +360,52 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>
             </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="Write the dtCompanyStock Data to output excel CompanyStockData.xlsx" DisplayName="Write to Excel" sap:VirtualizedContainerService.HintSize="550.4,79.2" sap2010:WorkflowViewState.IdRef="Sequence_36">
+            <Sequence sap2010:Annotation.AnnotationText="Write the dtCompanyStock Data to output excel CompanyStockData.xlsx" DisplayName="Write to Excel" sap:VirtualizedContainerService.HintSize="550.4,367.2" sap2010:WorkflowViewState.IdRef="Sequence_36">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dtCompanyStockData]" DisplayName="Write output Workbook" sap:VirtualizedContainerService.HintSize="416,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="CompanyStockInfo" WorkbookPath="Data\Output\CompanyStockData.xlsx">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Writing to excel started" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="logMessage">Writing stock data to excel started</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="logLevel">Info</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="currentLogLevel">Info</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:InvokeWorkflowFile>
+              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dtCompanyStockData]" DisplayName="Write output Workbook" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="CompanyStockInfo" WorkbookPath="[&quot;Data\\Output\\CompanyStockData_&quot; + DateTime.Now.ToString(&quot;yyyyMMdd_HHmmss&quot;) + &quot;.xlsx&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:WriteRange>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Writing to excel ended" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="logMessage">["Writing stock data to excel ended and created CompanyStockData_"+DateTime.Now.ToString+".xlsx at Data\Output\"]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="logLevel">Info</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="currentLogLevel">Info</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:InvokeWorkflowFile>
             </Sequence>
           </Sequence>
         </TryCatch.Try>
         <TryCatch.Catches>
-          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="587.2,213.6" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="587.2,106.4" sap2010:WorkflowViewState.IdRef="Catch`1_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -377,7 +416,27 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
               </ActivityAction.Argument>
-              <ui:LogMessage DisplayName="Log Exceptions" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Error" Message="[exception.Source + &quot;  -  &quot;+exception.Message]" />
+              <Sequence DisplayName="Main catch exception" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Exceptions" sap:VirtualizedContainerService.HintSize="382.4,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="logMessage" xml:space="preserve">[exception.Source + "  -  "+exception.Message]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="logLevel">Error</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="currentLogLevel">Error</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:InvokeWorkflowFile>
+              </Sequence>
             </ActivityAction>
           </Catch>
         </TryCatch.Catches>

@@ -81,20 +81,8 @@
       "output": []
     },
     {
-      "filePath": "Process\\FetchAndConvert\\FetchStockInfo.xaml",
-      "uniqueId": "a703977e-1272-4e93-806a-673c81f71652",
-      "input": [],
-      "output": []
-    },
-    {
       "filePath": "Shared\\Components\\GetExchangeRates.xaml",
       "uniqueId": "06536d17-d3a7-4728-92a9-de9c15e3fe32",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "Testing\\Tryouts\\GetExchangeRates_.xaml",
-      "uniqueId": "c1386bab-8426-4083-98c5-cfb8e1d7a655",
       "input": [],
       "output": []
     },
@@ -105,14 +93,14 @@
       "output": []
     },
     {
-      "filePath": "Testing\\Tryouts\\GetCompanyUrl_c.xaml",
-      "uniqueId": "a80c27ff-b96b-428c-a388-97dfacc04fd1",
+      "filePath": "Main - with Parallel fetch.xaml",
+      "uniqueId": "6dee9d41-35fe-41d3-99ec-83c92a4e7b10",
       "input": [],
       "output": []
     },
     {
-      "filePath": "Main - with Parallel fetch.xaml",
-      "uniqueId": "6dee9d41-35fe-41d3-99ec-83c92a4e7b10",
+      "filePath": "Workflows\\ExtractData\\FetchStockInfo.xaml",
+      "uniqueId": "b9cb3c1b-1dfa-49cb-832a-3301bac29c3a",
       "input": [],
       "output": []
     }

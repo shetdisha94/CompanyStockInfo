@@ -1,13 +1,112 @@
-﻿[ Info ] Reading config completed
-[ Info ]   10/20/2024 19:26:09  Reading config completed
-[ Info ]   10/20/2024 19:31:19  Reading config completed
-[ Info ]   10/20/2024 20:08:45  Reading config completed
-[ Info ]   10/20/2024 20:10:52  Reading config completed
-[ Info ]   10/20/2024 20:33:38  Reading config completed
-[ Info ]   10/20/2024 20:38:15  Reading config completed
-[ Info ]   10/20/2024 20:45:20  Reading config completed
-[ Info ]   10/20/2024 21:00:10  Reading config completed
-[ Info ]   10/20/2024 21:42:57  Reading config completed
-[ Info ]   10/20/2024 21:45:59  Reading config completed
-[ Info ]   10/20/2024 22:04:25  Reading config completed
-[ Info ]   10/20/2024 22:39:13  Reading config completed
+﻿[ Info ]   10/21/2024 01:49:43  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/21/2024 01:49:44  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/21/2024 01:49:54   Conversion Rate  for  INR to EUR is 0.0109481
+[ Info ]   10/21/2024 01:49:55  Fetching stock data started
+[ Info ]   10/21/2024 01:50:21  Extracted stock data for Abbott India  in  24.8152463 s
+[ Info ]   10/21/2024 01:50:21  Stock price : 29209.55 Date : 18/10/2024 15:51   Open : 28,347.95  Previous : 28,371.70
+[ Info ]   10/21/2024 01:50:22  Converting stock prices started
+[ Info ]   10/21/2024 01:50:22  Converted  stock price  319.789074355 Converted open  310.356191395  Converted  previos close  310.61620877
+[ Info ]   10/21/2024 01:50:22  Final Stock Price319.78 Final Open  310.35 Final Previous close 310.61
+[ Info ]   10/21/2024 01:50:32  Extracted stock data for Just Dial  in  9.240757100000002 s
+[ Info ]   10/21/2024 01:50:32  Stock price : 1199.60 Date : 18/10/2024 15:59   Open : 1,194.95  Previous : 1,194.40
+[ Info ]   10/21/2024 01:50:32  Converting stock prices started
+[ Info ]   10/21/2024 01:50:32  Converted  stock price  13.13334076 Converted open  13.082432095000001  Converted  previos close  13.076410640000002
+[ Info ]   10/21/2024 01:50:32  Final Stock Price13.13 Final Open  13.08 Final Previous close 13.07
+[ Info ]   10/21/2024 01:50:56  Extracted stock data for DLF  in  22.7869142 s
+[ Info ]   10/21/2024 01:50:56  Stock price : 875.15 Date : 18/10/2024 15:59   Open : 860.90  Previous : 861.00
+[ Info ]   10/21/2024 01:50:57  Converting stock prices started
+[ Info ]   10/21/2024 01:50:57  Converted  stock price  9.581229715000001 Converted open  9.42521929  Converted  previos close  9.4263141
+[ Info ]   10/21/2024 01:50:57  Final Stock Price9.58 Final Open  9.42 Final Previous close 9.42
+[ Info ]   10/21/2024 01:51:06  Extracted stock data for Aditya Birla F  in  8.4502966 s
+[ Info ]   10/21/2024 01:51:06  Stock price : 334.05 Date : 18/10/2024 15:59   Open : 330.90  Previous : 330.70
+[ Info ]   10/21/2024 01:51:07  Converting stock prices started
+[ Info ]   10/21/2024 01:51:07  Converted  stock price  3.6572128050000003 Converted open  3.62272629  Converted  previos close  3.62053667
+[ Info ]   10/21/2024 01:51:07  Final Stock Price3.65 Final Open  3.62 Final Previous close 3.62
+[ Info ]   10/21/2024 01:51:15  Extracted stock data for Ceat  in  6.6912595 s
+[ Info ]   10/21/2024 01:51:15  Stock price : 2972.85 Date : 18/10/2024 16:00   Open : 2,799.00  Previous : 2,891.75
+[ Info ]   10/21/2024 01:51:16  Converting stock prices started
+[ Info ]   10/21/2024 01:51:16  Converted  stock price  32.547059085 Converted open  30.643731900000002  Converted  previos close  31.659168175
+[ Info ]   10/21/2024 01:51:16  Final Stock Price32.54 Final Open  30.64 Final Previous close 31.65
+[ Info ]   10/21/2024 01:51:16  Writing stock data to excel started
+[ Info ]   10/21/2024 02:05:29  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/21/2024 02:05:31  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/21/2024 02:05:41   Conversion Rate  for  INR to EUR is 0.0109461
+[ Info ]   10/21/2024 02:05:42  Started fetching stock data for Abbott India
+[ Info ]   10/21/2024 02:05:52  Extracted stock data for Abbott India  in  6.803997000000001 s
+[ Info ]   10/21/2024 02:05:52  Stock price : 29209.55 Date : 18/10/2024 15:51   Open : 28,347.95  Previous : 28,371.70
+[ Info ]   10/21/2024 02:05:52  Started converting stock prices for Abbott India
+[ Info ]   10/21/2024 02:05:52  Converted stock price  319.730655255 Converted open  310.29949549500003  Converted  previos close  310.55946537
+[ Info ]   10/21/2024 02:05:52  Final Stock Price319.73 Final Open  310.29 Final Previous close 310.55
+[ Info ]   10/21/2024 02:05:52  Started fetching stock data for Just Dial
+[ Info ]   10/21/2024 02:06:01  Extracted stock data for Just Dial  in  6.3894924 s
+[ Info ]   10/21/2024 02:06:01  Stock price : 1199.60 Date : 18/10/2024 15:59   Open : 1,194.95  Previous : 1,194.40
+[ Info ]   10/21/2024 02:06:01  Started converting stock prices for Just Dial
+[ Info ]   10/21/2024 02:06:01  Converted stock price  13.13094156 Converted open  13.080042195  Converted  previos close  13.074021840000002
+[ Info ]   10/21/2024 02:06:01  Final Stock Price13.13 Final Open  13.08 Final Previous close 13.07
+[ Info ]   10/21/2024 02:06:02  Started fetching stock data for DLF
+[ Info ]   10/21/2024 02:06:10  Extracted stock data for DLF  in  6.713935 s
+[ Info ]   10/21/2024 02:06:10  Stock price : 875.15 Date : 18/10/2024 15:59   Open : 860.90  Previous : 861.00
+[ Info ]   10/21/2024 02:06:11  Started converting stock prices for DLF
+[ Info ]   10/21/2024 02:06:11  Converted stock price  9.579479415 Converted open  9.42349749  Converted  previos close  9.4245921
+[ Info ]   10/21/2024 02:06:11  Final Stock Price9.57 Final Open  9.42 Final Previous close 9.42
+[ Info ]   10/21/2024 02:06:11  Started fetching stock data for Aditya Birla F
+[ Info ]   10/21/2024 02:06:19  Extracted stock data for Aditya Birla F  in  7.1243462 s
+[ Info ]   10/21/2024 02:06:19  Stock price : 334.05 Date : 18/10/2024 15:59   Open : 330.90  Previous : 330.70
+[ Info ]   10/21/2024 02:06:20  Started converting stock prices for Aditya Birla F
+[ Info ]   10/21/2024 02:06:20  Converted stock price  3.6565447050000004 Converted open  3.6220644899999996  Converted  previos close  3.61987527
+[ Info ]   10/21/2024 02:06:20  Final Stock Price3.65 Final Open  3.62 Final Previous close 3.61
+[ Info ]   10/21/2024 02:06:20  Started fetching stock data for Ceat
+[ Info ]   10/21/2024 02:06:29  Extracted stock data for Ceat  in  6.9181974 s
+[ Info ]   10/21/2024 02:06:29  Stock price : 2972.85 Date : 18/10/2024 16:00   Open : 2,799.00  Previous : 2,891.75
+[ Info ]   10/21/2024 02:06:29  Started converting stock prices for Ceat
+[ Info ]   10/21/2024 02:06:29  Converted stock price  32.541113385 Converted open  30.6381339  Converted  previos close  31.653384675
+[ Info ]   10/21/2024 02:06:29  Final Stock Price32.54 Final Open  30.63 Final Previous close 31.65
+[ Info ]   10/21/2024 02:06:29  Writing stock data to excel started
+[ Error ]   10/21/2024 02:06:29  UiPath.Excel.Activities  -  The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\Lenovo\Documents\UiPath\CompanyStockInfo\Data\Output\CompanyStockData_10\21\2024 02:06:29.xlsx'
+[ Info ]   10/21/2024 02:21:52  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/21/2024 02:21:53  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/21/2024 02:22:02   Conversion Rate  for  INR to EUR is 0.0109463
+[ Info ]   10/21/2024 02:22:02  Started fetching stock data for Abbott India
+[ Info ]   10/21/2024 02:22:25  Extracted stock data for Abbott India  in  22.0381466 s
+[ Info ]   10/21/2024 02:22:26  Started converting stock prices for Abbott India
+[ Info ]   10/21/2024 02:22:26  Started fetching stock data for Just Dial
+[ Info ]   10/21/2024 02:22:48  Extracted stock data for Just Dial  in  20.8585141 s
+[ Info ]   10/21/2024 02:22:48  Started converting stock prices for Just Dial
+[ Info ]   10/21/2024 02:22:49  Started fetching stock data for DLF
+[ Info ]   10/21/2024 02:22:59  Extracted stock data for DLF  in  9.5569033 s
+[ Info ]   10/21/2024 02:22:59  Started converting stock prices for DLF
+[ Info ]   10/21/2024 02:22:59  Started fetching stock data for Aditya Birla F
+[ Info ]   10/21/2024 02:23:08  Extracted stock data for Aditya Birla F  in  7.1260521 s
+[ Info ]   10/21/2024 02:23:08  Started converting stock prices for Aditya Birla F
+[ Info ]   10/21/2024 02:23:08  Started fetching stock data for Ceat
+[ Info ]   10/21/2024 02:23:30  Extracted stock data for Ceat  in  20.8326214 s
+[ Info ]   10/21/2024 02:23:31  Started converting stock prices for Ceat
+[ Info ]   10/21/2024 02:23:31  Started fetching stock data for ABC
+[ Info ]   10/21/2024 02:23:31  Writing stock data to excel started
+[ Info ]   10/21/2024 02:23:31  Writing stock data to excel ended and created CompanyStockData_10/21/2024 02:23:31.xlsx at Data\Output\
+[ Info ]   10/21/2024 02:36:15  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/21/2024 02:36:16  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/21/2024 02:36:24   Conversion Rate  for  INR to EUR is 0.0109459
+[ Info ]   10/21/2024 02:36:24  Started fetching stock data for Abbott India
+[ Info ]   10/21/2024 02:36:32  Extracted stock data for Abbott India  in  6.1286735 s
+[ Info ]   10/21/2024 02:36:32  Stock price : 29209.55 Date : 18/10/2024 15:51   Open : 28,347.95  Previous : 28,371.70
+[ Info ]   10/21/2024 02:36:33  Started converting stock prices for Abbott India
+[ Info ]   10/21/2024 02:36:33  Started fetching stock data for Just Dial
+[ Info ]   10/21/2024 02:36:39  Extracted stock data for Just Dial  in  5.0914304 s
+[ Info ]   10/21/2024 02:36:39  Stock price : 1199.60 Date : 18/10/2024 15:59   Open : 1,194.95  Previous : 1,194.40
+[ Info ]   10/21/2024 02:36:40  Started converting stock prices for Just Dial
+[ Info ]   10/21/2024 02:36:40  Started fetching stock data for DLF
+[ Info ]   10/21/2024 02:36:47  Extracted stock data for DLF  in  5.5894241000000005 s
+[ Info ]   10/21/2024 02:36:47  Stock price : 875.15 Date : 18/10/2024 15:59   Open : 860.90  Previous : 861.00
+[ Info ]   10/21/2024 02:36:47  Started converting stock prices for DLF
+[ Info ]   10/21/2024 02:36:47  Started fetching stock data for Aditya Birla F
+[ Info ]   10/21/2024 02:36:54  Extracted stock data for Aditya Birla F  in  5.9052547 s
+[ Info ]   10/21/2024 02:36:54  Stock price : 334.05 Date : 18/10/2024 15:59   Open : 330.90  Previous : 330.70
+[ Info ]   10/21/2024 02:36:55  Started converting stock prices for Aditya Birla F
+[ Info ]   10/21/2024 02:36:55  Started fetching stock data for Ceat
+[ Info ]   10/21/2024 02:37:01  Extracted stock data for Ceat  in  5.3732061 s
+[ Info ]   10/21/2024 02:37:01  Stock price : 2972.85 Date : 18/10/2024 16:00   Open : 2,799.00  Previous : 2,891.75
+[ Info ]   10/21/2024 02:37:02  Started converting stock prices for Ceat
+[ Info ]   10/21/2024 02:37:02  Started fetching stock data for ABC
+[ Info ]   10/21/2024 02:37:02  Writing stock data to excel started
+[ Info ]   10/21/2024 02:37:02  Writing stock data to excel ended and created CompanyStockData_10/21/2024 02:37:02.xlsx at Data\Output\

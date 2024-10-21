@@ -10,6 +10,7 @@
         <RequiredArgumentAttribute />
       </x:Property.Attributes>
     </x:Property>
+    <x:Property Name="dblWebsiteLoadTime" Type="InArgument(x:Double)" />
   </x:Members>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
@@ -246,13 +247,13 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="1318.4,1697.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap:VirtualizedContainerService.HintSize="1269.6000000000001,1003.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try - Fetch stock info" sap:VirtualizedContainerService.HintSize="1318.4,1674.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try - Fetch stock info" sap:VirtualizedContainerService.HintSize="486.4,980" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="s:DateTime" Name="startTimeMoniter" />
         <Variable x:TypeArguments="s:DateTime" Name="endTimeMoniter" />
@@ -263,13 +264,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Moneycontrol URL" sap:VirtualizedContainerService.HintSize="1281.6,1420" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="03a6ce69-2503-4661-88d7-4ab2051f6968" Version="V2" WindowResize="Restore">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Moneycontrol URL" sap:VirtualizedContainerService.HintSize="449.6,725.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="03a6ce69-2503-4661-88d7-4ab2051f6968" Version="V2" WindowResize="Restore">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Extract thestock prices" sap:VirtualizedContainerService.HintSize="1248,1203.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Extract thestock prices" sap:VirtualizedContainerService.HintSize="416,508.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="ui:UiElement" Name="companyNameElement" />
                   <Variable x:TypeArguments="x:String" Name="strOpenINR" />
@@ -290,7 +291,7 @@
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign DisplayName="Get Start Time" sap:VirtualizedContainerService.HintSize="1214.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign DisplayName="Get Start Time" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_4">
                   <Assign.To>
                     <OutArgument x:TypeArguments="s:DateTime">[startTimeMoniter]</OutArgument>
                   </Assign.To>
@@ -304,75 +305,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1214.4,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_8">
-                  <ui:CommentOut.Body>
-                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_39">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <Assign DisplayName="Set variable strCompanyName" sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_6">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:String">[in_strCompanyName]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">DART</InArgument>
-                        </Assign.Value>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </Assign>
-                    </Sequence>
-                  </ui:CommentOut.Body>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:CommentOut>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1214.4,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_9">
-                  <ui:CommentOut.Body>
-                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_41">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:UiElementExists DisplayName="Element Exists" Exists="[isHeadingExists]" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
-                        <ui:UiElementExists.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9d0ffd8f-85f4-4c54-9237-ffbfe454d229" Selector="[string.Format(&quot;&lt;html app='chrome.exe' htmlwindowname='/21751243814,1039154/Moneycontol_interstitial_ad_multisize_one' title='{0} Share Price, {0} Stock Price, * NSE/BSE Forecast News and Live Quotes' /&gt;&lt;webctrl tag='H1' /&gt;&quot;, in_strCompanyName)]">
-                            <ui:Target.TimeoutMS>
-                              <InArgument x:TypeArguments="x:Int32" />
-                            </ui:Target.TimeoutMS>
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
-                        </ui:UiElementExists.Target>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:UiElementExists>
-                    </Sequence>
-                  </ui:CommentOut.Body>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:CommentOut>
-                <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="JS - To extract stock price" sap:VirtualizedContainerService.HintSize="1214.4,283.2" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScopeIdentifier="03a6ce69-2503-4661-88d7-4ab2051f6968" ScriptCode="Shared\Utils\FetchStockPrice.js">
+                <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="JS - To extract stock price" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScopeIdentifier="03a6ce69-2503-4661-88d7-4ab2051f6968" ScriptCode="Shared\Utils\FetchStockPrice.js">
                   <uix:NInjectJsScript.ScriptOutput>
                     <OutArgument x:TypeArguments="x:String">
                       <VisualBasicReference x:TypeArguments="x:String" ExpressionText="out_strStockPrice" sap2010:WorkflowViewState.IdRef="VisualBasicReference`1_1" />
@@ -383,16 +316,16 @@
                   </uix:NInjectJsScript.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NInjectJsScript>
-                <Parallel sap:VirtualizedContainerService.HintSize="1214.4,236" sap2010:WorkflowViewState.IdRef="Parallel_2">
+                <Parallel sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Parallel_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <uix:NGetText DisplayName="Get Opening Date" sap:VirtualizedContainerService.HintSize="373.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="03a6ce69-2503-4661-88d7-4ab2051f6968" ScrapingMethod="Fulltext" TextString="[strOpeningDate]" Version="V4">
@@ -444,7 +377,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NGetText>
                 </Parallel>
-                <Assign DisplayName="Format Date to out_strOpeningDate" sap:VirtualizedContainerService.HintSize="1214.4,114.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign DisplayName="Format Date to out_strOpeningDate" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_3">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[out_strOpeningDate]</OutArgument>
                   </Assign.To>
@@ -453,12 +386,12 @@
                   </Assign.Value>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
-                <Assign DisplayName="Get End Time" sap:VirtualizedContainerService.HintSize="1214.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign DisplayName="Get End Time" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_5">
                   <Assign.To>
                     <OutArgument x:TypeArguments="s:DateTime">[endTimeMoniter]</OutArgument>
                   </Assign.To>
@@ -466,230 +399,46 @@
                     <InArgument x:TypeArguments="s:DateTime">[DateTime.Now]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:LogMessage DisplayName="Log Time" sap:VirtualizedContainerService.HintSize="1214.4,176" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Extracted stock data for &quot;+in_strCompanyName+&quot;  in  &quot;+((endTimeMoniter - startTimeMoniter).TotalMilliseconds/1000.0).ToString+&quot; s&quot;]">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:LogMessage>
-                <Sequence DisplayName="To Comment" sap:VirtualizedContainerService.HintSize="1214.4,56.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Execution time to ftch stock data" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="logMessage" xml:space="preserve">["Extracted stock data for "+in_strCompanyName+"  in  "+((endTimeMoniter - startTimeMoniter).TotalMilliseconds/1000.0).ToString+" s"]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="logLevel">Info</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="currentLogLevel">Info</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log prices and date" sap:VirtualizedContainerService.HintSize="451.2,176" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Stock price : &quot;+out_strStockPrice+&quot; Date : &quot;+out_strOpeningDate+&quot;   Open : &quot;+out_strOpenPrice+&quot;  Previous : &quot;+out_strPreviousClose]" />
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,292" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-                    <ui:CommentOut.Body>
-                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,190.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'DIV'" FoundElement="[stockPriceElement]" sap:VirtualizedContainerService.HintSize="382.4,130.4" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_4">
-                          <ui:WaitUiElementAppear.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2e972b48-3c2e-457e-bdc7-3d93068afb5c" InformativeScreenshot="72a41668ff1ebc4a94dce4ad371e8531" Selector="&lt;webctrl id='nsecp' tag='DIV' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:WaitUiElementAppear.Target>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </ui:WaitUiElementAppear>
-                      </Sequence>
-                    </ui:CommentOut.Body>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:CommentOut>
-                </Sequence>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1214.4,48" sap2010:WorkflowViewState.IdRef="CommentOut_7">
-                  <ui:CommentOut.Body>
-                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="2325.6,750.4" sap2010:WorkflowViewState.IdRef="Sequence_40">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="True" sap:VirtualizedContainerService.HintSize="2292,690.4" sap2010:WorkflowViewState.IdRef="If_1">
-                        <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="2258.4,439.2" sap2010:WorkflowViewState.IdRef="Sequence_37">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <Parallel sap:VirtualizedContainerService.HintSize="2224.8,379.2" sap2010:WorkflowViewState.IdRef="Parallel_1">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <uix:NCheckState DisplayName="Check Stock price Exists'" EnableIfNotExists="False" Exists="[isDateElementExists]" sap:VirtualizedContainerService.HintSize="532.8,309.6" sap2010:WorkflowViewState.IdRef="NCheckState_6" IsLoose="True" Version="V4">
-                                <uix:NCheckState.IfExists>
-                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_35">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Sequence>
-                                </uix:NCheckState.IfExists>
-                                <uix:NCheckState.IfNotExists>
-                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_36">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Sequence>
-                                </uix:NCheckState.IfNotExists>
-                                <uix:NCheckState.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://www.moneycontrol.com/india/stockpricequote/retail/adityabirlafashionretail/PFR" CVScreenId="de8e87f9-67ca-4f99-a02c-3a0042d20c6a" DesignTimeRectangle="330, 382, 340, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='inp_nse' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='inp_nse' tag='P' type='' class='nseasondate' aaname='As on * | *' /&gt;" Guid="ce56408b-9110-4b0b-9c35-7c4ecd272b86" InformativeScreenshot="ba95c54b4f3de4b5bd5357f94b21032b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/21751243814,1039154/385208-160-600-1' title='Aditya Birla F Share Price, Aditya Birla F Stock Price, Aditya Birla Fashion &amp;amp; Retail Ltd. Stock Price, Share Price, Live BSE/NSE, Aditya Birla Fashion &amp;amp; Retail Ltd. Bids Offers. Buy/Sell Aditya Birla Fashion &amp;amp; Retail Ltd. news &amp;amp; tips, &amp;amp; F&amp;amp;O Quotes, NSE/BSE Forecast News and Live Quotes' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
-                                </uix:NCheckState.Target>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </uix:NCheckState>
-                              <uix:NCheckState DisplayName="Check Opening Date Exists'" EnableIfNotExists="False" Exists="[isDateElementExists]" sap:VirtualizedContainerService.HintSize="532.8,309.6" sap2010:WorkflowViewState.IdRef="NCheckState_3" IsLoose="True" Version="V4">
-                                <uix:NCheckState.IfExists>
-                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_29">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Sequence>
-                                </uix:NCheckState.IfExists>
-                                <uix:NCheckState.IfNotExists>
-                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_30">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Sequence>
-                                </uix:NCheckState.IfNotExists>
-                                <uix:NCheckState.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://www.moneycontrol.com/india/stockpricequote/retail/adityabirlafashionretail/PFR" CVScreenId="de8e87f9-67ca-4f99-a02c-3a0042d20c6a" DesignTimeRectangle="330, 382, 340, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='inp_nse' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='inp_nse' tag='P' type='' class='nseasondate' aaname='As on * | *' /&gt;" Guid="ce56408b-9110-4b0b-9c35-7c4ecd272b86" InformativeScreenshot="ba95c54b4f3de4b5bd5357f94b21032b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/21751243814,1039154/385208-160-600-1' title='Aditya Birla F Share Price, Aditya Birla F Stock Price, Aditya Birla Fashion &amp;amp; Retail Ltd. Stock Price, Share Price, Live BSE/NSE, Aditya Birla Fashion &amp;amp; Retail Ltd. Bids Offers. Buy/Sell Aditya Birla Fashion &amp;amp; Retail Ltd. news &amp;amp; tips, &amp;amp; F&amp;amp;O Quotes, NSE/BSE Forecast News and Live Quotes' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
-                                </uix:NCheckState.Target>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </uix:NCheckState>
-                              <uix:NCheckState DisplayName="Check Open stock price Exists'" EnableIfNotExists="False" Exists="[isOpenStockElementExists]" sap:VirtualizedContainerService.HintSize="532.8,309.6" sap2010:WorkflowViewState.IdRef="NCheckState_4" IsLoose="True" Version="V4">
-                                <uix:NCheckState.IfExists>
-                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_31">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Sequence>
-                                </uix:NCheckState.IfExists>
-                                <uix:NCheckState.IfNotExists>
-                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_32">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Sequence>
-                                </uix:NCheckState.IfNotExists>
-                                <uix:NCheckState.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://www.moneycontrol.com/india/stockpricequote/finance-others/360onewam/IIFLW54277" CVScreenId="3b7b1e7d-fb0f-48ab-a4be-d762de9b8b22" ContentHash="64KFOizAvESiMb2KO9BLhg" DesignTimeRectangle="479, 766, 96, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tag='TD' rowName='Open' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' rowName='Open' class='nseopn bseopn' /&gt;" Guid="67923eb7-6f67-4252-be9b-5614c4a834f8" ImageBase64="" InformativeScreenshot="97cadaefea6866e33997bb9be3fce6c7.png" Reference="Mn-a4VsjIUerpiuTZdzabQ/OREkrJpcF0W6HnsiVHlnHg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/21751243814,1039154/385208-160-600-1' title='* NSE/BSE Forecast News and Live Quotes' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
-                                    <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                        <uix:Target CVScreenId="3b7b1e7d-fb0f-48ab-a4be-d762de9b8b22" DesignTimeRectangle="330, 766, 149, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='Open' check:innerText='Open' /&gt;" Guid="0f53a1f2-88a6-4dbf-87c4-4a0de45f522d" ImageBase64="" SearchSteps="Selector, FuzzySelector" />
-                                      </scg:List>
-                                    </uix:TargetAnchorable.Anchors>
-                                  </uix:TargetAnchorable>
-                                </uix:NCheckState.Target>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </uix:NCheckState>
-                              <uix:NCheckState DisplayName="Check Previous close stock price Exists'" EnableIfNotExists="False" Exists="[isPreviosStockElementExists]" sap:VirtualizedContainerService.HintSize="532.8,309.6" sap2010:WorkflowViewState.IdRef="NCheckState_5" IsLoose="True" Version="V4">
-                                <uix:NCheckState.IfExists>
-                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Sequence>
-                                </uix:NCheckState.IfExists>
-                                <uix:NCheckState.IfNotExists>
-                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,91.2" sap2010:WorkflowViewState.IdRef="Sequence_34">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </Sequence>
-                                </uix:NCheckState.IfNotExists>
-                                <uix:NCheckState.Target>
-                                  <uix:TargetAnchorable BrowserURL="https://www.moneycontrol.com/india/stockpricequote/finance-others/360onewam/IIFLW54277" CVScreenId="347d0c37-68c4-4fee-b0d5-8b47332acf68" ContentHash="_QGztEC11U6upJ5_b7bgIw" DesignTimeRectangle="479, 796, 96, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tag='TD' rowName='Previous Close' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' rowName='Previous Close' class='nseprvclose bseprvclose' /&gt;" Guid="c8440568-fce9-4f81-b6b0-39b6a59e5076" ImageBase64="" InformativeScreenshot="cbf46cafc7fbdf3157b2e0df84586634.png" Reference="Mn-a4VsjIUerpiuTZdzabQ/htUCOklp7kCXXX7M-92GDQ" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='/21751243814,1039154/385208-160-600-1' title='360 ONE WAM Share Price, 360 ONE WAM Stock Price, 360 ONE WAM Ltd. Stock Price, Share Price, Live BSE/NSE, 360 ONE WAM Ltd. Bids Offers. Buy/Sell 360 ONE WAM Ltd. news &amp;amp; tips, &amp;amp; F&amp;amp;O Quotes, NSE/BSE Forecast News and Live Quotes' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="None">
-                                    <uix:TargetAnchorable.Anchors>
-                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                        <uix:Target CVScreenId="347d0c37-68c4-4fee-b0d5-8b47332acf68" DesignTimeRectangle="330, 796, 149, 30" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='Previous Close' rowName='Previous Close' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='stk_overview' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='Previous Close' rowName='Previous Close' type='' class='' check:text='Previous Close' /&gt;" Guid="3ac01fc0-9c4d-431c-a7db-9eb1dc69e38c" SearchSteps="Selector, FuzzySelector" />
-                                      </scg:List>
-                                    </uix:TargetAnchorable.Anchors>
-                                  </uix:TargetAnchorable>
-                                </uix:NCheckState.Target>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </uix:NCheckState>
-                            </Parallel>
-                          </Sequence>
-                        </If.Then>
-                        <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_38">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </Sequence>
-                        </If.Else>
-                      </If>
-                    </Sequence>
-                  </ui:CommentOut.Body>
+                </ui:InvokeWorkflowFile>
+                <Assign DisplayName="Assign website load time" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_7">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Double">[dblWebsiteLoadTime]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Double">[dblWebsiteLoadTime + ((endTimeMoniter - startTimeMoniter).TotalMilliseconds / 1000.0)]</InArgument>
+                  </Assign.Value>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Extracted Stock Data" sap:VirtualizedContainerService.HintSize="382.4,49.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="logMessage" xml:space="preserve">["Stock price : "+out_strStockPrice+" Date : "+out_strOpeningDate+"   Open : "+out_strOpenPrice+"  Previous : "+out_strPreviousClose]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="logLevel">Info</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="currentLogLevel">Info</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                </ui:CommentOut>
+                </ui:InvokeWorkflowFile>
               </Sequence>
             </ActivityAction>
           </uix:NApplicationCard.Body>
@@ -704,7 +453,7 @@
         </uix:NApplicationCard>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="sn:WebException" sap:VirtualizedContainerService.HintSize="1284.8,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="sn:WebException" sap:VirtualizedContainerService.HintSize="452.8,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
