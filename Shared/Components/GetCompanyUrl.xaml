@@ -125,9 +125,11 @@
       <AssemblyReference>DeserializeJSON1f800.DziCb4xzdtD1eJUz61ns9I34</AssemblyReference>
       <AssemblyReference>DeserializeJSON29834.QVBG21OpAJH1fWcnj2gfkPe4</AssemblyReference>
       <AssemblyReference>DeserializeJSON178e2.Mm4JT3dIz5M1c0yHK1Bty6g4</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1286.4,786.84" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1540.0000000000002,1259.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="jStrCompanies" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="dictCompanies" />
@@ -137,7 +139,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="456,540.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1056,1236" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Stock Quotes|Company Stock Price quotes|NSE/ BSE Listed Company Stocks|Indian St" sap:VirtualizedContainerService.HintSize="1019.2,981.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1111a36b-ef41-4594-85e9-f6454e8e5880" Timeout="1000" Version="V2">
           <uix:NApplicationCard.Body>
@@ -159,7 +161,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="Inject Js to fetch stock price" sap:VirtualizedContainerService.HintSize="416,283.2" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="1111a36b-ef41-4594-85e9-f6454e8e5880" ScriptCode="Shared\Utils\FetchAllCompany.js" Version="V4">
+                      <uix:NInjectJsScript InputParameter="{x:Null}" ContinueOnError="False" DisplayName="Inject Js to fetch stock price" sap:VirtualizedContainerService.HintSize="416,283.2" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="1111a36b-ef41-4594-85e9-f6454e8e5880" ScriptCode="Shared\Utils\FetchAllCompany.js" Version="V4">
                         <uix:NInjectJsScript.ScriptOutput>
                           <OutArgument x:TypeArguments="x:String">[jStrCompanies]</OutArgument>
                         </uix:NInjectJsScript.ScriptOutput>
@@ -199,10 +201,10 @@
         </uix:NApplicationCard>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422.4,353.6" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1022.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -210,13 +212,20 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,282.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence sap:VirtualizedContainerService.HintSize="416,164.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log  -  Failed to fetch Company urls" sap:VirtualizedContainerService.HintSize="382.4,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[exception.Source +&quot; - &quot;+exception.Message]" />
+              <ui:LogMessage DisplayName="Log  -  Failed to fetch Company urls" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[exception.Source +&quot; - &quot;+exception.Message]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
               <Rethrow sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
             </Sequence>
           </ActivityAction>

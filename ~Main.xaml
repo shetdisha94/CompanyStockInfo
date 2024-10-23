@@ -129,6 +129,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -343,7 +344,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>
             </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="Write the dtCompanyStock Data to output excel CompanyStockData.xlsx" DisplayName="Write to Excel" sap:VirtualizedContainerService.HintSize="449.6,550.4" sap2010:WorkflowViewState.IdRef="Sequence_36">
+            <Sequence sap2010:Annotation.AnnotationText="Write the dtCompanyStock Data to output excel CompanyStockData.xlsx" DisplayName="Write to Excel" sap:VirtualizedContainerService.HintSize="449.6,848.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -384,11 +385,16 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
-              <ui:LogMessage DisplayName="Log Output" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;File has been generated at  &quot;+&quot;Data\\Output\\CompanyStockData_&quot; + DateTime.Now.ToString(&quot;yyyyMMdd_HHmmss&quot;) + &quot;.xlsx&quot;]">
+              <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" Subject="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="416,180.8" sap2010:WorkflowViewState.IdRef="SendOutlookMail_2" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal">
+                <ui:SendOutlookMail.Files>
+                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                </ui:SendOutlookMail.Files>
+              </ui:SendOutlookMail>
+              <ui:LogMessage DisplayName="Log Output" sap:VirtualizedContainerService.HintSize="416,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[&quot;File has been generated at  &quot;+&quot;Data\\Output\\CompanyStockData_&quot; + DateTime.Now.ToString(&quot;yyyyMMdd_HHmmss&quot;) + &quot;.xlsx&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>

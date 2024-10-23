@@ -9,24 +9,6 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Testing/Tryouts/CurrencyConverter.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "strEUR&Sequence_1",
-        "strINR&Sequence_1",
-        "strToCurrencyType&Sequence_2",
-        "strFromCurrencyType&Sequence_2"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "out_ConvertedValue",
-        "in_CurrencyValue",
-        "in_strToCurrencyType",
-        "in_strFromCurrencyType"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
       "Path": "ReadConfig.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
@@ -46,63 +28,58 @@
       "VariablesSectionElementsOrder": [
         "dictConfig&Sequence_1",
         "dtCompanies&Sequence_1",
-        "strStockPrice&Sequence_1",
-        "strCompanyName&Sequence_1",
-        "strOpen&Sequence_1",
         "dtCompanyStockData&Sequence_1",
         "dictCompanyURLInfo&Sequence_1",
         "strConversionRate&Sequence_1",
         "iCurrentIndex&Sequence_1",
-        "listOfCompanies&Sequence_1",
-        "strOpeningDate&Sequence_1",
-        "strConvertedStockPrice&Sequence_1",
-        "strConvertedOpen&Sequence_1",
-        "strConvertedPreviousClose&Sequence_1",
-        "strPreviousClose&Sequence_1",
-        "strFormattedConPrevClose&Sequence_1",
-        "strFormattedConOpen&Sequence_1",
-        "strFormattedConStockPrice&Sequence_1",
-        "strCompanyUrl&Sequence_1",
-        "intBatchSize&Sequence_35",
-        "dictCompanyBatches&Sequence_35"
+        "dblWebsiteLoadTime&Sequence_12"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "Process/FetchAndConvert/FetchStockInfo.xaml",
+      "Path": "Workflows/ExtractData/FetchStockInfo.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "startTimeMoniter&TryCatch_1",
         "endTimeMoniter&TryCatch_1",
-        "companyNameElement&Sequence_5",
-        "strOpenINR&Sequence_5",
-        "strPreviousCloseINR&Sequence_5",
-        "strOpeningDate&Sequence_5",
-        "boolElementExists&Sequence_5",
-        "stockPriceElement&Sequence_5",
-        "dictCompanies&Sequence_5",
-        "allCompanies&Sequence_5",
-        "isDateElementExists&Sequence_5",
-        "isOpenStockElementExists&Sequence_5",
-        "isPreviosStockElementExists&Sequence_5",
-        "isHeadingExists&Sequence_5"
+        "strOpeningDate&Sequence_5"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_strCompanyUrl",
-        "in_strConversionRate",
-        "io_dtCompanyBatchData",
+        "dblWebsiteLoadTime",
+        "out_strOpeningDate",
+        "out_strPreviousClose",
+        "out_strOpenPrice",
+        "out_strStockPrice",
+        "in_CompanyUrl",
         "in_strCompanyName"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "Process/FetchAndConvert/FetchAndConvert_Main.xaml",
+      "Path": "Workflows/ExtractData/FetchAndConvert_Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "strOpeningDate&Sequence_32",
+        "strStockPrice&Sequence_32",
+        "strConvertedStockPrice&Sequence_32",
+        "strConvertedOpen&Sequence_32",
+        "strConvertedPreviousClose&Sequence_32",
+        "strFormattedConStockPrice&Sequence_32",
+        "strFormattedConOpen&Sequence_32",
+        "strFormattedConPrevClose&Sequence_32",
+        "strOpen&Sequence_32",
+        "strPreviousClose&Sequence_32"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "dblWebsiteLoadTime",
+        "in_strCompanyName",
+        "in_strCompanyUrl",
+        "in_strConversionRate",
+        "io_dtCompanyBatchData"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -112,20 +89,9 @@
       "VariablesSectionElementsOrder": [
         "dtConfig&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Testing/Tryouts/GetCompanyUrl_c.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "jStrCompanies&Sequence_1",
-        "dictCompanies&Sequence_1"
-      ],
       "ArgumentsSectionElementsOrder": [
-        "in_URL",
-        "out_DictCompanyURLInfo"
+        "in_ConfigFilePath",
+        "out_Config"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -141,50 +107,6 @@
         "in_URL",
         "out_DictCompanyURLInfo"
       ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Testing/Tryouts/GetExchangeRates_.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "strINR&Sequence_1",
-        "strEUR&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "in_CurrencyValue",
-        "in_strToCurrencyType",
-        "in_strFromCurrencyType",
-        "out_ConvertionRate"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Testing/Tryouts/Main - Old.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "dictConfig&Sequence_1",
-        "dtStockData&Sequence_1",
-        "strStockPrice&Sequence_1",
-        "strCompanyName&Sequence_1",
-        "strOpen&Sequence_1",
-        "dtCompanyStockData&Sequence_1",
-        "dictCompanyURLInfo&Sequence_1",
-        "strConversionRate&Sequence_1",
-        "iCurrentIndex&Sequence_1",
-        "listOfCompanies&Sequence_1",
-        "strOpeningDate&Sequence_1",
-        "strConvertedStockPrice&Sequence_1",
-        "strConvertedOpen&Sequence_1",
-        "strConvertedPreviousClose&Sequence_1",
-        "strPreviousClose&Sequence_1",
-        "strFormattedConPrevClose&Sequence_1",
-        "strFormattedConOpen&Sequence_1",
-        "strFormattedConStockPrice&Sequence_1",
-        "strCompanyUrl&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -211,18 +133,10 @@
         "dtConfig&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "currentLogLevel",
+        "logMessage",
         "logLevel",
-        "logMessage"
+        "currentLogLevel"
       ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Utils/Flowchart.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -230,6 +144,7 @@
       "Path": "Shared/Components/GetCompanyUrl.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "brow&TryCatch_1",
         "jStrCompanies&Sequence_1",
         "dictCompanies&Sequence_1"
       ],

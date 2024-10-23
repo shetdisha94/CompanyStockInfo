@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -130,7 +129,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1353.6,8226.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1540.0000000000002,8284" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="dictConfig" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtCompanies" />
@@ -157,14 +156,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1353.6,3384.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1353.6,3442.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Main" sap:VirtualizedContainerService.HintSize="1320,3292.8" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+      <TryCatch DisplayName="Try Main" sap:VirtualizedContainerService.HintSize="1320,3350.4" sap2010:WorkflowViewState.IdRef="TryCatch_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -172,7 +171,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Fetch and process the stock prices" sap:VirtualizedContainerService.HintSize="1283.2,2744" sap2010:WorkflowViewState.IdRef="Sequence_21">
+          <Sequence DisplayName="Fetch and process the stock prices" sap:VirtualizedContainerService.HintSize="1283.2,2801.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="intBatchSize" />
               <Variable x:TypeArguments="sc:ListDictionaryInternal" Name="dictCompanyBatches" />
@@ -283,7 +282,7 @@
               </ui:MultipleAssign>
               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1216,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Info" Message="[dtCompanies]" />
             </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="Fetch and convert the stock prices for each compoany and write to output to dtCompanyStockData" DisplayName="Fetch and convert the stock prices" sap:VirtualizedContainerService.HintSize="1249.6,1306.4" sap2010:WorkflowViewState.IdRef="Sequence_34">
+            <Sequence sap2010:Annotation.AnnotationText="Fetch and convert the stock prices for each compoany and write to output to dtCompanyStockData" DisplayName="Fetch and convert the stock prices" sap:VirtualizedContainerService.HintSize="1249.6,1364" sap2010:WorkflowViewState.IdRef="Sequence_34">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -291,20 +290,20 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iCurrentIndex]" DataTable="[dtCompanies]" DisplayName="For Each Company " sap:VirtualizedContainerService.HintSize="516.8,1170.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[iCurrentIndex]" DataTable="[dtCompanies]" DisplayName="For Each Company " sap:VirtualizedContainerService.HintSize="516.8,1228" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Extract stock data , convert the prices and write to datatable" sap:VirtualizedContainerService.HintSize="483.2,981.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Extract stock data , convert the prices and write to datatable" sap:VirtualizedContainerService.HintSize="483.2,1039.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[Not dictCompanyURLInfo.ContainsKey(CurrentRow(&quot;Company name&quot;).ToString)]" DisplayName="Check if the company is not listed" sap:VirtualizedContainerService.HintSize="449.6,921.6" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If Condition="[Not dictCompanyURLInfo.ContainsKey(CurrentRow(&quot;Company name&quot;).ToString)]" DisplayName="Check if the company is not listed" sap:VirtualizedContainerService.HintSize="449.6,979.2" sap2010:WorkflowViewState.IdRef="If_1">
                         <If.Then>
                           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,502.4" sap2010:WorkflowViewState.IdRef="Sequence_37">
                             <sap:WorkflowViewStateService.ViewState>
@@ -326,13 +325,13 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,257.6" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,315.2" sap2010:WorkflowViewState.IdRef="Sequence_38">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FetchAndConvert_Main.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="382.4,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Workflows\ExtractData\FetchAndConvert_Main.xaml">
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FetchAndConvert_Main.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="382.4,255.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Workflows\ExtractData\FetchAndConvert_Main.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
                                 <InArgument x:TypeArguments="x:String" x:Key="in_strCompanyName">[CurrentRow("Company name").ToString]</InArgument>
                                 <InArgument x:TypeArguments="x:String" x:Key="in_strCompanyUrl">[dictCompanyURLInfo(CurrentRow("Company name").ToString).ToString]</InArgument>

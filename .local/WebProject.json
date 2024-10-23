@@ -4,9 +4,9 @@
     "Id": "23579255-db75-45b1-b4cc-52947910c4ef",
     "ExpressionLanguage": "VisualBasic",
     "ProjectType": "Process",
-    "Name": "ScrapeStockData",
+    "Name": "CompanyStockInfo",
     "Description": "Process reads company list and fetches stock data and converts INR price into EUR and writes data to excel.",
-    "LastModifiedTime": "2024-10-20T20:25:36.0616078Z",
+    "LastModifiedTime": "2024-10-22T12:40:34.998418Z",
     "CreationTime": "2024-10-20T11:33:31.0802647Z",
     "UserId": "45cb3191-7fcb-4823-9467-c7228c9af891",
     "RootFolder": {
@@ -349,6 +349,35 @@
           ]
         },
         {
+          "Id": "c8ef2883-a3db-492c-a8f2-a5023087f1e5",
+          "Name": "Workflows",
+          "Folders": [
+            {
+              "Id": "3183b63f-2ad7-4471-9622-3f2501f5d79a",
+              "Name": "ExtractData",
+              "Folders": [],
+              "Files": [
+                {
+                  "Id": "9475d30f-7b65-4595-8395-d983f66a5524",
+                  "Name": "FetchStockInfo.xaml",
+                  "IsMain": false
+                },
+                {
+                  "Id": "89fc5bf3-a91a-4f60-b162-9dce8df63a70",
+                  "Name": "FetchStockInfo.xaml.json",
+                  "IsMain": false
+                },
+                {
+                  "Id": "0a52d64e-8162-492a-bc3c-7a85c04856c0",
+                  "Name": "FetchAndConvert_Main.xaml",
+                  "IsMain": false
+                }
+              ]
+            }
+          ],
+          "Files": []
+        },
+        {
           "Id": "e1dacd5c-1340-490b-8a0c-532e87237f78",
           "Name": "Testing",
           "Folders": [
@@ -358,46 +387,6 @@
               "Folders": [],
               "Files": [
                 {
-                  "Id": "d9267d49-8db6-4d41-b47a-f0b52dbbc120",
-                  "Name": "Main - Copy (1).xaml",
-                  "IsMain": false
-                },
-                {
-                  "Id": "05402d10-325c-49a8-8824-1db45b7aa9d0",
-                  "Name": "CurrencyConverter.xaml.json",
-                  "IsMain": false
-                },
-                {
-                  "Id": "000eb1b8-cecb-4e5f-8413-d6bbe2dbcdc2",
-                  "Name": "CurrencyConverter.xaml",
-                  "IsMain": false
-                },
-                {
-                  "Id": "08742e8a-8e55-47b1-9e8d-9230e1e90674",
-                  "Name": "Main_Tryout.xaml",
-                  "IsMain": false
-                },
-                {
-                  "Id": "3bc0c83c-2296-4728-ba98-5cbd766a054b",
-                  "Name": "GetCompanyUrl_c.xaml.json",
-                  "IsMain": false
-                },
-                {
-                  "Id": "c633a957-b040-49ff-9421-e50bc760e8b1",
-                  "Name": "GetExchangeRates_.xaml.json",
-                  "IsMain": false
-                },
-                {
-                  "Id": "935c5309-9ee9-448b-90be-066ef70d6d6e",
-                  "Name": "GetExchangeRates_.xaml",
-                  "IsMain": false
-                },
-                {
-                  "Id": "0ee9a729-423c-4423-8bd3-9420efbcf8b2",
-                  "Name": "js.xaml",
-                  "IsMain": false
-                },
-                {
                   "Id": "f5e208e6-69df-45f8-a8d3-7579ca3cb19a",
                   "Name": "CurrencyConverter(Autosaved).xaml",
                   "IsMain": false
@@ -405,21 +394,6 @@
                 {
                   "Id": "8c40eaac-3d71-4722-81a6-ce05fe6aca39",
                   "Name": "ExtractStockData.xaml",
-                  "IsMain": false
-                },
-                {
-                  "Id": "7de0ff99-5010-4d02-aee5-cb7a262a3f5e",
-                  "Name": "Main - Old.xaml",
-                  "IsMain": false
-                },
-                {
-                  "Id": "0b7f34ed-7168-4d8c-83a4-5010cd80d894",
-                  "Name": "GetCompanyUrl_c.xaml",
-                  "IsMain": false
-                },
-                {
-                  "Id": "9a968c90-7724-4d6e-884c-48e094b5f7bd",
-                  "Name": "Main -with dt.xaml",
                   "IsMain": false
                 },
                 {
@@ -768,13 +742,13 @@
           "Folders": [],
           "Files": [
             {
-              "Id": "EntitiesBundle.X837u2PZ5BGRzc2Vu3xmddApjuCqJK3x0VA7PBjl454.zip",
-              "Name": "EntitiesBundle.X837u2PZ5BGRzc2Vu3xmddApjuCqJK3x0VA7PBjl454.zip",
+              "Id": "EntitiesBundle.Z4Npi4jQWUeKsTkui1NBzcnfdHS0l8QvCSfd1SfWemQ.zip",
+              "Name": "EntitiesBundle.Z4Npi4jQWUeKsTkui1NBzcnfdHS0l8QvCSfd1SfWemQ.zip",
               "IsMain": false
             },
             {
-              "Id": "EntitiesBundle.dK2PWbgRZNNJ3rzK4AKGrNXZwWep8yup16Vn6S6QBeY.zip",
-              "Name": "EntitiesBundle.dK2PWbgRZNNJ3rzK4AKGrNXZwWep8yup16Vn6S6QBeY.zip",
+              "Id": "EntitiesBundle.X837u2PZ5BGRzc2Vu3xmddApjuCqJK3x0VA7PBjl454.zip",
+              "Name": "EntitiesBundle.X837u2PZ5BGRzc2Vu3xmddApjuCqJK3x0VA7PBjl454.zip",
               "IsMain": false
             }
           ]
@@ -1741,62 +1715,6 @@
           ]
         },
         {
-          "Id": "228f8df1-3e55-4f49-a8d3-9d613e8ffb62",
-          "Name": "Process",
-          "Folders": [
-            {
-              "Id": "a87238b0-c971-4c0e-a0b0-230a6eac4a18",
-              "Name": "FetchAndConvert",
-              "Folders": [],
-              "Files": [
-                {
-                  "Id": "67cbe657-ecf2-46dd-8ee1-a83a4d8e3966",
-                  "Name": "FetchAndConvert_Main -Parallel.xaml",
-                  "IsMain": false
-                },
-                {
-                  "Id": "1794b4df-4cab-4a0c-93bc-3d83c39e0a98",
-                  "Name": "FetchStockInfo.xaml",
-                  "IsMain": false
-                },
-                {
-                  "Id": "b3addb17-1d0e-4eb7-b105-b979311d8222",
-                  "Name": "FetchStockInfo.xaml.json",
-                  "IsMain": false
-                },
-                {
-                  "Id": "f0d2fe50-0295-4c99-88e0-05db2d1a4b05",
-                  "Name": "FetchAndConvert_Main.xaml",
-                  "IsMain": false
-                }
-              ]
-            }
-          ],
-          "Files": []
-        },
-        {
-          "Id": "f9555c90-c42d-40e7-ae7f-f7b876405987",
-          "Name": "Utils",
-          "Folders": [],
-          "Files": [
-            {
-              "Id": "21693025-8e43-42dd-ac15-c2b82dd03ae4",
-              "Name": "FetchAllCompany.js",
-              "IsMain": false
-            },
-            {
-              "Id": "b567a804-d282-4ecf-9484-6ea81d76d9c6",
-              "Name": "Flowchart.xaml",
-              "IsMain": false
-            },
-            {
-              "Id": "5787f9ad-fd30-45fc-a188-acdc98afaa20",
-              "Name": "FetchStockPrice.js",
-              "IsMain": false
-            }
-          ]
-        },
-        {
           "Id": "4bcec7cd-1875-4a72-9471-a20020ddaf41",
           "Name": ".project",
           "Folders": [],
@@ -1869,7 +1787,7 @@
                 {
                   "Id": "7497f95b-c653-4f39-bc9e-7584a79e78ca",
                   "Name": "GetCompanyUrl.xaml",
-                  "IsMain": false
+                  "IsMain": true
                 },
                 {
                   "Id": "20a1f3b2-1b26-40b7-b4a7-fdafef4d189e",
@@ -1908,13 +1826,23 @@
               "Folders": [],
               "Files": [
                 {
+                  "Id": "aaf5a25a-77b9-46ee-a736-08360c227748",
+                  "Name": "CompanyStockData_20241021_081541.xlsx",
+                  "IsMain": false
+                },
+                {
                   "Id": "a770617f-c21d-48c1-bf10-df65fa36aded",
                   "Name": "CompanyStockData.xlsx",
                   "IsMain": false
                 },
                 {
-                  "Id": "824f17c0-9b30-4ac2-9ce2-8f53d5a298b5",
-                  "Name": "CompanyStockData_old.xlsx",
+                  "Id": "8aab9f0f-ba34-49fb-9822-f46f4b375062",
+                  "Name": "CompanyStockData_20241021_023702.xlsx",
+                  "IsMain": false
+                },
+                {
+                  "Id": "2550483f-cfea-4e69-8cea-884301be2986",
+                  "Name": "CompanyStockData_20241021_022331.xlsx",
                   "IsMain": false
                 }
               ]
@@ -1927,6 +1855,11 @@
                 {
                   "Id": "1ab124a1-628d-4663-a9fe-b80fe80743d7",
                   "Name": "CompanyList.xlsx",
+                  "IsMain": false
+                },
+                {
+                  "Id": "0174302e-6d93-4df9-a35b-79edb0fd5f6a",
+                  "Name": "CompanyList - Copy (2).xlsx",
                   "IsMain": false
                 },
                 {
@@ -1949,53 +1882,7 @@
               ]
             }
           ],
-          "Files": [
-            {
-              "Id": "3ae2eaa5-0acd-4de2-9d44-f89768b323fa",
-              "Name": "StockPriceOutput_old.xlsx",
-              "IsMain": false
-            },
-            {
-              "Id": "cfabf0bc-9e56-4041-8bac-a74c71025d05",
-              "Name": "CompanyStockData.xlsx",
-              "IsMain": false
-            },
-            {
-              "Id": "d6295a01-d7a2-4b5d-b901-5a6bb59fedba",
-              "Name": "StockData.xlsx",
-              "IsMain": false
-            },
-            {
-              "Id": "594d995c-5a83-4d2d-97fa-f99b57a6be33",
-              "Name": "StockPrice - Copy - Copy.xlsx",
-              "IsMain": false
-            },
-            {
-              "Id": "f3e2c57c-b8d1-45ee-98ae-2061862ce4a6",
-              "Name": "StockPrice.xlsx",
-              "IsMain": false
-            },
-            {
-              "Id": "685d743a-2849-4907-ba81-fdcf1d4e0a33",
-              "Name": "CompanyStockData_.xlsx",
-              "IsMain": false
-            },
-            {
-              "Id": "ecc3af9a-4170-44bb-a77a-19f50a2ef212",
-              "Name": "CompanyStockData_old.xlsx",
-              "IsMain": false
-            },
-            {
-              "Id": "e194eb23-f483-4e07-86ce-f5c9df76a723",
-              "Name": "StockPriceOutput.xlsx",
-              "IsMain": false
-            },
-            {
-              "Id": "ce3c6e5f-61da-4764-b1be-fb011ef5047c",
-              "Name": "CompanyStockData_parallel.xlsx",
-              "IsMain": false
-            }
-          ]
+          "Files": []
         },
         {
           "Id": "4e4bfa10-fe4f-4aac-980c-873eed3638ed",
@@ -2115,7 +2002,7 @@
         {
           "Id": "f80214de-09e6-4f17-a86a-fb8213de0845",
           "Name": "Main.xaml",
-          "IsMain": true
+          "IsMain": false
         },
         {
           "Id": "d19aafaf-23c3-4455-a3aa-48b95c42b064",
@@ -2123,8 +2010,28 @@
           "IsMain": false
         },
         {
+          "Id": "beac9746-13e2-492d-b826-791d27b8b0d5",
+          "Name": "README_TOBE.md",
+          "IsMain": false
+        },
+        {
+          "Id": "cfbc58ae-bf27-48b7-bc72-7544f2afa515",
+          "Name": "README_RESULTS.md",
+          "IsMain": false
+        },
+        {
           "Id": "a523decf-00fe-494d-85dd-e92751033f28",
           "Name": "Main - with Parallel fetch.xaml",
+          "IsMain": false
+        },
+        {
+          "Id": "11b5e47c-377c-4877-91bf-61dda0e986dc",
+          "Name": "README.md",
+          "IsMain": false
+        },
+        {
+          "Id": "d3326dbd-81a2-484a-a1cc-c4a835670c7a",
+          "Name": "README_ASIS.md",
           "IsMain": false
         }
       ]
@@ -2163,26 +2070,24 @@
     ".objects/dgFO/TKD0/-soJ/.type": "blYTfiHTIiouMTX8NFgob8P7ay4sZ56a4o2yaP6YKvc=",
     ".objects/mONe/fXej/WQTx/.metadata": "V6CiXvPjsJM9J4qciXLyJY+LnsfkAjaD+jVUUFVlZpg=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/5db609bc-c23f-49ed-bb5b-de6664602f16": "WSRsMzLAN5GxdzQFF9Q25AZ8NIllaIqrkDXyZgcI1JI=",
-    "Data/CompanyStockData_parallel.xlsx": "PGAHsqYPfnl4bGCXNpjXIfbyJuvQ+/4Po3+e4YQ1p1U=",
     ".screenshots/133dd2e49bfb7e3b22fc4250aca601c3.png": "QA70m9Vnij5TRS+nEDf84C0pRvSdtzPWENxV1Hu5218=",
+    "README_RESULTS.md": "9MxuYCmNvwUWDLh7vhDj8moY+FTFi0MPc01dyHlZ4Jo=",
     ".objects/dgFO/TKD0/-soJ/f3fN/.data/ObjectRepositoryTargetData/.content": "q8ti9jlRtIRax3f2se0SmCOuN7XGpsCO8lmypT9yBqA=",
-    "Data/CompanyStockData_old.xlsx": "DPpbz51axj8BiTAMMpdd0E/x6gWrPFUFFE5aX5rUYW0=",
     ".objects/dgFO/TKD0/-soJ/m4sY/.data/ObjectRepositoryTargetData/.images/.design/0UKYVQbBgdUae-BQZ24r6oA": "nk/Y+K24Xr0gesedAg6ZCwf8QMEASVJTW+IYku+PWyc=",
     ".settings/Release/settings-5190454b.json": "9dTmYrtHO5uIu22mdu0GX2x5y/DCUKnNBY94nZK1SXw=",
     ".storage/.runtime/AncestryPersistenceService/102fd88c-c954-4ebe-b2db-49c76251d0f1": "I+kAc5Tz69ERx9WiBxS9Zli3vC4lr+9RNoqpu0STg3U=",
-    "Testing/Tryouts/GetCompanyUrl_c.xaml": "KeysqoaAsYLuKpxSlA+1qU/qZ3Gh6iQ6sRiCNKcdNnw=",
+    "Data/Input/CompanyList - Copy (2).xlsx": "4+NMgCXJMioSIHnjXLp2DI++71qr5nKlIKZkQzzr10k=",
     ".objects/3FEj/92hH/eB8M/KOLx/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
     ".objects/3FEj/.data/ObjectSelectionName/.content": "6PsJOMs84zB7DMaNgFFpsn9XFC4zxJ+OSuShvRiKf50=",
     ".storage/.runtime/AncestryPersistenceService/4387fe99-7565-4cde-8814-0b5b7addf152": "Y1+l1Es1ZQSXRHLTD5ZXOpo2qTKTWtm+WLvOBD8x158=",
     ".objects/mONe/fXej/.metadata": "N54oQlYapf3SN5J9sbNxAu0S5jbYiP5ud5hWUsVg3Hk=",
     ".objects/mONe/fXej/WQTx/kjdg/.data/ObjectRepositoryTargetData/.images/.design/0R6kl_1bQFkuVk0wr5Gkp5g": "chD29lLOWiAGb5MInWbVg2suPuzC+k/JtEPnz5+7T6w=",
-    "Data/CompanyStockData_.xlsx": "J3HLC7jFFIwjcdV9T5Qg0VDh6+xBVjkcCubG3BFZZPQ=",
+    "Data/Output/CompanyStockData_20241021_023702.xlsx": "pISvl4H4ZrIT57F9btOrrs0FtJr5WYG/1mqZ8wdTzGI=",
     ".objects/dgFO/TKD0/.metadata": "zuYAqaXqomOF/uwVyJ5jo6l6Gp668NuOzLpIDGeqR0I=",
     ".screenshots/8514ecc0526791e332f51bf96d60bcf8.png": "h961h33F+dwFMQciTIQj0uvbzAwkBq/7Iq9kzoVD37k=",
     ".screenshots/cd87555e0e443f595c646935130005a6.png": "h/2sJk73Pf2+Uq9eVi52ugSkNCdAPF1XJe5MYoKI9Uw=",
     ".storage/.runtime/AncestryPersistenceService/d9f03b15-c645-454e-807a-40d20283a12a": "5QghBuDtxxzDklyY6UuT3gEUNBc6EvKhl7xzFTLYBQY=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/7443a688-c3f1-4027-a76a-700621294f42": "1pQAwax6IHGwyVbTq/KeHde1zXSugOwEY64uK2Q3EIs=",
-    "Testing/Tryouts/Main_Tryout.xaml": "g06D0t7jISUGQFAnhfkVWkkKFJux0kuL99VXIkgRFuY=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/0659ccf3-9e3e-4859-9de3-982d69ba57d3": "Hx3lXvdUgXIVkfmegpGz6ueC/glm/9G5VpsP2G9lMNA=",
     ".settings/Design/settings-afad0842.json": "jjBbv/WXwDPEhGnbSVQxlI3fuMaxR42abIF+4Qju1ok=",
     ".screenshots/97cadaefea6866e33997bb9be3fce6c7.png": "IOVl2q3VJKxLXJ5PMUoPTYeZtZGgKCd43aYgl5I1X80=",
@@ -2196,65 +2101,60 @@
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/5606e36e-c631-40a4-beae-fd9f0f3168de": "fvpt0ym4FqSCnxgr81AXUXim4UN9Gr6g00QCEMcAcu4=",
     ".objects/3FEj/92hH/eB8M/OREk/.data/ObjectRepositoryTargetData/.images/.design/0bB8H9UCkFk2DKd68ehz7Ig": "IOVl2q3VJKxLXJ5PMUoPTYeZtZGgKCd43aYgl5I1X80=",
     ".screenshots/0b4f6f942f4dade1e5ffc114438f8d68.png": "8aG1mwWI2cAxZ3CCiOE5AwvZlBR3tiOYNe01MGdRzaM=",
+    "Workflows/ExtractData/FetchStockInfo.xaml": "TTNscovuKOFjgIXTXZ3JwsC7r42CCVgd9xf5s3fP7Lk=",
     ".screenshots/cbd6d5e0982765ed9ae83be144b7c9bc.png": "Aw4pB51u5sa5wYuIL4KBOZDvXXLc870jq9QA04g5lgg=",
     ".settings/Release/settings-a1b2dac1.json": "jniB7XO7RvyXE8sg1W6+CdAeAGwUoixjP1iOAMQq0zY=",
     ".screenshots/e178af8e079f0a12888d5e8bb790d10b.png": "q/XtWtMfp27M+qW/IVoZK1MTqQH7fDdWEddzTDxK0C8=",
     ".objects/dgFO/TKD0/-soJ/m4sY/.data/ObjectRepositoryTargetData/.content": "9jGGpox5eBsdBYsw/b4sJ0SCeBcDqSepa0/r/GSd2wU=",
     ".storage/.runtime/AncestryPersistenceService/d230316b-d835-4ec5-b994-3c35ad936494": "YITN0YbO28jyBdazkcbzMqE6GNoO2jrvHClzNUUFgUU=",
-    "Data/StockPriceOutput_old.xlsx": "hKkYrifRoRQMSDJ7enT/Uaw1Zoga2nu5mZlHOmcd0Bc=",
     ".objects/3FEj/92hH/eB8M/.data/ObjectRepositoryScreenData/.content": "L2RVx1dPh9dsX5tNVavgX3ugEfisMKQVOMqvxkrmfCA=",
     ".screenshots/ea8ec28d477e1b07e1b4fdd7e4b06438.jpg": "GLqJhxnnvBh4qWQVfSEO0YZI2hlZAPemAW8/HRiLPg8=",
     ".objects/mONe/.type": "DQS/631ktxx0/JJcypPWgxVOjMfm5YOPrO1JjjTJmE0=",
     ".screenshots/ba95c54b4f3de4b5bd5357f94b21032b.png": "P0A6izM/ykNYbTeHfpM4SBLgA2PvtJXgHBQwb+LC/YU=",
-    "Process/FetchAndConvert/FetchAndConvert_Main -Parallel.xaml": "8N3Pe4OQ+KA4tkTy36tkLHMuV0E20ICq2U/C6ODsISM=",
-    "Data/CompanyStockData.xlsx": "/mhL9DQ0+BuEDXV5rbaQ0SQPs2Ly9Jq3k0xd4OLwUpI=",
+    "README.md": "sYsgTwqiP4ZHLbGBJraOaBsYWMFj8fhvH0l9KnOYPTM=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/5d8c0939-1203-41ad-8a0c-353465c43aad": "OqgjYJw+tZXcYS+NdjhhmDMXfBEdS9Ia5g8zZfb5GsE=",
     ".objects/3FEj/92hH/.type": "+GggqKGln+EckLy4CkowIpHwBNKm6rrFd/RbiZgQY7c=",
     ".screenshots/ff8a15b022e1135f6afb5d6b9c82675c.jpg": "g7eYgl+CJauhyI1a9g116+KF0rYmbE9RYwvcQomw1iM=",
-    "Testing/Tryouts/Main -with dt.xaml": "nDaEbsLZmiIIW0Ys7UnHoFdeWgb+PQDX8o/GPKP/oMw=",
     ".screenshots/047c90d69e79f7aee8090318b8cfd903.png": "uAT1HYP9nnoBbP0VLEjKfn8csnADanRl5JexXkSu9LA=",
     ".tmh/config.json": "Tk6QDUUsqtifkyIEMEjvqL300ZUpxaIp15qlWlZ+18w=",
     ".objects/mONe/fXej/WQTx/.data/ObjectRepositoryScreenData/.content": "BicYtNWgAAX8z1qYaYlsFclyzngFdAMDVat2sVukGfA=",
     ".storage/.runtime/AncestryPersistenceService/7ee74843-0dad-4486-a9dd-4da4dfd68286_0f7a8b22-42c6-4763-8a18-1541e571969a": "iYszUyJtfISSOaF+yxjDOeT65mhKZtQoqh3UNkwbGBM=",
     "Shared/Utils/FetchAllCompany.js": "9AUErwi4C6UA6GOCUTfmWouhO7QjWK6QFsOc1yY3Vjk=",
     ".objects/dgFO/TKD0/-soJ/f3fN/.metadata": "WTvTcQ/QJYrNKVJ6OgOPVt5Mn8bKyoqvOanJ8gvF/DE=",
-    "Shared/Components/InitConfig.xaml": "BMgu7SuIx9IzCusYYw5gMWKTaKawSHLSZvdZrITYJPA=",
     ".screenshots/cbf46cafc7fbdf3157b2e0df84586634.png": "mL7xx2HVEBpcKI8A7jKiDSag84biMc31tLpX1HivZAM=",
     ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297_1dc9949d-a849-4d27-9279-36f1f7b1d71f_dd5ecc78-0561-4add-b2bd-434ed21a1cbd_f1ae8c19-d365-41df-95fe-2f481681745d": "IFEVsYBi/ACRwhuIhJ6FzAC8Hdr7tBiTACyVD7y/4D4=",
+    "Shared/Components/InitConfig.xaml": "dY5YaTRsYr+rclsCzMBw0P4Rg4pJi0Fg7F9uXtXs0Ro=",
     ".objects/.type": "3CCz1dLN34L60zKCHKXppO/c7eSic6oZPStJW9zJKCU=",
     ".screenshots/a67b7258ab7990c3f849f319b992a851.png": "1c9ml/tNHfvv1W8w6K9KcoT+kysa1Qfo14JmIjyyAjQ=",
     ".storage/.runtime/AncestryPersistenceService/4eec6780-8975-4981-9eda-e63661226ae5_9648ad13-abd6-4b0f-8994-d248eeb1a755_cb52dab2-4fa8-4273-8227-6c2060c7d251": "APnk3faXSeb8Wz+KBpP3FqPa/7RajzUhLCqcsRd+3bk=",
     ".objects/dgFO/TKD0/-soJ/SRvx/.metadata": "9XE4FTs3W66Qh6zfE4lK/wV79PouLGCSxCX0jyVoE/w=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/cd9eb0fc-0424-4237-85d7-ed14d9ed35b7": "53UQ8y+5I3lrNcA+eceN9YdOz6gNyxDJoACvHgTmF/A=",
-    "Testing/Tryouts/js.xaml": "LkeH9ER3EhybpX0UXmoEmS4BUfNwsGZD4wDeqWA4vXM=",
     ".settings/Release/settings-9e9290da.json": "7PjBQcYPpDS7UhN/HydlT7QCRIsBYnPNtHuFFBOcfg8=",
     "Config/Config.xlsx": "2a6eZLEMmxwfGQQVrf0DBS7pY9Dw9OqNRL4ImKp7j/A=",
     "Shared/Components/LogMessage.xaml": "HqlpCzVKnGJpGWnVdc/YUOZuKe2qXAyxgopDRSzJF1E=",
-    "Main - with Parallel fetch.xaml": "GW/zERmLNgPdhiau86gOSsLqvCqhoXJxjuO7dfuTb4o=",
+    "Main - with Parallel fetch.xaml": "I1ZU/K3RNSb7vg5X/0iFyLmt8Ag/STBVgI8A2MMWO0U=",
     ".storage/.runtime/AncestryPersistenceService/4dd3fca3-78a8-4485-84e0-b4e1b5b4d46c": "YyNW8CpJSylFHVfv1BZO/Ik6pdPJTudXd0GoBMKPXqk=",
-    "Data/StockPriceOutput.xlsx": "H6HFKSiThFCT0Ge/ptK1RyD+2aCzQ/NLdaPcdmvjZqc=",
     ".objects/3FEj/.type": "DQS/631ktxx0/JJcypPWgxVOjMfm5YOPrO1JjjTJmE0=",
     ".screenshots/72a41668ff1ebc4a94dce4ad371e8531.png": "IZYwHdlAVHjghGYINSehdlQ5QhLmLmqbNHineP2XbAU=",
     ".settings/Debug/settings-1a5b880a.json": "7LuMiqeAyudf1SiAtg+L/3TGzsMJkAoNJ7g6yi2hqOg=",
-    "Testing/Tryouts/GetExchangeRates_.xaml": "w594Dnjd6mNhvtaLN/OMMIG1PSqxYdpEA7xVPyme5Yc=",
     ".objects/3FEj/92hH/eB8M/htUC/.data/ObjectRepositoryTargetData/.content": "b5VBtFCLne2RirVsdXWfYRMdDkQmUs9KZNKO9EaRgEo=",
     ".screenshots/5c68b728b628f6c71f79006dec4b44ce.jpg": "MMeNbOmrHb8+9Kk7cPECPZ6IbWtAqvoBqSMe3uD/2U8=",
     ".screenshots/8f23c6d995954202657282faa526fcee.jpg": "ovnGLfGDPwkilsTsjhs3loeRKLckuuLRVZPjMHpn7Js=",
     ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297_1dc9949d-a849-4d27-9279-36f1f7b1d71f_dd5ecc78-0561-4add-b2bd-434ed21a1cbd": "iA6l3wHDbWnyClMvbXAH5LzkDKwd89q+3K7/1CRBcgE=",
     ".settings/Design/settings-a1b2dac1.json": "/Pf++JYszjaKNRQIKt9HNhqooNNSjdx8OpMnOoey80M=",
     ".settings/Debug/settings-9e9290da.json": "7PjBQcYPpDS7UhN/HydlT7QCRIsBYnPNtHuFFBOcfg8=",
-    "Data/StockData.xlsx": "/wK4n7CnzxTP5K1ra8hIUG0k7D8fbojHzbqy4HnF7Xk=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/d2749676-9c62-46e0-b75b-5bac3241381e": "71saupRd/KSTnDP+gCimCsKuf9P+EQLQveOTWChn284=",
     ".storage/.runtime/AncestryPersistenceService/5606e36e-c631-40a4-beae-fd9f0f3168de": "dFS8isppE6T6vyy3LK/L22iZf1+9Mjb/mlWJ8qc2BHo=",
     ".objects/dgFO/TKD0/.type": "+GggqKGln+EckLy4CkowIpHwBNKm6rrFd/RbiZgQY7c=",
     ".screenshots/44b601a0298aa45728b1b4d05b82bcd9.png": "hLHiMxP8Ff49kLbCsgqeFI1l2LlPJqnTDqlPa96hNsY=",
+    "Data/Output/CompanyStockData_20241021_081541.xlsx": "QpqjW2zK4S0AZgXPgncydUuagstkSLMIb2ACNi8CZII=",
     ".objects/mONe/fXej/WQTx/kjdg/.data/ObjectRepositoryTargetData/.content": "Fch/oMLHb62ihhfN2vA7/HDSd8YCnJvWP4wfbPrHDko=",
     ".screenshots/9a01318d3f5b4f6a9c2990e6a1b42b31.png": "aBoNHiVsVFftjGoAIScjpnlA9LE5WCwyBQo5kBJFkx8=",
     ".screenshots/4c51693c7a3ed2b4f2b65907ef606af1.png": "HEbrnNZnYLijxcVxob+mf2DD9KqDAvagNcIzuq9FrVw=",
     ".objects/dgFO/.data/ObjectSelectionName/.content": "6PsJOMs84zB7DMaNgFFpsn9XFC4zxJ+OSuShvRiKf50=",
     ".screenshots/ca7c223f8d49dbd3d82d1661eae49bcf.png": "IX6y4yzFJWLYu04P55h44j2jw2D1mMSzokxwbQp5IUI=",
     ".project/JitCustomTypes.json": "+KbXlI8UPAyEs2AoeXJFUrsAe7n1HTekBsT4SneoTPY=",
-    "Shared/Components/GetCompanyUrl.xaml": "1E4yYN1RpUSRF43I8x6ujWwYRXwTcBPIUhD7ekGnhBU=",
+    "Shared/Components/GetCompanyUrl.xaml": "dRAIxHlOlPTC83vPu/JqjSIbdbMuYWUgVs13O4MkNLw=",
     ".screenshots/86eba801312f848cbbb9c0ea8361f63f.jpg": "UYdEop4KAGMGhj8RV1rtS1DeQUEChT0r5X8BoOAFfW0=",
     ".screenshots/4a909a4569f7c9e71231db39d7c49932.png": "sb/uXtdDFahen2voxM+n7RYg9DaIwEWnwvpDW75ET+A=",
     ".objects/dgFO/TKD0/DFam/.data/ObjectRepositoryScreenData/.content": "7qGQKfiDUTND0Mh7pZmdPf0uC9UGuYBsW0F1PNqBB+M=",
@@ -2270,12 +2170,10 @@
     ".project/PackageBindingsMetadata.json": "ib+hY6+KQbH7tsM3AxzF8P2FqvrZkPgVgASwCAs9ZLY=",
     ".screenshots/8c7b421e37087c9b74bb96c498fecc6b.png": "bFxaIR88nt3uUCvkNiwKEXVnZ2N6NAEcoBQ1rTYFOiM=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/67923eb7-6f67-4252-be9b-5614c4a834f8": "Xdc8yrlNOBdAzmIqUg2PgA1mvo6g8siLxOrMXSB6L24=",
-    "Utils/Flowchart.xaml": "iiw88uE0WyOs4GvHlltltm7Z9UDi5bMn5zS57kudef0=",
     ".objects/dgFO/TKD0/-soJ/VAW2/.metadata": "IubknqCUs2nAqwGVD+4E9SbQibL/5uaJgd3mqpAYSBM=",
     ".storage/.runtime/AncestryPersistenceService/caa9830a-3680-4628-ba67-28ef1c3fecd1_0fa25e46-8800-479e-b688-d3aefb01196c": "amJ3EqK4LGs74sLK4V59U6R0yPhtGt+B2cObyHyftcU=",
     ".storage/.runtime/AncestryPersistenceService/0659ccf3-9e3e-4859-9de3-982d69ba57d3": "DmW7EqkvAKfgWQwd6NSb1HeVt0V/Rz9pShzM0uWXDqY=",
     ".objects/dgFO/TKD0/-soJ/.data/ObjectRepositoryScreenData/.images/.design/09ukbVCvewE26ypUtDR7Xsg": "MMeNbOmrHb8+9Kk7cPECPZ6IbWtAqvoBqSMe3uD/2U8=",
-    "Data/StockPrice - Copy - Copy.xlsx": "NChVdu4EVv6kQHu+yqQuyShX2Pp4desPbcjNaBYI8lk=",
     ".objects/mONe/fXej/.type": "+GggqKGln+EckLy4CkowIpHwBNKm6rrFd/RbiZgQY7c=",
     ".objects/3FEj/92hH/eB8M/htUC/.metadata": "35ELVPqyIFFT2xFKV7/lq8+g+Yj20Yw0h2qTz8kd4LA=",
     ".settings/Debug/settings-a1b2dac1.json": "jniB7XO7RvyXE8sg1W6+CdAeAGwUoixjP1iOAMQq0zY=",
@@ -2284,20 +2182,18 @@
     ".screenshots/e8d2433a6d3d592073522328a97b5bff.jpg": "4tW2yK9hWAs9mdqqCqj4+KKhwnUKxvXj4EMUxPQKvAM=",
     ".objects/dgFO/TKD0/-soJ/f3fN/.data/ObjectRepositoryTargetData/.images/.design/0vXeAovRfLEiapsSurbKoYw": "QA70m9Vnij5TRS+nEDf84C0pRvSdtzPWENxV1Hu5218=",
     ".storage/.runtime/AncestryPersistenceService/ce56408b-9110-4b0b-9c35-7c4ecd272b86": "S5tbHI2Dpzaw6gXjbjKGomifTfrJXlNGvEgwF/10pr4=",
-    "Testing/Tryouts/GetCompanyUrl_c.xaml.json": "gHdePamE2FJWtxXl4TcyPskedmpF9lKO2U+hPKOD6Yg=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/bdd249fa-e7b5-42e7-a269-16e0d0cba36f": "aZvMXbXArZawZXsoZEdWtCaksm2hSXjPSf3cFEPd/nw=",
     ".storage/.runtime/AncestryPersistenceService/9f657fa1-4adf-4fb1-b2dd-f18ac6878dab": "qx1kw0nJhdnDSBBcI6vp0pe0HcbA9KrUMlGOhOJ+omQ=",
-    "Shared/Components/GetExchangeRates.xaml": "nSyjTZkBnrkA940BHwbtycRZdnhk5H59X2Jb5d2PxA0=",
+    "Shared/Components/GetExchangeRates.xaml": "FNNv6aSiLn90gJIaLew8laL9FBznn+0yshEg0HCDSz0=",
     ".screenshots/c5269ecbe19bd61ce29684c9846654ee.png": "d30XU4h083lgMLEmAfBJMJIFhyoqrusavUhVKAbdt+M=",
     ".storage/.runtime/AncestryPersistenceService/bdd249fa-e7b5-42e7-a269-16e0d0cba36f": "7VjABulP9swC0Etv/K7SqG+R6bRf+F/CUsHefFL4O2E=",
     ".objects/3FEj/92hH/eB8M/.metadata": "tcCUPlnlFrzFKyLDH4Ev7CXxIJvd9TuT4JFdExqubYA=",
-    "Main.xaml": "pZZ20L7nu9AFaQGB2K5CQlt7+xWVyFYuBvx9Cz7ELIM=",
+    "Main.xaml": "VPzgQFLN07ilv8/LMBIu/4ojxBkuHnL3bHjKvCVWhnw=",
     ".objects/mONe/.metadata": "2xoRiJ86yud9lMws9rPNARlGbuxRrRQpJGUNtd+q0dQ=",
     ".objects/dgFO/.metadata": "QaKGB0zL18EmFJxc5HHXtE54Z8yATRrfVwGmaHmp62U=",
     ".screenshots/80ff5e6b43da6ee1d1f5b60803e33277.png": "3T2ZchSmrfhTVvK+af3uEo0HJDkz/zP/pIASZKtsqm4=",
     ".screenshots/974aee13e4cf90aacb8881abec025b0e.png": "pQghBsQERYKSpSYl3Y8KWPqvJfs+/EVOJriQ4dOyrLI=",
     ".objects/dgFO/TKD0/DFam/.data/ObjectRepositoryScreenData/.images/.design/08rugRv1rQUW-059KU-x93g": "KDttcYj4csGKwLTbD9dh++jhr4Of9niwLnkiuZOvBCI=",
-    "Process/FetchAndConvert/FetchStockInfo.xaml": "Njkd0DcI6ekJdyuHUyy7CvcJpteCSY4PYUJ9nsVqvYw=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297": "nz07g8g1ThO7nHe0ko9+9EzfsogslyW2MCbek4VGXpw=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/d9f03b15-c645-454e-807a-40d20283a12a": "DICfU612cD44qrPQ9iDrh7ZUK9lnksrzj9HwSz6OEjg=",
     ".settings/Release/settings-590bb27b.json": "4fvUURCKkxFSSIwu1y1AoZuELH2J5tuzSfwKYQ+/qxo=",
@@ -2312,13 +2208,10 @@
     "Data/Input/CompanyList - Copy.xlsx": "c15WkuzXmrwSQXw9sutRS8as7DD9K9ByScLu4pwN6AU=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/4387fe99-7565-4cde-8814-0b5b7addf152": "Aev5mdUq90/CyWjw3vvdB98FKqhOiVNz925kdcDaCLw=",
     ".screenshots/15fefef96e27ae6fcf4cd88f7d337201.png": "SSjWfs2g1afaQFbPX0wmOrC2LrMkOnrX4QKKEVzB2RU=",
-    "Utils/FetchAllCompany.js": "KbInpIzEAl6vL3YSp+YpuwDu0mz4bI/qM0rUQdJCKXg=",
-    "Testing/Tryouts/CurrencyConverter.xaml.json": "zhC85jLzGHCqwiglE5eKija35yTffJ0AEymRoZBYb74=",
     ".settings/Debug/settings-5190454b.json": "9dTmYrtHO5uIu22mdu0GX2x5y/DCUKnNBY94nZK1SXw=",
     ".screenshots/de722c5ad8b5d8e9ddd3fbde16025dc6.png": "0LbxpXQaunaeJmxbIQWVn4mbFECD7znnL1Yn6+ontw0=",
     ".storage/.runtime/AncestryPersistenceService/75b265a3-4fdb-4cc1-81af-bd66225c6060_dd4a62e5-17da-4820-8c50-d94c0393cac3": "DWOPoJjyQHVxPum/kd9VhKiBei6yrJ/2XieJ57NuFgc=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/47cb387c-e844-44c2-a7ea-d89d104a2cbb": "xbn36YQBtMKU7nbIKnJjhNbT/VXlVErLyy5IIgvxO58=",
-    "Testing/Tryouts/Main - Copy (1).xaml": "MUueJwUUt5kfoz/4ajZwvjkNYcIOUIgSXHml14/TMd0=",
     ".screenshots/2df2137de9c1a0301c076a3e74d91aa1.png": "8ldhpcIerj7KYt2HtWGIhjcLmEA+uUAY/h4/Jd98xx4=",
     ".storage/.runtime/AncestryPersistenceService/7443a688-c3f1-4027-a76a-700621294f42": "HoM6U9MWZQgeRsuz+iDKgZ/dPkl3Cu0fkAGoTJFAbQ4=",
     ".objects/mONe/fXej/WQTx/kjdg/.metadata": "YsPmG150nS36+2ncn1bFmz7qLoQtl75vuBVHD68exQw=",
@@ -2334,7 +2227,6 @@
     ".objects/3FEj/92hH/eB8M/.data/ObjectRepositoryScreenData/.images/.design/0o9mydZXLMUKVzig14dTwRA": "4tW2yK9hWAs9mdqqCqj4+KKhwnUKxvXj4EMUxPQKvAM=",
     "Shared/Components/GetCompanyUrl.xaml.json": "bNA+iULSuHHGuv9qp3+4e1s8hzZpGo4yvz1yKM/i/5U=",
     ".screenshots/cf3296444b7fc2da1fefcedbed26a6b2.png": "2tRmblBYVMZNg3IeKuyw4Vvo3zP3pLRAhiYVA6R3rws=",
-    "Process/FetchAndConvert/FetchAndConvert_Main.xaml": "8N3Pe4OQ+KA4tkTy36tkLHMuV0E20ICq2U/C6ODsISM=",
     ".objects/dgFO/TKD0/-soJ/xxU_/.data/ObjectRepositoryTargetData/.images/.design/0FDCKYs5DRkK5M_PBpuKsvQ": "X+Nm0latLB+QuuQzoGRl6urrhvAYH9qh2FYL139xh9o=",
     ".objects/3FEj/92hH/eB8M/htUC/.data/ObjectRepositoryTargetData/.images/.design/0tKEr-vCk1kmpWyfqdlMYGw": "mL7xx2HVEBpcKI8A7jKiDSag84biMc31tLpX1HivZAM=",
     ".objects/mONe/.data/ObjectSelectionName/.content": "6PsJOMs84zB7DMaNgFFpsn9XFC4zxJ+OSuShvRiKf50=",
@@ -2342,44 +2234,44 @@
     ".objects/3FEj/92hH/eB8M/.type": "blYTfiHTIiouMTX8NFgob8P7ay4sZ56a4o2yaP6YKvc=",
     ".objects/dgFO/TKD0/-soJ/xxU_/.metadata": "cOxApz3ofbes/ddtIlOmOv8d56Nw5Ea07vFFEpgMi4M=",
     ".screenshots/00401267301aaca4f9a9f1038ed5b3dc.png": "4U/1Y1s3lvSjjrwPh9Fb350cUNVXpDQzC7zMv36VByU=",
+    "Workflows/ExtractData/FetchAndConvert_Main.xaml": "owtG0VwKg6mSrSq/QMe4WvtZoeHQxEixV4zYTAqNOOw=",
     ".objects/dgFO/TKD0/DFam/.metadata": "Wgtzl2oEMxb6YMONFB46l4HDg1dfJBo/Wu+wBsraz14=",
     ".objects/dgFO/TKD0/-soJ/h6qw/.metadata": "D9H2plh5wPZIQETX6GFcZYqd+s7HYp/YabPqT5ArTDI=",
     ".screenshots/6159c49b5328a926a76b65013a3a166e.png": "OWH7EBcxuW3AyNiVC0MwI37zDkhM1vWOn5pQu4ih4OI=",
     ".screenshots/91fdff762737f1f464d94bb99656542e.png": "kkTVf76zS6St4N13hcADcSGzA8BXnl+DB++Sms1kRV4=",
     ".objects/dgFO/.type": "DQS/631ktxx0/JJcypPWgxVOjMfm5YOPrO1JjjTJmE0=",
     ".objects/dgFO/TKD0/-soJ/f3fN/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
-    "Data/Input/CompanyList.xlsx": "4+NMgCXJMioSIHnjXLp2DI++71qr5nKlIKZkQzzr10k=",
-    "Utils/FetchStockPrice.js": "lZjSX4NDbLcfsIKP5okvxvQeaNBvx7BSHtp26a6Nz0k=",
+    "Data/Input/CompanyList.xlsx": "xQ+ggP13HECx72v4Tytn8+88CRiAHRGWeYbuASsjOSY=",
     "Shared/Utils/FetchStockPrice.js": "lZjSX4NDbLcfsIKP5okvxvQeaNBvx7BSHtp26a6Nz0k=",
     ".project/design.json": "tpigGYm5XaG029JmRVNbleDrxKui0uJxWXFRRvAf2I4=",
     ".storage/.runtime/AncestryPersistenceService/c6b21b2a-c913-4aef-b496-5a49477b8297": "e8w3diG+X5hHuIe6odWrucxucuZmS9qYTGJqe2xqQFg=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/75b265a3-4fdb-4cc1-81af-bd66225c6060": "WhAZtMBcpD2aKHqObbrRzD0CGaPIC6FTetUk13xxx7M=",
+    "README_ASIS.md": "0WIVwU1uTBGD4aFUuVQe2zfn1TLFJGXqSi+RS6TaZqc=",
     ".objects/3FEj/.metadata": "SwaTJ7Vn/H2uGdi8KTaVnQfJpTBPl5EYe1c7nqxlr9w=",
     ".objects/dgFO/TKD0/-soJ/h6qw/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
+    "README_TOBE.md": "8pQLcCaX5FM6tIQ91gWz4c7keXnWXGNsK2rjSMh0lis=",
+    "Workflows/ExtractData/FetchStockInfo.xaml.json": "/NiC33iMCvtD3ry84eiea7imrA0k4S/J9QlRPhvfVWw=",
     ".objects/dgFO/TKD0/-soJ/VAW2/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
-    "Data/Output/CompanyStockData.xlsx": "jmRlGBXvwU+/UrPXc4vAxSJI7QlfNc+8eThE8QSg3iA=",
+    "Data/Output/CompanyStockData.xlsx": "sb5rn7G7B5fj19xnxgZQKcCxe1oWYvljM+dqJmjfGLs=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/ce56408b-9110-4b0b-9c35-7c4ecd272b86": "aEQsz3YG4ghDhZZewuqRmGLL6vBwwfY83syI6Cq64fo=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/afa58f88-464b-4753-b3ad-9a67caec5819": "QTfaivmJJpOnj9+1zFhmGyW9wGjVhGvdtugDwQwZsIU=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/58eecccb-5a29-4e2e-bfde-4676fcbffbdd": "xOGro279u+ufbw+NdNMIh1hTP8WW6kK1Lw0NUXrVCGg=",
     ".objects/dgFO/TKD0/-soJ/VAW2/.data/ObjectRepositoryTargetData/.content": "mw4lzbH1HoM+sz844vRZbWHUNIo5zfU1OWuVPFK1WcE=",
     ".objects/dgFO/TKD0/-soJ/h6qw/.data/ObjectRepositoryTargetData/.images/.design/0UfZrArCqcUe64Im8eRikqA": "hLHiMxP8Ff49kLbCsgqeFI1l2LlPJqnTDqlPa96hNsY=",
-    "Testing/Tryouts/CurrencyConverter.xaml": "fZibNI57v+KGPLR2uHYiX3PWxgZP6GIphRzxCjYnO9M=",
     ".objects/dgFO/TKD0/-soJ/SRvx/.data/ObjectRepositoryTargetData/.images/.design/0QQaGc4v2nUOQZHFkXFUfRQ": "m51u2GBWNQijtxf7VopGUUpSgwWOhloc6EU/oekPaCo=",
     ".objects/dgFO/TKD0/-soJ/xxU_/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
     ".screenshots/e748a140492247b5d36da22a302c8963.png": "WLikY2pWmoZLs/XP6q5zsSUhd6K/irAD4k17KqGOXbU=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/c8440568-fce9-4f81-b6b0-39b6a59e5076": "35nbDoRsyqJZY1FO3VhsC9XqzRF8jgW7VA6kT1xmjeU=",
     ".screenshots/3fd0ef5a837b2ca4437e0d778fff660a.jpg": "KDttcYj4csGKwLTbD9dh++jhr4Of9niwLnkiuZOvBCI=",
     ".objects/mONe/fXej/WQTx/.type": "blYTfiHTIiouMTX8NFgob8P7ay4sZ56a4o2yaP6YKvc=",
-    "project.json": "J26npkW9OVKu1t3ux1BeQAU2Pw2r7DbjHSQmxFKosJo=",
-    "Testing/Tryouts/GetExchangeRates_.xaml.json": "rGgSa+NZ/f5881tibaoTLsKgMammv5tfVJ/wHZOuyFQ=",
+    "Data/Output/CompanyStockData_20241021_022331.xlsx": "iftxNtQ5OMBYNDqD9+XCTOJtg4ufZEIxbAUiXCCrLDk=",
+    "project.json": "gJXS6xxDkcs9tBcmTRaQvp2uTE+ht06o+WXuFa6S9Lo=",
     ".screenshots/bf2d3fcdbbda2535371e1fb7c267be67.png": "vV2U92m7mnD5bMoOmwN5p6BBqIxzqoYxANOJW+K7Ou0=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/102fd88c-c954-4ebe-b2db-49c76251d0f1": "ekT+nxhfdwH0IX4j07pyfdLjGP3nHNmMZrtH7siDW+Y=",
     ".objects/dgFO/TKD0/-soJ/m4sY/.metadata": "dH275YbmcvB2qKqbWzfqkCV8ndmLO6+dTdpiPyY/3fE=",
     ".screenshots/08ea56b119e6e9ccde2741024fa7f9ac.png": "M7Ttjf+m5P6XaxS3Ec8dsnYei1GbzFkid9Bu6CuraHI=",
     ".storage/.runtime/DesignTimeTargetImagePersistenceService/9f657fa1-4adf-4fb1-b2dd-f18ac6878dab": "vSr42Hbfb9j419Uo3si9ZdppmrQdPG8E3j2Kx38c17w=",
-    "Data/Output/CompanyStockData_old.xlsx": "Z6cWIv6aTUF+9bcO0C4otKANMF6K01qUmxXMkDeunMY=",
     ".screenshots/43f43b8e2999b6a796a9cbcebf29c0ea.png": "0Zy3ZM9LzikiWvqxqnYSEWNBLha4kR/7k69M7ii/b14=",
-    "Process/FetchAndConvert/FetchStockInfo.xaml.json": "IlGPrG2nMs0puXLeOpPEjg/Ba1ywN+VkHTp/b5ZWeWs=",
     ".screenshots/cace48d2d22cc99e61ce1ec65e419eae.png": "b4zxQWhnkiyO6pzbJqgkx8AABKLZCXHubwOP2FL/DwQ=",
     ".screenshots/ef3b38e98a4c1ff045fd52bb17d224d6.png": "yv8e4nzfuA0ZJlu66YWmciKwiCnQPYRcUNPt6pjnBgY=",
     ".objects/3FEj/92hH/eB8M/OREk/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
@@ -2395,7 +2287,7 @@
     ".objects/dgFO/TKD0/DFam/.type": "blYTfiHTIiouMTX8NFgob8P7ay4sZ56a4o2yaP6YKvc=",
     ".storage/.runtime/AncestryPersistenceService/afa58f88-464b-4753-b3ad-9a67caec5819_332a28a7-81b4-4236-b717-de5063df7b9d_5cfe7deb-a668-4e87-9db6-a09390b482bc": "MJN7TjnkoOVP1y9xoMkSB5ZUvBRYzGdXXALz2QEq+c8=",
     ".screenshots/b13691ba3121af58defebdc25cbc8385.png": "Sbh0SKsP2x7VFPlFuY215MRC0eMFv8EQOvefklJHYRo=",
-    "Data/Logs/process_log.txt": "j0lNcNLsVkisc0bmD2NmHbUyByO34u+5TMbmYKDlgnU=",
+    "Data/Logs/process_log.txt": "KuIAun/fIQ0gmtvnaWOdm2IKo9uS9rL0jfQ6dyHrygU=",
     ".project/JitCustomTypesSchema.json": "44m8TZjbxKYGpflr4lUqhn+eTLTsuZT4QpjQZaRLLRc=",
     ".screenshots/b8c82f5e406f1b34db45e9ab539b2089.png": "TgLLfFys4H6VMKu4Yc3yWWgBA/iYkUbWFa3qsmuoyDU=",
     ".settings/Release/settings-1a5b880a.json": "7LuMiqeAyudf1SiAtg+L/3TGzsMJkAoNJ7g6yi2hqOg=",
@@ -2407,7 +2299,6 @@
     ".screenshots/02d9366f47533709c74cf007777c04c1.png": "gwT7pMhXeVBCGyn2nowgwGEb0xgTZK4IXngM7aK4o/A=",
     ".screenshots/897ed62f1f16e0463880ebb078a0f3b6.png": "ug90kc9DgjMa+WGVuLhhKnk1eG8hhKlCuL09lJ0StlE=",
     ".screenshots/a09ea02fb4fab9ec69852bb90aa9f331.png": "M0mSC2bI0WmcbkWgNAIeff+AUqaj3Yl/T2ArzhjL3yY=",
-    "Testing/Tryouts/Main - Old.xaml": "6lQ2yOJm1KfRVGF9Hz4FFKbP6li2yEG8/V+wCRoeWh0=",
     ".objects/dgFO/TKD0/-soJ/SRvx/.type": "TltUjW1h8ABoQKyhBvdGSktZ5ahUMX1bV4YbhCOQG/Y=",
     ".settings/Debug/settings-afad0842.json": "o6cyP0e4lygMz+a1AdWsz/rRkRbvynZ6TlDRF8oah28=",
     "Testing/Tryouts/ExtractStockData.xaml": "uGPdV2BlWrdTvViNHTuEHoJ6M9cgUhOwyjLIW6bVeKY=",
@@ -2415,7 +2306,6 @@
     ".screenshots/bdff033ab26bd50cfceb9552cb201a8d.jpg": "adXS27OHDb8RbP7KaPiiEQ016qmFCoATjwwqxdJakpA=",
     ".objects/dgFO/TKD0/-soJ/xxU_/.data/ObjectRepositoryTargetData/.content": "MVmBCaJRcAc+jYCH5JS6JT388W3QLQvVj7pj3UbgrQY=",
     ".settings/Debug/settings-590bb27b.json": "4fvUURCKkxFSSIwu1y1AoZuELH2J5tuzSfwKYQ+/qxo=",
-    "Data/StockPrice.xlsx": "1F2AAOE0AB0oONu+qnXZbO9P0zZLETqDf4f3k0VUhAo=",
     ".objects/dgFO/TKD0/-soJ/SRvx/.data/ObjectRepositoryTargetData/.content": "LyVp8W+j8c3MxJdOuCsBcoXsWH2bx0sZtYfA1WchSNk=",
     ".settings/Debug/settings-82ca306a.json": "wW7p8opAxgjsb/RDAO397wAnWiGTiw2bTYZH58LTpCI=",
     ".objects/3FEj/92hH/.metadata": "59+t9WBtnmTlbtUY/lvjs94KHxVp97/1gDX12yBYXpo=",
@@ -2546,6 +2436,10 @@
     "Main - with Parallel fetch.xaml",
     "Main.xaml",
     "project.json",
+    "README.md",
+    "README_ASIS.md",
+    "README_RESULTS.md",
+    "README_TOBE.md",
     ".entities/EntitiesBundle.X837u2PZ5BGRzc2Vu3xmddApjuCqJK3x0VA7PBjl454.zip",
     ".objects/.metadata",
     ".objects/.type",
@@ -2762,24 +2656,14 @@
     ".templates/GetCompanyUrlTemplate.xaml",
     ".tmh/config.json",
     "Config/Config.xlsx",
-    "Data/CompanyStockData.xlsx",
-    "Data/CompanyStockData_.xlsx",
-    "Data/CompanyStockData_old.xlsx",
-    "Data/CompanyStockData_parallel.xlsx",
-    "Data/StockData.xlsx",
-    "Data/StockPrice - Copy - Copy.xlsx",
-    "Data/StockPrice.xlsx",
-    "Data/StockPriceOutput.xlsx",
-    "Data/StockPriceOutput_old.xlsx",
+    "Data/Input/CompanyList - Copy (2).xlsx",
     "Data/Input/CompanyList - Copy.xlsx",
     "Data/Input/CompanyList.xlsx",
     "Data/Logs/process_log.txt",
     "Data/Output/CompanyStockData.xlsx",
-    "Data/Output/CompanyStockData_old.xlsx",
-    "Process/FetchAndConvert/FetchAndConvert_Main -Parallel.xaml",
-    "Process/FetchAndConvert/FetchAndConvert_Main.xaml",
-    "Process/FetchAndConvert/FetchStockInfo.xaml",
-    "Process/FetchAndConvert/FetchStockInfo.xaml.json",
+    "Data/Output/CompanyStockData_20241021_022331.xlsx",
+    "Data/Output/CompanyStockData_20241021_023702.xlsx",
+    "Data/Output/CompanyStockData_20241021_081541.xlsx",
     "Shared/Components/GetCompanyUrl.xaml",
     "Shared/Components/GetCompanyUrl.xaml.json",
     "Shared/Components/GetExchangeRates.xaml",
@@ -2789,26 +2673,15 @@
     "Shared/Utils/FetchAllCompany.js",
     "Shared/Utils/FetchStockPrice.js",
     "Testing/Tryouts/CurrencyConverter(Autosaved).xaml",
-    "Testing/Tryouts/CurrencyConverter.xaml",
-    "Testing/Tryouts/CurrencyConverter.xaml.json",
     "Testing/Tryouts/ExtractStockData.xaml",
-    "Testing/Tryouts/GetCompanyUrl_c.xaml",
-    "Testing/Tryouts/GetCompanyUrl_c.xaml.json",
     "Testing/Tryouts/GetExchangeRates.xaml",
-    "Testing/Tryouts/GetExchangeRates_.xaml",
-    "Testing/Tryouts/GetExchangeRates_.xaml.json",
-    "Testing/Tryouts/js.xaml",
-    "Testing/Tryouts/Main - Copy (1).xaml",
-    "Testing/Tryouts/Main - Old.xaml",
-    "Testing/Tryouts/Main -with dt.xaml",
-    "Testing/Tryouts/Main_Tryout.xaml",
-    "Utils/FetchAllCompany.js",
-    "Utils/FetchStockPrice.js",
-    "Utils/Flowchart.xaml"
+    "Workflows/ExtractData/FetchAndConvert_Main.xaml",
+    "Workflows/ExtractData/FetchStockInfo.xaml",
+    "Workflows/ExtractData/FetchStockInfo.xaml.json"
   ],
   "StudioWebEmptyFolders": [],
-  "LockKey": "9095fcf6-cc2a-49df-a922-84b44fd7b4d7",
-  "LocalProjectPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice",
+  "LockKey": "3d8964c7-cf42-49be-955e-f66b2bb50e27",
+  "LocalProjectPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\CompanyStockInfo",
   "ProjectId": "23579255-db75-45b1-b4cc-52947910c4ef",
-  "ProjectName": "ScrapeStockData"
+  "ProjectName": "CompanyStockInfo"
 }

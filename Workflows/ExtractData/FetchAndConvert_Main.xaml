@@ -119,15 +119,14 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1269.6000000000001,1760" sap2010:WorkflowViewState.IdRef="Sequence_33">
+  <Sequence sap:VirtualizedContainerService.HintSize="1836.0000000000002,1120" sap2010:WorkflowViewState.IdRef="Sequence_33">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Fetch and convert stock " sap:VirtualizedContainerService.HintSize="571.2,1736.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
+    <Sequence DisplayName="Fetch and convert stock " sap:VirtualizedContainerService.HintSize="553.6,1096.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
       <Sequence.Variables>
-        <Variable x:TypeArguments="x:String" Name="strCompanyUrl" />
         <Variable x:TypeArguments="x:String" Name="strOpeningDate" />
         <Variable x:TypeArguments="x:String" Name="strStockPrice" />
         <Variable x:TypeArguments="x:String" Name="strConvertedStockPrice" />
@@ -145,7 +144,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try  - Fetch  stock data , convert and write to table" sap:VirtualizedContainerService.HintSize="537.6,1653.6" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+      <TryCatch DisplayName="Try  - Fetch  stock data , convert and write to table" sap:VirtualizedContainerService.HintSize="520,1013.6" sap2010:WorkflowViewState.IdRef="TryCatch_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -153,17 +152,14 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Extract convert and write to DT" sap:VirtualizedContainerService.HintSize="500.8,1399.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="sd:DataTable" Name="out" />
-            </Sequence.Variables>
+          <Sequence DisplayName="Extract convert and write to DT" sap:VirtualizedContainerService.HintSize="483.2,759.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow- FetchStockInfo.xaml" sap:VirtualizedContainerService.HintSize="467.2,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Workflows\ExtractData\FetchStockInfo.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Workflow- FetchStockInfo.xaml" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Workflows\ExtractData\FetchStockInfo.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="x:String" x:Key="in_strCompanyName">[in_strCompanyName]</InArgument>
                 <OutArgument x:TypeArguments="x:String" x:Key="out_strOpeningDate">[strOpeningDate]</OutArgument>
@@ -175,19 +171,19 @@
               </ui:InvokeWorkflowFile.Arguments>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
-            <Sequence DisplayName="Convert all the stock prices " sap:VirtualizedContainerService.HintSize="467.2,1084.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence DisplayName="Convert all the stock prices " sap:VirtualizedContainerService.HintSize="449.6,594.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Conversion started" sap:VirtualizedContainerService.HintSize="433.6,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Conversion started" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="logMessage">["Started converting stock prices for "+in_strCompanyName]</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="logLevel">Info</InArgument>
@@ -195,12 +191,12 @@
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
-              <Assign DisplayName="Assign Stock price (EUR)" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign DisplayName="Get Stock price (EUR)" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strConvertedStockPrice]</OutArgument>
                 </Assign.To>
@@ -209,12 +205,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign Open (EUR)" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign DisplayName="Get Open (EUR)" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strConvertedOpen]</OutArgument>
                 </Assign.To>
@@ -223,12 +219,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign Previous close (EUR)" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign DisplayName="GetPrevious close (EUR)" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strConvertedPreviousClose]</OutArgument>
                 </Assign.To>
@@ -237,12 +233,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log converted price" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log converted price" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="logMessage" xml:space="preserve">["Converted stock price  "+strConvertedStockPrice+  " Converted open  "+strConvertedOpen+"  Converted  previos close  "+ strConvertedPreviousClose]</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="logLevel">Debug</InArgument>
@@ -255,7 +251,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
-              <Assign DisplayName="Format Stock price (EUR)" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign DisplayName="Format Stock price (EUR)" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="Assign_6">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strFormattedConStockPrice]</OutArgument>
                 </Assign.To>
@@ -264,12 +260,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Format Open (EUR)" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign DisplayName="Format Open (EUR)" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="Assign_7">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strFormattedConOpen]</OutArgument>
                 </Assign.To>
@@ -278,12 +274,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Format Previous close (EUR)" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign DisplayName="Format Previous close (EUR)" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="Assign_8">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strFormattedConPrevClose]</OutArgument>
                 </Assign.To>
@@ -292,12 +288,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log converted final formatted price" sap:VirtualizedContainerService.HintSize="433.6,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log converted final formatted price" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="logMessage" xml:space="preserve">["Final Stock Price"+strFormattedConStockPrice+" Final Open  "+strFormattedConOpen+" Final Previous close "+strFormattedConPrevClose]</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="logLevel">Debug</InArgument>
@@ -311,10 +307,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
             </Sequence>
-            <Sequence DisplayName="Output datatable with stock data for given company" sap:VirtualizedContainerService.HintSize="467.2,48" sap2010:WorkflowViewState.IdRef="Sequence_22">
-              <Sequence.Variables>
-                <Variable x:TypeArguments="x:String" Name="variable1" />
-              </Sequence.Variables>
+            <Sequence DisplayName="Output datatable with stock data for given company" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_22">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -333,7 +326,7 @@
           </Sequence>
         </TryCatch.Try>
         <TryCatch.Catches>
-          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="504,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="486.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>

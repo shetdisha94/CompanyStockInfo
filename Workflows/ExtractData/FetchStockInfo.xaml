@@ -247,13 +247,13 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="1269.6000000000001,1003.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap:VirtualizedContainerService.HintSize="1836.0000000000002,1466.4000000000003" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try - Fetch stock info" sap:VirtualizedContainerService.HintSize="486.4,980" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try - Fetch stock info" sap:VirtualizedContainerService.HintSize="1318.4,1443.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="s:DateTime" Name="startTimeMoniter" />
         <Variable x:TypeArguments="s:DateTime" Name="endTimeMoniter" />
@@ -264,26 +264,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Moneycontrol URL" sap:VirtualizedContainerService.HintSize="449.6,725.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="03a6ce69-2503-4661-88d7-4ab2051f6968" Version="V2" WindowResize="Restore">
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Moneycontrol URL" sap:VirtualizedContainerService.HintSize="1281.6,1188.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="03a6ce69-2503-4661-88d7-4ab2051f6968" Version="V2" WindowResize="Restore">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Extract thestock prices" sap:VirtualizedContainerService.HintSize="416,508.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Extract thestock prices" sap:VirtualizedContainerService.HintSize="1248,972" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <Sequence.Variables>
-                  <Variable x:TypeArguments="ui:UiElement" Name="companyNameElement" />
-                  <Variable x:TypeArguments="x:String" Name="strOpenINR" />
-                  <Variable x:TypeArguments="x:String" Name="strPreviousCloseINR" />
                   <Variable x:TypeArguments="x:String" Name="strOpeningDate" />
-                  <Variable x:TypeArguments="x:Boolean" Name="boolElementExists" />
-                  <Variable x:TypeArguments="ui:UiElement" Name="stockPriceElement" />
-                  <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="dictCompanies" />
-                  <Variable x:TypeArguments="x:String" Name="allCompanies" />
-                  <Variable x:TypeArguments="x:Boolean" Name="isDateElementExists" />
-                  <Variable x:TypeArguments="x:Boolean" Name="isOpenStockElementExists" />
-                  <Variable x:TypeArguments="x:Boolean" Name="isPreviosStockElementExists" />
-                  <Variable x:TypeArguments="x:Boolean" Name="isHeadingExists" />
                 </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -291,7 +280,7 @@
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign DisplayName="Get Start Time" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign DisplayName="Get Start Time" sap:VirtualizedContainerService.HintSize="1214.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_4">
                   <Assign.To>
                     <OutArgument x:TypeArguments="s:DateTime">[startTimeMoniter]</OutArgument>
                   </Assign.To>
@@ -305,7 +294,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
-                <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="JS - To extract stock price" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScopeIdentifier="03a6ce69-2503-4661-88d7-4ab2051f6968" ScriptCode="Shared\Utils\FetchStockPrice.js">
+                <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="JS  To extract stock price into out_strStockPrice" sap:VirtualizedContainerService.HintSize="1214.4,283.2" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScopeIdentifier="03a6ce69-2503-4661-88d7-4ab2051f6968" ScriptCode="Shared\Utils\FetchStockPrice.js">
                   <uix:NInjectJsScript.ScriptOutput>
                     <OutArgument x:TypeArguments="x:String">
                       <VisualBasicReference x:TypeArguments="x:String" ExpressionText="out_strStockPrice" sap2010:WorkflowViewState.IdRef="VisualBasicReference`1_1" />
@@ -316,16 +305,16 @@
                   </uix:NInjectJsScript.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NInjectJsScript>
-                <Parallel sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Parallel_2">
+                <Parallel sap:VirtualizedContainerService.HintSize="1214.4,236" sap2010:WorkflowViewState.IdRef="Parallel_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <uix:NGetText DisplayName="Get Opening Date" sap:VirtualizedContainerService.HintSize="373.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="03a6ce69-2503-4661-88d7-4ab2051f6968" ScrapingMethod="Fulltext" TextString="[strOpeningDate]" Version="V4">
@@ -377,7 +366,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NGetText>
                 </Parallel>
-                <Assign DisplayName="Format Date to out_strOpeningDate" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign DisplayName="Format Date to out_strOpeningDate" sap:VirtualizedContainerService.HintSize="1214.4,114.4" sap2010:WorkflowViewState.IdRef="Assign_3">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[out_strOpeningDate]</OutArgument>
                   </Assign.To>
@@ -386,12 +375,12 @@
                   </Assign.Value>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
-                <Assign DisplayName="Get End Time" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign DisplayName="Get End Time" sap:VirtualizedContainerService.HintSize="1214.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_5">
                   <Assign.To>
                     <OutArgument x:TypeArguments="s:DateTime">[endTimeMoniter]</OutArgument>
                   </Assign.To>
@@ -399,7 +388,7 @@
                     <InArgument x:TypeArguments="s:DateTime">[DateTime.Now]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Execution time to ftch stock data" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Execution time to ftch stock data" sap:VirtualizedContainerService.HintSize="1214.4,56.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="logMessage" xml:space="preserve">["Extracted stock data for "+in_strCompanyName+"  in  "+((endTimeMoniter - startTimeMoniter).TotalMilliseconds/1000.0).ToString+" s"]</InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="logLevel">Info</InArgument>
@@ -412,7 +401,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InvokeWorkflowFile>
-                <Assign DisplayName="Assign website load time" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_7">
+                <Assign DisplayName="Assign website load time" sap:VirtualizedContainerService.HintSize="1214.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_7">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Double">[dblWebsiteLoadTime]</OutArgument>
                   </Assign.To>
@@ -426,7 +415,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Extracted Stock Data" sap:VirtualizedContainerService.HintSize="382.4,49.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Log Extracted Stock Data" sap:VirtualizedContainerService.HintSize="1214.4,49.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Shared\Components\LogMessage.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="logMessage" xml:space="preserve">["Stock price : "+out_strStockPrice+" Date : "+out_strOpeningDate+"   Open : "+out_strOpenPrice+"  Previous : "+out_strPreviousClose]</InArgument>
                     <InArgument x:TypeArguments="x:String" x:Key="logLevel">Info</InArgument>
@@ -448,12 +437,13 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </uix:NApplicationCard>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="sn:WebException" sap:VirtualizedContainerService.HintSize="452.8,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="sn:WebException" sap:VirtualizedContainerService.HintSize="1284.8,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
