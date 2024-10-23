@@ -3,7 +3,7 @@
   "projectId": "23579255-db75-45b1-b4cc-52947910c4ef",
   "previousProjectId": "ac484897-524a-46a4-8620-a95a015a955c",
   "description": "Process reads company list and fetches stock data and converts INR price into EUR and writes data to excel.",
-  "main": "Main.xaml",
+  "main": "Shared\\Components\\SendOutlookMailMessage.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.0-preview]",
     "UiPath.Mail.Activities": "[1.23.11]",
@@ -101,6 +101,12 @@
     {
       "filePath": "Workflows\\ExtractData\\FetchStockInfo.xaml",
       "uniqueId": "b9cb3c1b-1dfa-49cb-832a-3301bac29c3a",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Shared\\Components\\SendOutlookMailMessage.xaml",
+      "uniqueId": "96a9d647-6a47-46ae-bf8f-955553e7ac61",
       "input": [],
       "output": []
     }

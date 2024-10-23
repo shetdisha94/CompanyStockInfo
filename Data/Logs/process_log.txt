@@ -235,3 +235,23 @@
 [ Info ]   10/22/2024 15:16:46  Started fetching stock data for ABC
 [ Info ]   10/22/2024 15:16:46  Writing stock data to excel started
 [ Info ]   10/22/2024 15:16:46  Writing stock data to excel ended and created CompanyStockData_10/22/2024 15:16:46.xlsx at Data\Output\
+[ Info ]   10/23/2024 12:26:52  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/23/2024 12:26:53  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/23/2024 12:27:21   Conversion Rate  for  INR to EUR is 0.0110319
+[ Info ]   10/23/2024 12:27:22  Started fetching stock data for Abbott India
+[ Info ]   10/23/2024 12:27:32  Extracted stock data for Abbott India  in  6.6122307000000005 s
+[ Info ]   10/23/2024 12:27:32  Stock price : 28455.15 Date : 23/10/2024 15:52   Open : 29,000.00  Previous : 29,028.10
+[ Info ]   10/23/2024 12:27:32  Started converting stock prices for Abbott India
+[ Info ]   10/23/2024 12:27:32  Writing stock data to excel started
+[ Info ]   10/23/2024 12:27:33  Writing stock data to excel ended and created CompanyStockData_10/23/2024 12:27:33.xlsx at Data\Output\
+[ Error ]   10/23/2024 12:27:33  UiPath.Mail  -  An error occured while trying to initialize the Outlook session.
+Make sure Outlook is installed on your system! If Outlook is installed this error might be due a corrupt installation. Please repair Office installation.
+[ Info ]   10/23/2024 12:29:12  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/23/2024 12:29:13  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/23/2024 12:29:57   Conversion Rate  for  INR to EUR is 0.0110318
+[ Info ]   10/23/2024 12:29:58  Started fetching stock data for Abbott India
+[ Info ]   10/23/2024 12:30:24  Extracted stock data for Abbott India  in  7.115454 s
+[ Info ]   10/23/2024 12:30:24  Stock price : 28455.15 Date : 23/10/2024 15:52   Open : 29,000.00  Previous : 29,028.10
+[ Info ]   10/23/2024 12:30:24  Started converting stock prices for Abbott India
+[ Info ]   10/23/2024 12:30:24  Writing stock data to excel started
+[ Info ]   10/23/2024 12:30:25  Writing stock data to excel ended and created CompanyStockData_10/23/2024 12:30:25.xlsx at Data\Output\
