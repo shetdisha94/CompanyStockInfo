@@ -26,6 +26,8 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strPassword&Sequence_21",
+        "strUsername&Sequence_21",
         "dictConfig&Sequence_1",
         "dtCompanies&Sequence_1",
         "dtCompanyStockData&Sequence_1",
@@ -144,7 +146,6 @@
       "Path": "Shared/Components/GetCompanyUrl.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "brow&TryCatch_1",
         "jStrCompanies&Sequence_1",
         "dictCompanies&Sequence_1"
       ],
@@ -181,6 +182,25 @@
         "strFormattedConStockPrice&Sequence_1",
         "strCompanyUrl&Sequence_1"
       ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Shared/Components/SendOutlookMailMessage.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "strPassword",
+        "strUsername"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ad.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

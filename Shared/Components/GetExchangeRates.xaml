@@ -127,7 +127,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExtractStock" sap:VirtualizedContainerService.HintSize="1269.6000000000001,1023.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ExtractStock" sap:VirtualizedContainerService.HintSize="1102.4,1023.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="INR" Name="strINR" />
       <Variable x:TypeArguments="x:String" Default="EUR" Name="strEUR" />

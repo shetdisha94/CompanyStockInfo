@@ -127,9 +127,10 @@
       <AssemblyReference>DeserializeJSON178e2.Mm4JT3dIz5M1c0yHK1Bty6g4</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1229.6000000000001,1259.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1102.4,1259.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="jStrCompanies" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="dictCompanies" />
@@ -153,7 +154,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NCheckState DisplayName="Get Company name &amp; URLs" sap:VirtualizedContainerService.HintSize="952,703.2" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="1111a36b-ef41-4594-85e9-f6454e8e5880" Timeout="5" Version="V4">
+                <uix:NCheckState DisplayName="Get Company name &amp; URLs" sap:VirtualizedContainerService.HintSize="952,703.2" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="1111a36b-ef41-4594-85e9-f6454e8e5880" Version="V4">
                   <uix:NCheckState.IfExists>
                     <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,460" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <sap:WorkflowViewStateService.ViewState>

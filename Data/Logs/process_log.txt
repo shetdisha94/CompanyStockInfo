@@ -255,3 +255,26 @@ Make sure Outlook is installed on your system! If Outlook is installed this erro
 [ Info ]   10/23/2024 12:30:24  Started converting stock prices for Abbott India
 [ Info ]   10/23/2024 12:30:24  Writing stock data to excel started
 [ Info ]   10/23/2024 12:30:25  Writing stock data to excel ended and created CompanyStockData_10/23/2024 12:30:25.xlsx at Data\Output\
+[ Info ]   10/24/2024 08:42:02  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/24/2024 08:42:03  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/24/2024 08:42:13   Conversion Rate  for  INR to EUR is 0.0110252
+[ Info ]   10/24/2024 08:42:14  Started fetching stock data for Abbott India
+[ Error ]   10/24/2024 08:42:14  CompanyStockInfo_Expressions_Main  -  Object reference not set to an instance of an object.
+[ Info ]   10/24/2024 08:46:41  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/24/2024 08:46:42  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/24/2024 08:46:51   Conversion Rate  for  INR to EUR is 0.011027
+[ Info ]   10/24/2024 08:46:51  Started fetching stock data for Abbott India
+[ Error ]   10/24/2024 08:46:51  CompanyStockInfo_Expressions_Main  -  Object reference not set to an instance of an object.
+[ Info ]   10/24/2024 08:48:34  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/24/2024 08:48:35  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/24/2024 08:48:42   Conversion Rate  for  INR to EUR is 0.0110304
+[ Info ]   10/24/2024 08:48:42  Started fetching stock data for Abbott India
+[ Error ]   10/24/2024 08:48:42  CompanyStockInfo_Expressions_Main  -  Object reference not set to an instance of an object.
+[ Info ]   10/24/2024 08:49:42  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/24/2024 08:49:43  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/24/2024 08:51:47  Reading infomration from the config file: Config/Config.xlsx
+[ Info ]   10/24/2024 08:51:48  Reading config sucessfull: Config/Config.xlsx
+[ Info ]   10/24/2024 08:51:55   Conversion Rate  for  INR to EUR is 0.0110282
+[ Info ]   10/24/2024 08:51:56  Started fetching stock data for Abbott India
+[ Error ]   10/24/2024 08:51:56  CompanyStockInfo_Expressions_Main  -  Object reference not set to an instance of an object.
+[ Info ]   10/24/2024 08:52:22   Conversion Rate  for  INR to EUR is 0.0110282

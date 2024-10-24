@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k+rLENNKgUs5eRtxE3LPqt6PYFeewEbudPut1j52W5p/AIEoCWcxuvSG/jM1LuSH0gfPNjhWhLrLOye8p8sMSg==",
+  "dgSpecHash": "6haD9favJB/0lu5xUGs056y+zq116pocQtuB2gHubtTmTz3MQovA0xb6u2zR9mrYrmmCb/ciNHN5hV0w7FHmwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.local\\",
+  "projectFilePath": "C:\\Users\\Lenovo\\Documents\\UiPath\\CompanyStockInfo\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\avalonedit\\6.1.3.50\\avalonedit.6.1.3.50.nupkg.sha512",
@@ -288,8 +288,8 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\24.11.1-preview\\uipath.uiautomation.activities.runtime.24.11.1-preview.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\24.11.1-preview\\uipath.uiautomation.activities.runtime.design.24.11.1-preview.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\uipath.vision\\3.14.0-preview\\uipath.vision.3.14.0-preview.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\uipath.webapi.activities\\1.21.0\\uipath.webapi.activities.1.21.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.21.0\\uipath.webapi.activities.runtime.1.21.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\uipath.webapi.activities\\1.21.1\\uipath.webapi.activities.1.21.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.21.1\\uipath.webapi.activities.runtime.1.21.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\xlparser\\1.5.2\\xlparser.1.5.2.nupkg.sha512"
   ],
   "logs": []

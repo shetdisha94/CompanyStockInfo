@@ -3,14 +3,14 @@
   "projectId": "23579255-db75-45b1-b4cc-52947910c4ef",
   "previousProjectId": "ac484897-524a-46a4-8620-a95a015a955c",
   "description": "Process reads company list and fetches stock data and converts INR price into EUR and writes data to excel.",
-  "main": "Shared\\Components\\SendOutlookMailMessage.xaml",
+  "main": "Shared\\Components\\GetCompanyUrl.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.0-preview]",
     "UiPath.Mail.Activities": "[1.23.11]",
     "UiPath.System.Activities": "[24.11.0-preview]",
     "UiPath.Testing.Activities": "[24.10.0]",
     "UiPath.UIAutomation.Activities": "[24.11.1-preview]",
-    "UiPath.WebAPI.Activities": "[1.21.0]"
+    "UiPath.WebAPI.Activities": "[1.21.1]"
   },
   "webServices": [],
   "entitiesStores": [],

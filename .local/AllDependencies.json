@@ -5725,7 +5725,7 @@
           "lib/net6.0-windows7.0/UiPath.Vision.dll": {}
         }
       },
-      "UiPath.WebAPI.Activities/1.21.0": {
+      "UiPath.WebAPI.Activities/1.21.1": {
         "type": "package",
         "dependencies": {
           "AvalonEdit": "6.1.3.50",
@@ -5734,7 +5734,7 @@
           "RestSharp": "106.15.0",
           "UiPath.Platform": "24.10.2",
           "UiPath.Telemetry.Client": "2.1.3",
-          "UiPath.WebAPI.Activities.Runtime": "1.21.0"
+          "UiPath.WebAPI.Activities.Runtime": "1.21.1"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -5783,7 +5783,7 @@
           }
         }
       },
-      "UiPath.WebAPI.Activities.Runtime/1.21.0": {
+      "UiPath.WebAPI.Activities.Runtime/1.21.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -11447,7 +11447,7 @@
           "lib/net6.0-windows7.0/UiPath.Vision.dll": {}
         }
       },
-      "UiPath.WebAPI.Activities/1.21.0": {
+      "UiPath.WebAPI.Activities/1.21.1": {
         "type": "package",
         "dependencies": {
           "AvalonEdit": "6.1.3.50",
@@ -11456,7 +11456,7 @@
           "RestSharp": "106.15.0",
           "UiPath.Platform": "24.10.2",
           "UiPath.Telemetry.Client": "2.1.3",
-          "UiPath.WebAPI.Activities.Runtime": "1.21.0"
+          "UiPath.WebAPI.Activities.Runtime": "1.21.1"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -11505,7 +11505,7 @@
           }
         }
       },
-      "UiPath.WebAPI.Activities.Runtime/1.21.0": {
+      "UiPath.WebAPI.Activities.Runtime/1.21.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -22304,10 +22304,10 @@
         "uipath.vision.nuspec"
       ]
     },
-    "UiPath.WebAPI.Activities/1.21.0": {
-      "sha512": "AtNBSg+d5IirNz+plfnr4ucVosh2hHMwlsGKqW6y0m3IzZ4DDsrR1hq5WbTLu/NTJ8+BtaULBFtpWhBKJxRZWg==",
+    "UiPath.WebAPI.Activities/1.21.1": {
+      "sha512": "MDrjYyau8UCbVYUguIYaeZ8N0k8FKCmqKuJUYFffT5aIXi95I929EOYkXNk4PBFjH4HS05jTe6iPpL+ua9hTNw==",
       "type": "package",
-      "path": "uipath.webapi.activities/1.21.0",
+      "path": "uipath.webapi.activities/1.21.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -22343,14 +22343,14 @@
         "lib/net6.0-windows7.0/zu/UiPath.Web.Activities.Design.resources.dll",
         "lib/net6.0/UiPath.Web.Activities.RulesLibrary.dll",
         "lib/net6.0/UiPath.Web.Activities.ViewModels.dll",
-        "uipath.webapi.activities.1.21.0.nupkg.sha512",
+        "uipath.webapi.activities.1.21.1.nupkg.sha512",
         "uipath.webapi.activities.nuspec"
       ]
     },
-    "UiPath.WebAPI.Activities.Runtime/1.21.0": {
-      "sha512": "fnBByFp3eFMYYNgMjlYL0CXabOYNtxOFIp+SojAmBOh6/PAD5MqyXC2DkiXamvZpEAn73Dguy2/Bmbl/3Bw/zA==",
+    "UiPath.WebAPI.Activities.Runtime/1.21.1": {
+      "sha512": "99Nc/IE/kxgYU8AKe9z+lldBTfKsUdHrYHgNiKwtZ0o+llw/ZNUhDjfEkz5X9CX5Zumot0A95yuj+o+uhQd2LQ==",
       "type": "package",
-      "path": "uipath.webapi.activities.runtime/1.21.0",
+      "path": "uipath.webapi.activities.runtime/1.21.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -22396,7 +22396,7 @@
         "lib/net6.0/tr/UiPath.Web.Activities.resources.dll",
         "lib/net6.0/zh-CN/UiPath.Web.Activities.resources.dll",
         "lib/net6.0/zu/UiPath.Web.Activities.resources.dll",
-        "uipath.webapi.activities.runtime.1.21.0.nupkg.sha512",
+        "uipath.webapi.activities.runtime.1.21.1.nupkg.sha512",
         "uipath.webapi.activities.runtime.nuspec"
       ]
     },
@@ -22423,7 +22423,7 @@
       "UiPath.System.Activities >= 24.11.0-preview <= 24.11.0-preview",
       "UiPath.Testing.Activities >= 24.10.0 <= 24.10.0",
       "UiPath.UIAutomation.Activities >= 24.11.1-preview <= 24.11.1-preview",
-      "UiPath.WebAPI.Activities >= 1.21.0 <= 1.21.0"
+      "UiPath.WebAPI.Activities >= 1.21.1 <= 1.21.1"
     ]
   },
   "packageFolders": {
@@ -22431,11 +22431,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "StockPrice",
-      "projectName": "StockPrice",
-      "projectPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.local",
+      "projectUniqueName": "CompanyStockInfo",
+      "projectName": "CompanyStockInfo",
+      "projectPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\CompanyStockInfo\\.local",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\StockPrice\\.local"
+      "outputPath": "C:\\Users\\Lenovo\\Documents\\UiPath\\CompanyStockInfo\\.local"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -22468,7 +22468,7 @@
           "UiPath.WebAPI.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.21.0, 1.21.0]"
+            "version": "[1.21.1, 1.21.1]"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
